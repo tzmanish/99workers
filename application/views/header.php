@@ -69,7 +69,7 @@
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper">
+					<div id="navbar" class="navbar-nav-wrapper" ">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						

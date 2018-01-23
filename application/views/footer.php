@@ -9,7 +9,7 @@
 					<div class="row">
 					
 						<div class="col-sm-12 col-md-3">
-							<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/logo.png" class="img-responsive"  style="height:50px;"></a> <br>
+							<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/logo1.png" class="img-responsive"  style="height:50px;"></a> <br>
              
 
 							<p class="font16">99workers is an ICANN-accredited Graphics Design and Web Development Company . In addition to great pricing and a
