@@ -61,7 +61,7 @@
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="index.html"><img src="images/logo-white.png" alt="Logo" /></a>
+							<a href="index.html"><img src="<?php echo base_url(); ?>media/images/logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
