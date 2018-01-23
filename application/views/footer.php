@@ -8,61 +8,70 @@
 				
 					<div class="row">
 					
-						<div class="col-sm-12 col-md-4">
-						
-							<h5 class="footer-title">newsletter</h5>
+						<div class="col-sm-12 col-md-3">
+							<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/logo.png" class="img-responsive"  style="height:50px;"></a> <br>
+             
+
+							<p class="font16">99workers is an ICANN-accredited Graphics Design and Web Development Company . In addition to great pricing and a
+							commitment to world-class customer service, we offer Graphic Design, Print Design, Website Builder, SEO Service.</p>
 							
-							<p class="font16">Subsribe to get our latest updates and oeffers</p>
 							
-							<div class="footer-newsletter">
-								
-								<div class="form-group">
-									<input class="form-control" placeholder="enter your email " />
-									<button class="btn btn-primary">subsribe</button>
-								</div>
-								
-								<p class="font-italic font13">*** Don't worry, we wont spam you!</p>
-							
-							</div>
 
 						</div>
 						
-						<div class="col-sm-12 col-md-8">
+						<div class="col-sm-12 col-md-9">
 						
 							<div class="row">
 								
-								<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3 mt-25-sm">
-									<h5 class="footer-title">footer</h5>
+								<div class="col-xs-12 col-sm-4 col-md-3 mt-25-sm">
+									<h5 class="footer-title">QUICK LINK</h5>
 									<ul class="footer-menu">
-										<li><a href="#">Support</a></li>
-										<li><a href="#">Advertise</a></li>
-										<li><a href="#">Media Relations</a></li>
-										<li><a href="#">Affiliates</a></li>
-										<li><a href="#">Careers</a></li>
+										<li><a href="#">Portfolio</a></li>
+										<li><a href="#">Pricing</a></li>
+										<li><a href="#">Login</a></li>
+										<li><a href="#">Sign Up</a></li>
+										<li><a href="#">Start A Project</a></li>
+										<li><a href="#">Client Reviews</a></li>
 									</ul>
 								</div>
 								
 								<div class="col-xs-12 col-sm-4 col-md-3 mt-25-sm">
-									<h5 class="footer-title">quick  links</h5>
+									<h5 class="footer-title">OUR SERVICES</h5>
 									<ul class="footer-menu">
-										<li><a href="#">Media Relations</a></li>
-										<li><a href="#">Affiliates</a></li>
-										<li><a href="#">Careers</a></li>
-										<li><a href="#">Support</a></li>
-										<li><a href="#">Advertise</a></li>
+										<li><a href="#">Graphics Design</a></li>
+										<li><a href="#">Logo Design</a></li>
+										<li><a href="#">Web Development</a></li>
+										<li><a href="#">Theme Design</a></li>
+										<li><a href="#">Plugins Development</a></li>
+										<li><a href="#">Mobile Apps</a></li>
+										<li><a href="#">API Integration</a></li>
 									</ul>
 								</div>
 								
 								<div class="col-xs-12 col-sm-4 col-md-3 mt-25-sm">
 								
-									<h5 class="footer-title">helps</h5>
+									<h5 class="footer-title">INFORMATION</h5>
 									<ul class="footer-menu">
-										<li><a href="#">Using a Tour</a></li>
-										<li><a href="#">Submitting a Tour</a></li>
-										<li><a href="#">Managing My Account</a></li>
-										<li><a href="#">Merchant Help</a></li>
-										<li><a href="#">White Label Website</a></li>
+										<li><a href="#">Trust and Security</a></li>
+										<li><a href="#">Registration Agreement</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">Contact US</a></li>
 									</ul>
+								
+								</div>
+
+
+								<div class="col-xs-12 col-sm-4 col-md-3 mt-25-sm">
+								
+									<h5 class="footer-title">OUR COMPANY</h5>
+									<ul class="footer-menu">
+										<li><a href="#">About US</a></li>
+										<li><a href="#">Why Choose Us</a></li>
+										<li><a href="#">Support</a></li>
+										
+									</ul><br>
+									<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/pay.png" class="img-responsive"  style="height:100px;"></a> 
 								
 								</div>
 
@@ -84,18 +93,13 @@
 					
 						<div class="col-xs-12 col-sm-6 col-md-4">
 				
-							<p class="copy-right">&#169; 2017 Togoby - tour hosting</p>
+							<p class="copy-right">Copyright 2012 - 2018 99workers | All Rights Reserved</p>
 							
 						</div>
 						
 						<div class="col-xs-12 col-sm-6 col-md-4">
 						
-							<ul class="bottom-footer-menu">
-								<li><a href="#">Cookies</a></li>
-								<li><a href="#">Policies</a></li>
-								<li><a href="#">Terms</a></li>
-								<li><a href="#">Blogs</a></li>
-							</ul>
+							
 						
 						</div>
 						
