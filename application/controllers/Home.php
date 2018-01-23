@@ -19,4 +19,16 @@ class Home extends CI_Controller {
 		$this->load->view('home');
 		$this->load->view('footer');
 	}
+	public function portfolio()
+	{
+		$this->load->view('header');
+		$this->load->view('portfolio');
+		$this->load->view('footer');
+	}
+	public function portfolio_details()
+	{
+		$this->load->view('header');
+		$this->load->view('portfoliodetails');
+		$this->load->view('footer');
+	}
 }
