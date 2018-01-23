@@ -27,8 +27,8 @@
 										<div class="image">
 											<img src="<?php echo base_url();?>/media/images/top-destinations/01.jpg" alt="images" />
 										</div>
-										<h4 class="uppercase"><span>Italy</span></h4>
-										<p>254 packages<br /> 142 requests<br /> 52 guides</p>
+										<h4 class="uppercase"><span>Category</span></h4>
+										<p style="font-size: 30px;">Name </p>
 									</a>
 								</div>
 								
@@ -41,8 +41,8 @@
 										<div class="image">
 											<img src="<?php echo base_url();?>/media/images/top-destinations/02.jpg" alt="images" />
 										</div>
-										<h4 class="uppercase"><span>USA</span></h4>
-										<p>254 packages<br /> 142 requests<br /> 52 guides</p>
+										<h4 class="uppercase"><span>Category</span></h4>
+										<p style="font-size: 30px;">Name </p>
 									</a>
 								</div>
 								
@@ -55,8 +55,8 @@
 										<div class="image">
 											<img src="<?php echo base_url();?>/media/images/top-destinations/03.jpg" alt="images" />
 										</div>
-										<h4 class="uppercase"><span>Emerate</span></h4>
-										<p>254 packages<br /> 142 requests<br /> 52 guides</p>
+										<h4 class="uppercase"><span>Category</span></h4>
+										<p style="font-size: 30px;">Name </p>
 									</a>
 								</div>
 								
@@ -69,8 +69,8 @@
 										<div class="image">
 											<img src="<?php echo base_url();?>/media/images/top-destinations/04.jpg" alt="images" />
 										</div>
-										<h4 class="uppercase"><span>Greece</span></h4>
-										<p>254 packages<br /> 142 requests<br /> 52 guides</p>
+										<h4 class="uppercase"><span>Category</span></h4>
+										<p style="font-size: 30px;">Name </p>
 									</a>
 								</div>
 								
@@ -83,8 +83,8 @@
 										<div class="image">
 											<img src="<?php echo base_url();?>/media/images/top-destinations/05.jpg" alt="images" />
 										</div>
-										<h4 class="uppercase"><span>Maldives</span></h4>
-										<p>254 packages<br /> 142 requests<br /> 52 guides</p>
+										<h4 class="uppercase"><span>Category</span></h4>
+										<p style="font-size: 30px;">Name </p>
 									</a>
 								</div>
 								
@@ -97,8 +97,8 @@
 										<div class="image">
 											<img src="<?php echo base_url();?>/media/images/top-destinations/06.jpg" alt="images" />
 										</div>
-										<h4 class="uppercase"><span>Australia</span></h4>
-										<p>254 packages<br /> 142 requests<br /> 52 guides</p>
+										<h4 class="uppercase"><span>Category</span></h4>
+										<p style="font-size: 30px;">Name </p>
 									</a>
 								</div>
 								
