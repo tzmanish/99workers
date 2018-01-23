@@ -61,7 +61,11 @@
 					
 					<div class="logo-wrapper">
 						<div class="logo">
+
 							<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/logo.png" class="img-responsive"  style="height:50px;"></a> <br>
+
+							
+
 						</div>
 					</div>
 					
