@@ -28,6 +28,8 @@
 
 	<!-- CSS Custom -->
 	<link href="<?php echo base_url();?>/media/css/style.css" rel="stylesheet">
+	<link href="<?php echo base_url();?>/media/css/style1.css" rel="stylesheet">
+	<link href="<?php echo base_url();?>/media/css/style2.css" rel="stylesheet">
 	
 	<!-- Add your style -->
 	<link href="<?php echo base_url();?>/media/css/your-style.css" rel="stylesheet">
