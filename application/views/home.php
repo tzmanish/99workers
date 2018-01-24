@@ -172,4 +172,15 @@
 			<br>
 		</div>	
 	</div>
+	<div class="container-fluid" style="background-color: #f4f4f4;padding-top: 3%;padding-bottom: 3%;">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-8">
+				<h4>SingUp For Email alerts to recive big discount on Design & Develpment Services.</h4>
+				<p>(We promise not to share your information with anyone, and you can unsubscribe anytime.)</p>
+		    </div>
+			<div class="col-md-4" >
+			    <input type="email" name="subemail" class="form-control col-xs-12 col-md-12" placeholder="Email" style="height: 50px;border-radius: 5px;">
+			</div>
+		</div>
+	</div>
 </div>
