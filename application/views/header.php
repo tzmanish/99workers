@@ -70,31 +70,19 @@
 						<ul class="nav navbar-nav" id="responsive-menu">
 						
 							<li>
-								<a href="#">Chat</a>
+								<a href="#">Live Chat</a>
 								
 							</li>
-							
 							<li>
-								<a href="<?php echo base_url();?>index.php/home/services"><i class="glyphicons glyphicons-group"></i>Our Services</a>
-							</li>
-							
-							<li>
-								<a href="<?php echo base_url();?>index.php/home/portfolio"><i class="glyphicon glyphicon-th"></i>Portfolio</a>
+								<a href="#">Make Money</a>
+								
 							</li>
 							<li>
-								<a href="#"><i class="glyphicon glyphicon-question-sign"></i>Help</a>
-								<ul>
-	
-									<li><a href="#">Support Ticket</a></li>
-									<li><a href="#">Terms & Conditions</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-									<li><a href="#">FAQ</a></li>
-									
-								</ul>
+								<a href="#">Pay Us</a>
+								
 							</li>
-							
-							<li><a data-toggle="modal" href="#loginModal" class="btn btn-default button-medium">Log In</a></li>
-							<li><a data-toggle="modal" href="#registerModal" class="btn btn-default button-medium">Sign Up </a></li>
+							<li><a data-toggle="modal" href="#loginModal" style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a></li>
+							<li><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;">&nbsp;SignUp &nbsp;&nbsp;</a></li>
 						</ul>
 				
 					</div><!--/.nav-collapse -->
@@ -106,19 +94,19 @@
 				</div>
 				
 				<div id="slicknav-mobile"></div>
-				 <div class="container-fluid" style="background-color: #000;height: 40px; color: #fff;">
+				 <div class="container-fluid" style="background-color: #000;height: 45px; color: #fff;padding-left: 5%;padding-right: 5%;padding-top: 5px;">
 				 	<div  id="navbar" class="navbar-nav-wrapper1">
 				 		<ul class="nav navbar-nav" id="responsive-menu">
 						
 							<li>
-								<a href="#">Chat</a>
-								
+								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="glyphicons glyphicons-group"></i>Who We Are</a>
 							</li>
-							
 							<li>
 								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="glyphicons glyphicons-group"></i>Our Services</a>
 							</li>
-							
+							<li>
+								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="glyphicon glyphicon-th"></i>Product</a>
+							</li>
 							<li>
 								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="glyphicon glyphicon-th"></i>Portfolio</a>
 							</li>
@@ -133,9 +121,9 @@
 									
 								</ul>
 							</li>
+							<li><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;">&nbsp;Start Project &nbsp;&nbsp;</a></li>
 						</ul>
 				 	</div>
-				 	
 			     </div>
 			</nav>
 			<!-- end Navbar (Header) -->

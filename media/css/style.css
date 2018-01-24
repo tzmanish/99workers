@@ -106,15 +106,11 @@ body
 
 .navbar-nav-wrapper {
     width: 70%;
-}
-
-.nav-mini-wrapper {
-    width: 15%;
+    padding-right: 15%;
 }
 
 .nav.navbar-nav {
-    text-align: center;
-    float: none;
+    float: right;
 }
 
 .nav.navbar-nav li {
@@ -124,6 +120,8 @@ body
 }
 
 .nav.navbar-nav li a {
+
+    text-decoration: none !important;
     color: #FFF;
 }
 
