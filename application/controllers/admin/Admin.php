@@ -9,7 +9,7 @@ class Admin extends CI_Controller {
 		$this->load->helper(array('form','url'));
 		$this->load->library(array('session', 'form_validation','pagination'));
 		$this->load->database();
-		$this->load->model('user');
+		$this->load->model('user1');
 
 	}
 
@@ -35,59 +35,60 @@ class Admin extends CI_Controller {
 	{
 		$config = array();
         $config["base_url"] = base_url() . "index.php/admin/client";
-        $config["total_rows"] = $this->user->countclient();
+        $config["total_rows"] = $this->user1->countclient();
         $config["per_page"] = 50;
         $config["uri_segment"] = 3;
 
         $this->pagination->initialize($config);
 
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-        $details['query'] = $this->user->get_client($config["per_page"], $page);
+        $details['query'] = $this->user1->get_client($config["per_page"], $page);
         $details["links"] = $this->pagination->create_links();
-        $this->load->view('header');
-		$this->load->view('viewuser',$details);
-		$this->load->view('footer');
+        $this->load->view('admin/header');
+		$this->load->view('admin/viewuser',$details);
+		$this->load->view('admin/footer');
 	}
-    public function scategory()
+	public function showcategory()
+	{	
+        	$details['query']=$this->user1->showcategory();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/showcategory',$details);
+		    $this->load->view('admin/footer');
+    }
+    public function addcategory()
 	{	$this->form_validation->set_rules('name', 'name', 'required');
 		if ($this->form_validation->run() == FALSE)
         {
-        	$details['query']=$this->user->showcategory();
-     		$this->load->view('header');
-		$this->load->view('scategory',$details);
-		$this->load->view('footer');
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/addcategory');
+		    $this->load->view('admin/footer');
         }
 		else
 		{
-			
-			$name=$_POST['name'];
-		    $descr=$_POST['descr'];
-
-		    $categorys = $_POST['category'];
-
-
-					    
-			
-			$result=$this->user->insert_scategory( $name,$descr,$categorys);
+			$data = array(
+				'name' => $this->input->post('name'),
+				'descr' => $this->input->post('descr')
+			);
+            $result=$this->user1->insert_category($data);
 		if ($result)
 			{
 				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
-				redirect('admin/scategory');
+				redirect('admin/admin/addcategory');
 			}
 			else
 			{
 				// error
 				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
-				redirect('admin/scategory');
+				redirect('admin/admin/addcategory');
 			}
 		}
 	
 		
 	}
-	public function Deletescategory($id)
+	public function Deletecategory($id)
 	{
 			
-		$details['query']=$this->user->showscategory();
+		$details['query']=$this->user1->showscategory();
      		$this->load->view('header');
 		$this->load->view('scategory',$details);
 		$this->load->view('footer');
@@ -95,7 +96,7 @@ class Admin extends CI_Controller {
 	  echo "<script>
 	 x = confirm ('You want to proceed deleting?')";
 	 
-	  $r=$this->user->deletescategory($id);
+	  $r=$this->user1->deletescategory($id);
 	  if($r){
 	  echo "Successfully Deleted Data";
 	  }

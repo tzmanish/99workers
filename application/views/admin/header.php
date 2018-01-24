@@ -112,10 +112,10 @@
               <a href="register.html">Add Portfolio</a>
             </li>
             <li>
-              <a href="forgot-password.html">All Category</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showcategory">All Category</a>
             </li>
             <li>
-              <a href="blank.html">Add Ctegory</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/addcategory">Add Category</a>
             </li>
           </ul>
         </li>
