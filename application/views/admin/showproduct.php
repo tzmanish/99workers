@@ -9,17 +9,17 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
+                  <th>Image</th>
                   <th>Name</th>
                   <th>Description</th>
-                  <th>Status</th>
                   <th>Actions</th>
                 </tr>
               </thead>
               <tfoot>
                 <tr>
+                  <th>Image</th>
                   <th>Name</th>
                   <th>Description</th>
-                  <th>Status</th>
                   <th>Actions</th>
                 </tr>
               </tfoot>
@@ -27,11 +27,9 @@
               	
                 <?php foreach ($query as $row) {?>
                 <tr>
-                  <td><?php echo $row->name;?></td>
-                  <td><?php echo $row->descr;?></td>
-                  <td><?php if($row->status==1){ echo "active";}else{echo "inactive";}?></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/deletecategory/<?php echo $row->id; ?>" class="btn">Delete</a></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/categorystatus/<?php echo $row->id; ?>/<?php echo $row->status; ?>" class="btn"><?php if($row->status==0){ echo "active";}else{echo "inactive";}?></a></td>
+                  <td><?php echo $row->pname;?></td>
+                  <td><?php echo $row->pdescr;?></td>
+                  <td><a href="<?php echo base_url();?>index.php/admin/admin/deleteproduct/<?php echo $row->pid; ?>" class="btn">Delete</a></td>
                 </tr>
                 <?php }?>
               </tbody>

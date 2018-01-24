@@ -25,7 +25,7 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <div class="collapse navbar-collapse" id="navbarResponsive" style="overflow: auto;">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="index.html">
@@ -92,10 +92,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="Product">
             <li>
-              <a href="login.html">All Product</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showproduct">All Product</a>
             </li>
             <li>
-              <a href="register.html">Add Product</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/addproduct">Add Product</a>
             </li>
           </ul>
         </li>
@@ -106,10 +106,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="login.html">All Portfolio</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showportfolio">All Portfolio</a>
             </li>
             <li>
-              <a href="register.html">Add Portfolio</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/addportfolio">Add Portfolio</a>
             </li>
             <li>
               <a href="<?php echo base_url();?>index.php/admin/admin/showcategory">All Category</a>
@@ -126,16 +126,16 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-              <a href="#">All Service Categories</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showscategory">All Service Categories</a>
             </li>
             <li>
               <a href="<?php echo base_url();?>index.php/admin/admin/addscategory">Add Service Category</a>
             </li>
             <li>
-              <a href="#">All Services</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showservice">All Services</a>
             </li>
             <li>
-              <a href="#">Add Service</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/addservice">Add Service</a>
             </li>
           </ul>
         </li>
