@@ -11,22 +11,22 @@
 
 							<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
-								<div class="col-md-2 col-sm-12 col-xs-12">
+								<div class="col-md-2 col-sm-4 col-xs-4">
 									<a href=""><img src="<?php echo base_url();?>media/images/fb.png"></a>
 								</div>
-								<div class="col-md-2 col-sm-12 col-xs-12">
+								<div class="col-md-2 col-sm-4 col-xs-4">
 									<a href=""><img src="<?php echo base_url();?>media/images/yt.png"></a>
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-2 col-sm-4 col-xs-4">
 									<a href=""><img src="<?php echo base_url();?>media/images/tw.png"></a>
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-2 col-sm-4 col-xs-4">
 									<a href=""><img src="<?php echo base_url();?>media/images/fb.png"></a>
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-2 col-sm-4 col-xs-4">
 									<a href=""><img src="<?php echo base_url();?>media/images/yt.png"></a>
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-2 col-sm-4 col-xs-4">
 									<a href=""><img src="<?php echo base_url();?>media/images/tw.png"></a>
 								</div>
 
