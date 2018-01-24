@@ -9,25 +9,22 @@
 					<div class="row">
 						<div class="col-md-12">
 
-							<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
 
-								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/fb.png"></a>
+								<div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4">
+									<a href=""><img class="icn" src="<?php echo base_url();?>media/images/fb.png"></a>
 								</div>
 								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/yt.png"></a>
+									<a href=""><img class="icn" src="<?php echo base_url();?>media/images/yt.png"></a>
 								</div>
 								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/tw.png"></a>
+									<a href=""><img class="icn" src="<?php echo base_url();?>media/images/in.png"></a>
 								</div>
-								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/fb.png"></a>
+								<div class="col-md-2 col-sm-4 col-xs-6">
+									<a href=""><img class="icn" src="<?php echo base_url();?>media/images/bl.png"></a>
 								</div>
-								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/yt.png"></a>
-								</div>
-								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/tw.png"></a>
+								<div class="col-md-2 col-sm-4 col-xs-6">
+									<a href=""><img class="icn" src="<?php echo base_url();?>media/images/tw.png"></a>
 								</div>
 
 							</div>
