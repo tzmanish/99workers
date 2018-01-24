@@ -61,6 +61,12 @@ class Home extends CI_Controller {
 		$this->load->view('services');
 		$this->load->view('footer');
 	}
+	public function changemail()
+	{
+		$this->load->view('header');
+		$this->load->view('changemail');
+		$this->load->view('footer');
+	}
 	public function portfolio_details()
 	{
 		$this->load->view('header');

@@ -1,5 +1,4 @@
-
-		
+	
 		<div class="main-wrapper scrollspy-container">
 		
 			<!-- start Breadcrumb -->
@@ -7,7 +6,6 @@
 			<div class="breadcrumb-wrapper">
 				
 			</div>
-			
 			
 
 			<div class="pt-30 pb-50">
@@ -18,7 +16,7 @@
 						
 						<div class="col-xs-12 col-sm-4 col-md-3 mt-20">
 
-							<aside class="sidebar-wrapper pr-15 pr-0-xs">
+							<aside class="sidebar-wrapper pr-5 pr-0-xs">
 	
 								<div class="common-menu-wrapper">
 							
@@ -56,21 +54,54 @@
 						
 							<div class="dashboard-wrapper">
 							
-								<h4 class="section-title">Hello Kalvin</h4>
-								<p class="mmt-15 mb-20">Your last loged-in: <span class="text-primary">11:42:21 am - March 15, 2016</span></p>
+								<h4 class="section-title">Change Email</h4>
+								<p class="mmt-15 mb-20">Middleton fat two satisfied additions. So continued he or commanded household smallness delivered.</p>
 								
-								<div class="admin-empty-dashboard">
+								<form class="post-form-wrapper">
 									
-									<div class="icon">
-										<i class="ion-ios-book-outline"></i>
+									<div class="row gap-20">
+
+										<div class="col-sm-6 col-md-4">
+										
+											<div class="form-group">
+												<label>Current Email id</label>
+												<input type="text" class="form-control" placeholder="your Current Email id">
+											</div>
+											
+										</div>
+										
+										<div class="clear"></div>
+										
+										<div class="col-sm-6 col-md-4">
+										
+											<div class="form-group">
+												<label>New Email id</label>
+												<input type="text" class="form-control" placeholder="your new Email id">
+											</div>
+											
+										</div>
+										
+										<div class="clear"></div>
+										
+										<div class="col-sm-6 col-md-4">
+										
+											<div class="form-group">
+												<label>Confirm Email id</label>
+												<input type="password" class="form-control"  placeholder="confirm your new Email id">
+											</div>
+											
+										</div>
+										
+										<div class="clear mb-10"></div>
+										
+										<div class="col-sm-12">
+											<a href="#" class="btn btn-primary">Save</a>
+											<a href="#" class="btn btn-primary btn-border">Cancel</a>
+										</div>
+
 									</div>
 									
-									<h4>You have no any activities yet!</h4>
-									
-									<a href="#" class="btn btn-primary">Create Tour Offer</a>
-									<a href="#" class="btn btn-primary">Browse Tour Offer</a>
-								
-								</div>
+								</form>
 								
 							</div>
 							
@@ -85,4 +116,3 @@
 		</div>
 		
 		<!-- end Main Wrapper -->
-		
