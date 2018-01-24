@@ -477,4 +477,119 @@ class Admin extends CI_Controller {
 	 
 	} 
 
+	/* user */ 
+
+
+	public function showuser()
+	{	
+        	$details['query']=$this->user1->showuser();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/showuser',$details);
+		    $this->load->view('admin/footer');
+    }
+
+	public function showsuspendeduser()
+	{	
+        	$details['query']=$this->user1->showsuspendeduser();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/showsuspendeduser',$details);
+		    $this->load->view('admin/footer');
+    }
+
+	public function userstatus($id,$status)
+	{
+
+	  if($status=='1')
+	 {
+	 	$r=$this->user1->userstatus($id,'0');
+	 }
+	 else
+	 {
+	 	$r=$this->user1->userstatus($id,'1');
+	 }
+	  if($r){
+	  echo "Successfully Updated Data";
+	  }
+	  else {
+		  echo "Can Not Delete Data";
+	  }
+	  redirect($_SERVER['HTTP_REFERER']);
+	}
+
+	/* subscription */
+
+	public function subscriptionstatus($id,$status)
+	{
+
+	  if($status=='1')
+	 {
+	 	$r=$this->user1->subscriptionstatus($id,'0');
+	 }
+	 else
+	 {
+	 	$r=$this->user1->subscriptionstatus($id,'1');
+	 }
+	  if($r){
+	  echo "Successfully Updated Data";
+	  }
+	  else {
+		  echo "Can Not Delete Data";
+	  }
+	  redirect($_SERVER['HTTP_REFERER']);
+	}
+
+
+	public function showsubscription()
+	{	
+        	$details['query']=$this->user1->showsubscription();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/subscription',$details);
+		    $this->load->view('admin/footer');
+    }
+
+	/* projects */
+
+	public function projectstatus($id,$status)
+	{
+
+	  if($status=='1')
+	 {
+	 	$r=$this->user1->projectstatus($pid,'0');
+	 }
+	 else
+	 {
+	 	$r=$this->user1->projectstatus($pid,'1');
+	 }
+	  if($r){
+	  echo "Successfully Updated Data";
+	  }
+	  else {
+		  echo "Can Not Update Data";
+	  }
+	  redirect($_SERVER['HTTP_REFERER']);
+	}
+
+
+	public function showproject()
+	{	
+        	$details['query']=$this->user1->showproject();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/showprojects',$details);
+		    $this->load->view('admin/footer');
+    }
+	public function showcompleatedproject()
+	{	
+        	$details['query']=$this->user1->showcompleatedproject();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/showprojects',$details);
+		    $this->load->view('admin/footer');
+    }
+	public function showongoingproject()
+	{	
+        	$details['query']=$this->user1->showongoingproject();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/showprojects',$details);
+		    $this->load->view('admin/footer');
+    }
+
 }

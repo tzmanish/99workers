@@ -113,4 +113,67 @@ class user1 extends CI_Model
 	   return($this->db->delete('portfolio'));
 	}
 
+	/* user */ 
+
+	function showuser()
+	{
+
+		$this->db->where('status',"1");
+		$query=$this->db->get('user');
+		return $query->result();
+	}
+
+	function showsuspendeduser()
+	{
+		$this->db->where('status',"0");
+		$query=$this->db->get('user');
+		return $query->result();
+	}
+	function userstatus($id, $status)
+	{
+		$this->db->where('uid', $id);
+        $data = array('status'=>$status);
+		return($this->db->update('user',$data));
+	}
+
+	/* subscription */
+
+    function showsubscription()
+	{
+		$query=$this->db->get('subscription');
+		return $query->result();
+	}
+	function subscriptionstatus($id, $status)
+	{
+		$this->db->where('id', $id);
+        $data = array('status'=>$status);
+		return($this->db->update('subscription',$data));
+	}
+
+	/* projects */
+	
+    function showproject()
+	{
+		$query=$this->db->get('project');
+		return $query->result();
+	}
+    function showcompleatedproject()
+	{
+		$this->db->where('pstatus', "1");
+		$query=$this->db->get('project');
+		return $query->result();
+	}
+    function showongoingproject()
+	{
+		$this->db->where('pstatus',"0");
+		$query=$this->db->get('project');
+		return $query->result();
+	}
+	function projectstatus($id, $status)
+	{
+		$this->db->where('pid', $id);
+        $data = array('pstatus'=>$status);
+		return($this->db->update('project',$data));
+	}
+
 }?>
