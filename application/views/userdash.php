@@ -25,7 +25,7 @@
 									<ul class="common-menu-list">
 										
 										<li class="active"><a href="userdash"><span class=""><i class="glyphicon glyphicon-blackboard"></i>Dashboard</span></a></li>
-										<li><a href="#">Projet</a></li>
+										<li><a href="#">Project</a></li>
 										<li><a href="#">All Project</a></li>
 										<li><a href="#">Completed Project</a></li>
 										<li><a href="#">Project Processing</a></li>

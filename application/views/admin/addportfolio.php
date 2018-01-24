@@ -20,7 +20,7 @@
               </div>
             <div class="form-group">
               <label for="">Category</label>
-              <select class="form-control" name="id">
+              <select class="form-control" name=" id">
                 <?php foreach ($query as $row) {?>
                 <option value="<?php echo $row->id;?>"><?php echo $row->name; ?></option>
                 <?php }?>

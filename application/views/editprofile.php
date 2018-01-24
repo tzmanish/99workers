@@ -26,7 +26,7 @@
 									<ul class="common-menu-list">
 										
 										<li class="active"><a href="userdash"><span class=""><i class="glyphicon glyphicon-blackboard"></i>Dashboard</span></a></li>
-										<li><a href="#">Projet</a></li>
+										<li><a href="#">Project</a></li>
 										<li><a href="#">All Project</a></li>
 										<li><a href="#">Completed Project</a></li>
 										<li><a href="#">Project Processing</a></li>
@@ -64,68 +64,15 @@
 									
 									<div class="row gap-20">
 
-										<div class="col-sm-6 col-md-4">
-												
-											<div class="form-group bootstrap-fileinput-style-01">
-												<label>Photo</label>
-												<input type="file" name="form-register-photo" id="form-register-photo">
-												<span class="font12 font-italic">** photo must not bigger than 250kb</span>
-											</div>
-
-										</div>
+										
 										
 										<div class="clear"></div>
 										
 										<div class="col-sm-6 col-md-4">
 												
 											<div class="form-group">
-												<label>First Name</label>
-												<input type="text" class="form-control" value="Christine">
-											</div>
-											
-										</div>
-										
-										<div class="col-sm-6 col-md-4">
-										
-											<div class="form-group">
-												<label>Last Name</label>
-												<input type="text" class="form-control" value="Gateau">
-											</div>
-											
-										</div>
-										
-										<div class="clear"></div>
-										
-										<div class="col-sm-6 col-md-4">
-										
-											<div class="form-group">
-												<label>Born</label>
-												<div class="row gap-5">
-													<div class="col-xs-3 col-sm-3">
-														<select class="selectpicker form-control" data-live-search="false">
-															<option value="0">day</option>
-															<option value="1">01</option>
-															<option value="2" selected>02</option>
-															<option value="3">03</option>
-														</select>
-													</div>
-													<div class="col-xs-5 col-sm-5">
-														<select class="selectpicker form-control" data-live-search="false">
-															<option value="0">month</option>
-															<option value="1">Jan</option>
-															<option value="2" selected>Feb</option>
-															<option value="3">Mar</option>
-														</select>
-													</div>
-													<div class="col-xs-4 col-sm-4">
-														<select class="selectpicker form-control" data-live-search="false">
-															<option value="0">year</option>
-															<option value="1">1985</option>
-															<option value="2" selected>1986</option>
-															<option value="3">1987</option>
-														</select>
-													</div>
-												</div>
+												<label>Name</label>
+												<input type="text" class="form-control" placeholder="Full Name">
 											</div>
 											
 										</div>
@@ -134,117 +81,29 @@
 										
 											<div class="form-group">
 												<label>Email</label>
-												<input type="email" class="form-control" value="myemail@gmail.com">
+												<input type="email" class="form-control" placeholder="myemail@gmail.com">
 											</div>
 											
 										</div>
 										
 										<div class="clear"></div>
 										
-										<div class="col-sm-6 col-md-4">
 										
-											<div class="form-group">
-												<label>Address</label>
-												<input type="text" class="form-control" value="254">
-											</div>
-											
-										</div>
 										
-										<div class="col-sm-6 col-md-4">
 										
-											<div class="form-group">
-												<label>City/town</label>
-												<input type="text" class="form-control" value="Somewhere ">
-											</div>
-											
-										</div>
 										
 										<div class="clear"></div>
 										
 										<div class="col-sm-6 col-md-4">
 										
 											<div class="form-group">
-												<label>Province/State</label>
-												<input type="text" class="form-control" value="Paris">
+												<label>Contact No:</label>
+												<input type="text" class="form-control" placeholder="1234567890">
 											</div>
 											
 										</div>
 										
-										<div class="col-sm-6 col-md-4">
 										
-											<div class="form-group">
-												<label>Street</label>
-												<input type="text" class="form-control" value="Somewhere ">
-											</div>
-											
-										</div>
-
-										<div class="clear"></div>
-										
-										<div class="col-sm-6 col-md-4">
-										
-											<div class="form-group">
-												<label>Zip Code</label>
-												<input type="text" class="form-control" value="35214">
-											</div>
-											
-										</div>
-										
-										<div class="col-sm-6 col-md-4">
-										
-											<div class="form-group">
-												<label>Country</label>
-												<select class="selectpicker show-tick form-control" data-live-search="false">
-													<option value="0">Select</option>
-													<option value="1">Thailand</option>
-													<option value="2" selected>France</option>
-													<option value="3">China</option>
-													<option value="4">Malaysia </option>
-													<option value="5">Italy</option>
-												</select>
-											</div>
-											
-										</div>
-
-										<div class="clear"></div>
-										
-										<div class="col-sm-6 col-md-4">
-										
-											<div class="form-group">
-												<label>Facebook</label>
-												<input type="text" class="form-control" placeholder="placeholder">
-											</div>
-											
-										</div>
-										
-										<div class="col-sm-6 col-md-4">
-										
-											<div class="form-group">
-												<label>Twitter</label>
-												<input type="text" class="form-control" placeholder="placeholder">
-											</div>
-											
-										</div>
-
-										<div class="clear"></div>
-										
-										<div class="col-sm-6 col-md-4">
-										
-											<div class="form-group">
-												<label>Google Plus</label>
-												<input type="text" class="form-control" placeholder="placeholder">
-											</div>
-											
-										</div>
-
-										<div class="col-sm-6 col-md-4">
-										
-											<div class="form-group">
-												<label>Youtube</label>
-												<input type="text" class="form-control" placeholder="placeholder">
-											</div>
-											
-										</div>
 										
 										<div class="clear mb-10"></div>
 

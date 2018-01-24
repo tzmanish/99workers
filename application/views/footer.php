@@ -7,19 +7,42 @@
 				<div class="container">
 				
 					<div class="row">
-					
-						<div class="col-sm-12 col-md-3">
-							<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/logo1.png" class="img-responsive"  style="height:50px;"></a> <br>
-             
+						<div class="col-md-12">
 
-							<p class="font16">99workers is an ICANN-accredited Graphics Design and Web Development Company . In addition to great pricing and a
+							<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+
+								<div class="col-md-2 col-sm-12 col-xs-12">
+									<a href=""><img src="<?php echo base_url();?>media/images/fb.png"></a>
+								</div>
+								<div class="col-md-2 col-sm-12 col-xs-12">
+									<a href=""><img src="<?php echo base_url();?>media/images/yt.png"></a>
+								</div>
+								<div class="col-md-2">
+									<a href=""><img src="<?php echo base_url();?>media/images/tw.png"></a>
+								</div>
+								<div class="col-md-2">
+									<a href=""><img src="<?php echo base_url();?>media/images/fb.png"></a>
+								</div>
+								<div class="col-md-2">
+									<a href=""><img src="<?php echo base_url();?>media/images/yt.png"></a>
+								</div>
+								<div class="col-md-2">
+									<a href=""><img src="<?php echo base_url();?>media/images/tw.png"></a>
+								</div>
+
+							</div>	
+							<br><br>
+							<div class="col-md-12">
+								<p style="text-align: center;">99workers is an ICANN-accredited Graphics Design and Web Development Company . In addition to great pricing and a
 							commitment to world-class customer service, we offer Graphic Design, Print Design, Website Builder, SEO Service.</p>
-							
-							
+							</div>
 
 						</div>
+						<br>
+					
 						
-						<div class="col-sm-12 col-md-9">
+						
+						<div class="col-sm-12 col-md-12">
 						
 							<div class="row">
 								
