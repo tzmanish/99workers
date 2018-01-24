@@ -2059,7 +2059,7 @@ section,
 }
 
 .home .main-wrapper {
-    background: #ECF0F1;
+    background: #fff;
 }
 
 .container {
@@ -3268,25 +3268,27 @@ h5.section-title {
 }
 
 .btn-default {
-    color: #555;
-    background-color: #F3F3F3;
-    border-color: #F3F3F3;
+    color: #fff!important;
+    background-color: #15a853;
+    border-color: #15a853;
+    border-radius: 5px;
 }
 
 .btn-default:hover {
-    background-color: #EBEBEB;
-    border-color: #EBEBEB;
+    background-color: #5f9434;
+    border-color: #5f9434;
 }
 
 .btn-primary {
-    background: #FE8800;
-    border-color: #FE8800;
+    background: #F90;
+    border-color: #F90;
+    border-radius: 5px;
     color: #FFF !important;
 }
 
 .btn-primary:hover {
-    background: #E37900;
-    border-color: #E37900;
+    background: #e08700;
+    border-color:#e08700;
 }
 
 .btn-info {

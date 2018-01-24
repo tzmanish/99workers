@@ -38,9 +38,12 @@
 /**
  * Header
  */
-
+body
+{
+    background-color: #fff !important;
+}
 .navbar-default {
-    background: #1C1C1F;
+    background: #fff;
 }
 
 .navbar {
@@ -51,7 +54,7 @@
     -ms-transition: all 0.1s ease-in-out 0s;
     -o-transition: all 0.1s ease-in-out 0s;
     transition: all 0.1s ease-in-out 0s;
-    min-height: 30px;
+    min-height: 40px;
 }
 
 .navbar.navbar-default {
@@ -80,7 +83,7 @@
 }
 
 .bg-color-header .navbar-default {
-    background: #FE8800;
+    background: #fff;
 }
 
 
@@ -132,7 +135,7 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     padding-left: 14px;
-    color: #FFF;
+    color: #000;
     position: relative;
     font-weight: 700;
 }
@@ -141,15 +144,7 @@
     padding-right: 0;
 }
 
-.nav.navbar-nav > li > a:after {
-    content: "";
-    position: absolute;
-    top: 18px;
-    right: -3px;
-    height: 2px;
-    width: 4px;
-    background: #FFF;
-}
+
 
 .nav.navbar-nav > li:last-child > a:after {
     display: none;
@@ -185,7 +180,7 @@
     -ms-transition: all 0.2s ease-in-out 0s;
     -o-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
-    color: #636363;
+    color: #000;
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 1.25;
@@ -266,7 +261,7 @@
 
 .nav.navbar-nav > li > a:hover,
 .nav.navbar-nav:hover > li > a {
-    color: #FFF;
+    color: #000;
 }
 
 .navbar-arrow > ul > li .arrow-indicator {
@@ -374,7 +369,7 @@ ul.nav-mini li i {
  */
 
 .navbar-sticky {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #fff;
     padding: 10px 0;
     z-index: 999999;
 }

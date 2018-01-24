@@ -8,7 +8,7 @@
 			<div class="gap"></div>
 			<div class="row">
 				<div class="col-md-4 col-md-offset-2 text-center">
-					<a href="#" class="btn btn-primary btn-lg th-btn">Contact Us Now</a>
+					<a href="#" class="btn btn-default btn-lg">Contact Us Now</a>
 				</div>
 				<div class="col-md-4 text-center">
 					<a href="#" class="btn btn-primary btn-lg">Brows Portfolio</a>
@@ -18,7 +18,7 @@
 	</div>
 	<!-- end hero-header -->
 	<div class="gap" style="background-color: #fff;"></div>
-	<div class="container-fluid" >
+	<div class="container" >
 		<div class="row"  >
 			<div class="col-md-12" style="background-color: #fff;">
 				<div class="col-md-2">
@@ -153,13 +153,13 @@
 	</div>
 	<div class="gap"></div>
 	<div class="">
-		<div class="container-fluid text-center" style="background-color: #fff;"><br>
+		<div class="container-fluid text-center"><br>
 			<h4>We’re here to help you get your site online!</h4>
 			<p>Yep, these folks right here. Here’s some tips to help you affordable graphics design and website development solutions.</p>
 			<div class="gap"></div>
 			<div class="row">
 				<div class="col-md-4 col-md-offset-2 text-center">
-					<a href="#" class="btn btn-primary btn-lg th-btn">See Our Services</a>
+					<a href="#" class="btn btn-default btn-lg">See Our Services</a>
 				</div>
 				<div class="col-md-4 text-center">
 					<a href="#" class="btn btn-primary btn-lg">Brows Our Portfolio</a>

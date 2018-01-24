@@ -42,7 +42,7 @@
 	
 </head>
 
-<body class="home transparent-header">
+<body class="home">
 
 	<div id="introLoader" class="introLoading"></div>
 
@@ -55,17 +55,13 @@
 		<header id="header">
 
 			<!-- start Navbar (Header) -->
-			<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-arrow">
+			<nav class="navbar navbar-default navbar-fixed-top" style="height: 50px">
 
-				<div class="container">
+				<div class="container-fluid">
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-
-							<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/logo.png" class="img-responsive"  style="height:50px;"></a> <br>
-
-							
-
+							<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/logo.png" class="img-responsive"  style="height:35px;"></a> <br>
 						</div>
 					</div>
 					
