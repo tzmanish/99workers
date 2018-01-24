@@ -89,12 +89,17 @@ body
 
 /* Main Menu Dropdown */
 
-.logo-wrapper,
+.logo-wrapper{
+    float: left;
+}
 .navbar-nav-wrapper,
+.nav-mini-wrapper {
+    float: right;
+}
+.navbar-nav-wrapper1,
 .nav-mini-wrapper {
     float: left;
 }
-
 .logo-wrapper {
     width: 15%;
 }

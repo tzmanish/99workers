@@ -65,7 +65,7 @@
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper" ">
+					<div id="navbar" class="navbar-nav-wrapper">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						
@@ -92,29 +92,51 @@
 									
 								</ul>
 							</li>
-							<li >
-									<a href="#" class="fusion-bar-highlight" ><span class="menu-text fusion-button button-default button-medium"><span class="button-icon-divider-left"><i class="fa glyphicon fa-paypal" ></i></span><span class="fusion-button-text-left">Pay Us</span></span></a>
-								
-							</li>	
-
-							<li>
-								<a href="#loginModal" class="fusion-bar-highlight"><span class="menu-text fusion-button button-default button-medium"><span class="button-icon-divider-left"><i class="fa glyphicon fa-user"></i></span><span class="fusion-button-text-left">My Account</span></span></a>
-							</li>
+							
+							<li><a data-toggle="modal" href="#loginModal" class="btn btn-default button-medium">Log In</a></li>
+							<li><a data-toggle="modal" href="#registerModal" class="btn btn-default button-medium">Sign Up </a></li>
 						</ul>
 				
 					</div><!--/.nav-collapse -->
-
 					<div class="nav-mini-wrapper">
 						<ul class="nav-mini">
-							<li><a data-toggle="modal" href="#registerModal"><i class="icon-user-follow" data-toggle="tooltip" data-placement="bottom" title="sign up"></i></a></li>
-							<li><a data-toggle="modal" href="#loginModal"><i class="icon-login" data-toggle="tooltip" data-placement="bottom" title="login"></i> </a></li>
 						</ul>
 					</div>
-				
+				 </div>
 				</div>
 				
 				<div id="slicknav-mobile"></div>
-				
+				 <div class="container-fluid" style="background-color: #000;height: 40px; color: #fff;">
+				 	<div  id="navbar" class="navbar-nav-wrapper1">
+				 		<ul class="nav navbar-nav" id="responsive-menu">
+						
+							<li>
+								<a href="#">Chat</a>
+								
+							</li>
+							
+							<li>
+								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="glyphicons glyphicons-group"></i>Our Services</a>
+							</li>
+							
+							<li>
+								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="glyphicon glyphicon-th"></i>Portfolio</a>
+							</li>
+							<li>
+								<a href="#" style=" color: #fff;"><i class="glyphicon glyphicon-question-sign" ></i>Help</a>
+								<ul>
+	
+									<li><a href="#">Support Ticket</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">FAQ</a></li>
+									
+								</ul>
+							</li>
+						</ul>
+				 	</div>
+				 	
+			     </div>
 			</nav>
 			<!-- end Navbar (Header) -->
 

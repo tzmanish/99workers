@@ -21,27 +21,27 @@
 	<div class="container" >
 		<div class="row"  >
 			<div class="col-md-12" style="background-color: #fff;">
-				<div class="col-md-2">
+				<div class="col-md-2 col-xs-6">
 					<img class="img-responsive center-block serv" src="<?php echo base_url(); ?>media/images/services/gd.jpg">
 					
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 col-xs-6">
 					<img class="img-responsive center-block serv" src="<?php echo base_url(); ?>media/images/services/wd.jpg">
 					
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 col-xs-6">
 					<img class="img-responsive center-block serv" src="<?php echo base_url(); ?>media/images/services/aa.png">
 					
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 col-xs-6">
 					<img class="img-responsive center-block serv" src="<?php echo base_url(); ?>media/images/services/dm.png">
 					
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 col-xs-6">
 					<img class="img-responsive center-block serv" src="<?php echo base_url(); ?>media/images/services/mm.png">
 					
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 col-xs-6">
 					<img class="img-responsive center-block serv" src="<?php echo base_url(); ?>media/images/services/ws.png">
 					
 				</div>
@@ -57,29 +57,29 @@
 	<div class="container-fluid" style="background-color: #f4f4f4;padding-top: 5%;padding-bottom: 5%;">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="col-md-6" style="padding-top: 70px;">
+				<div class="col-md-6" style="padding-top: 10%;">
 					<iframe width="100%" height="360"  src="https://www.youtube.com/embed/IzYbQVNc6SU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 				<div class="col-md-6 text-center">
-					<h5>What’s happening at 99workers?</h5>
+					<h2>What’s happening at 99workers?</h2>
 					<p>Check out our blog to find out »</p>
-				    <div class="col-xs-12 col-sm-6 col-md-12 mt-20" style="padding-left: 70px;">
-				    	<div class="col-md-4" style="padding: 1%;">
+				    <div class="" style="padding-left: 70px;padding:0;">
+				    	<div class="col-md-4 col-xs-6" style="padding: 1%;">
 				    		<img src="<?php echo base_url(); ?>media/images/guide-lightbox/04.jpg" class="img-responsive center-block">
 				    	</div>
-				    	<div class="col-md-4" style="padding: 1%;">
+				    	<div class="col-md-4 col-xs-6" style="padding: 1%;">
 				    		<img src="<?php echo base_url(); ?>media/images/guide-lightbox/04.jpg" class="img-responsive center-block">
 				    	</div>
-				    	<div class="col-md-4" style="padding: 1%;">
+				    	<div class="col-md-4 col-xs-6" style="padding: 1%;">
 				    		<img src="<?php echo base_url(); ?>media/images/guide-lightbox/04.jpg" class="img-responsive center-block">
 				    	</div>
-				    	<div class="col-md-4" style="padding: 1%;">
+				    	<div class="col-md-4 col-xs-6"  style="padding: 1%;">
 				    		<img src="<?php echo base_url(); ?>media/images/guide-lightbox/04.jpg" class="img-responsive center-block">
 				    	</div>
-				    	<div class="col-md-4" style="padding: 1%;">
+				    	<div class="col-md-4 col-xs-6" style="padding: 1%;">
 				    		<img src="<?php echo base_url(); ?>media/images/guide-lightbox/04.jpg" class="img-responsive center-block">
 				    	</div>
-				    	<div class="col-md-4" style="padding: 1%;">
+				    	<div class="col-md-4 col-xs-6" style="padding: 1%;">
 				    		<img src="<?php echo base_url(); ?>media/images/guide-lightbox/04.jpg" class="img-responsive center-block">
 				    	</div>
 					</div>	
@@ -90,8 +90,8 @@
 	<div class="gap"></div>
 	<div class="">
 		<div class="container text-center"><br>
-			<h4>We’re here to help you get your site online!</h4>
-			<p>Yep, these folks right here. Here’s some tips to help you affordable graphics design and website development solutions.</p>
+			<h1>We’re here to help you get your site online!</h1>
+			<h4 style="color:#008000;">Yep, these folks right here. Here’s some tips to help you affordable graphics design and website development solutions.</h4>
 			<div class="gap"></div>
 			<div class="row">
 				<div class="col-md-4 col-md-offset-2 text-center">
