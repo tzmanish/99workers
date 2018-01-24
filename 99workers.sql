@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 24, 2018 at 05:33 PM
+-- Generation Time: Jan 24, 2018 at 10:03 PM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `category` (
   `descr` text NOT NULL,
   `status` int(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `category`
@@ -43,7 +43,8 @@ CREATE TABLE IF NOT EXISTS `category` (
 
 INSERT INTO `category` (`id`, `name`, `descr`, `status`) VALUES
 (4, 'asdfer', 'uyrtw', 0),
-(3, 'asdfasdf', 'asdfsadfas', 1);
+(3, 'asdfasdf', 'asdfsadfas', 1),
+(5, 'dfgdsfg', 'dfgds', 0);
 
 -- --------------------------------------------------------
 
@@ -74,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `pdescr` text NOT NULL,
   `pimage` varchar(200) NOT NULL,
   PRIMARY KEY (`pid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -87,10 +88,28 @@ CREATE TABLE IF NOT EXISTS `project` (
   `pid` int(10) NOT NULL AUTO_INCREMENT,
   `pname` varchar(200) NOT NULL,
   `pstatus` int(1) NOT NULL,
-  `pprogress` text NOT NULL,
   `cid` int(11) NOT NULL,
   PRIMARY KEY (`pid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `project`
+--
+
+INSERT INTO `project` (`pid`, `pname`, `pstatus`, `cid`) VALUES
+(2, 'gjklhjgjh', 0, 1),
+(3, 'rtyser', 1, 2),
+(4, 'ghjgjh', 0, 1),
+(8, 'gjklhjgjh', 0, 1),
+(5, 'rtyserkljk', 0, 2),
+(6, 'rtyserkljk', 1, 2),
+(7, 'rtyserkljk', 1, 2),
+(9, 'gjklhjgjh', 0, 1),
+(10, 'gjklhjgjh', 0, 1),
+(11, 'gjklhjgjh', 0, 1),
+(12, 'gjklhjgjh', 0, 1),
+(13, 'gjklhjgjh', 0, 1),
+(14, 'gjklhjgjh', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -150,8 +169,19 @@ DROP TABLE IF EXISTS `subscription`;
 CREATE TABLE IF NOT EXISTS `subscription` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(200) NOT NULL,
+  `status` int(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `subscription`
+--
+
+INSERT INTO `subscription` (`id`, `email`, `status`) VALUES
+(1, 'gfhf', 1),
+(2, 'hgshghf', 0),
+(3, 'fghdgfhdfh', 1),
+(4, 'hgsh', 0);
 
 -- --------------------------------------------------------
 
@@ -167,7 +197,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(200) NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`uid`, `name`, `email`, `password`, `status`) VALUES
+(1, 'ewrt', 'trew', 'ertwerwt', 1),
+(2, 'amit', 'trew', 'ertwerwt', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
