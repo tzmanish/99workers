@@ -3,6 +3,9 @@
 	<!-- start hero-header -->
 	<div class="hero img-bg-01">
 		<div class="container">
+			<div class="col-md-6 col-md-offset-6 col-xs-12">
+		    <h4>Logo, Packaging, Branding, Website,
+            Mobile Apps, Digital Marketing…</h4>
 			<h1>Need Work Done?</h1>
 			<p>Start a project with 99workers Its Simple!</p>
 			<div class="gap"></div>
@@ -14,6 +17,7 @@
 					<a href="#" class="btn btn-primary btn-lg">Brows Portfolio</a>
 				</div>
 			</div>
+		    </div>
 		</div>	
 	</div>
 	<!-- end hero-header -->

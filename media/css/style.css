@@ -439,16 +439,24 @@ ul.nav-mini li i {
 .hero h1 {
     color: #FFF;
     text-transform: capitalize;
-    text-align: center;
-    font-size: 78px;
+    text-align: left;
+    font-size: 45px;
     margin: 0;
     line-height: 1;
     font-weight: 400;
 }
-
+.hero h4 {
+    color: #008000;
+    text-transform: capitalize;
+    text-align: left;
+    font-size:22px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+}
 .hero p {
     color: #FFF;
-    text-align: center;
+    text-align: left;
     font-size: 26px;
     font-weight: 300;
     margin: 15px 0 20px;
@@ -5902,7 +5910,7 @@ ul.social-share-sm.for-useful li a:after {
 
 
 .img-bg-01 {
-	background-image:url('../images/hero-header/01.jpg');
+	background-image:url('../images/hero-header/home-background.jpg');
 }
 .img-bg-02 {
 	background-image:url('../images/hero-header/02.jpg');
