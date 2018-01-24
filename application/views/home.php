@@ -10,12 +10,8 @@
 			<p>Start a project with 99workers Its Simple!</p>
 			<div class="gap"></div>
 			<div class="row">
-				<div class="col-md-4 col-md-offset-2 text-center">
 					<a href="#" class="btn btn-default btn-lg">Contact Us Now</a>
-				</div>
-				<div class="col-md-4 text-center">
 					<a href="#" class="btn btn-primary btn-lg">Brows Portfolio</a>
-				</div>
 			</div>
 		    </div>
 		</div>	
@@ -58,7 +54,7 @@
 
 
 	<div class="gap" ></div>
-	<div class="container-fluid">
+	<div class="container-fluid" style="background-color: #f4f4f4;padding-top: 5%;padding-bottom: 5%;">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-6" style="padding-top: 70px;">
@@ -157,7 +153,7 @@
 	</div>
 	<div class="gap"></div>
 	<div class="">
-		<div class="container-fluid text-center"><br>
+		<div class="container text-center"><br>
 			<h4>We’re here to help you get your site online!</h4>
 			<p>Yep, these folks right here. Here’s some tips to help you affordable graphics design and website development solutions.</p>
 			<div class="gap"></div>
