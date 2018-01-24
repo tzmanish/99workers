@@ -37,10 +37,34 @@ class Home extends CI_Controller {
 		$this->load->view('sdetails');
 		$this->load->view('footer');
 	}
+	public function userdash()
+	{
+		$this->load->view('header');
+		$this->load->view('userdash');
+		$this->load->view('footer');
+	}
+	public function changepass()
+	{
+		$this->load->view('header');
+		$this->load->view('changepass');
+		$this->load->view('footer');
+	}
+	public function editprofile()
+	{
+		$this->load->view('header');
+		$this->load->view('editprofile');
+		$this->load->view('footer');
+	}
 	public function services()
 	{
 		$this->load->view('header');
 		$this->load->view('services');
+		$this->load->view('footer');
+	}
+	public function changemail()
+	{
+		$this->load->view('header');
+		$this->load->view('changemail');
 		$this->load->view('footer');
 	}
 	public function portfolio_details()

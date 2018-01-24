@@ -75,11 +75,11 @@
 							</li>
 							
 							<li>
-								<a href="#"><i class="glyphicons glyphicons-group"></i>Our Services</a>
+								<a href="<?php echo base_url();?>index.php/home/services"><i class="glyphicons glyphicons-group"></i>Our Services</a>
 							</li>
 							
 							<li>
-								<a href="#"><i class="glyphicon glyphicon-th"></i>Portfolio</a>
+								<a href="<?php echo base_url();?>index.php/home/portfolio"><i class="glyphicon glyphicon-th"></i>Portfolio</a>
 							</li>
 							<li>
 								<a href="#"><i class="glyphicon glyphicon-question-sign"></i>Help</a>

@@ -42,8 +42,8 @@
 											<div class="filter-item bb-sm no-bb-xss">
 											
 												<div class="input-group input-group-addon-icon no-border no-br-sm">
-													<span class="input-group-addon input-group-addon-icon bg-white"><label><i class="fa fa-map-marker"></i> Destination:</label></span>
-													<input type="text" class="form-control" id="autocompleteTagging" value="Paris, Rome, Bangkok" placeholder="" />
+													<span class="input-group-addon input-group-addon-icon bg-white"><label><i class="glyphicon glyphicon-search"></i> Search:</label></span>
+													<input type="text" class="form-control" id="autocompleteTagging" value="Name,Logo,Businesscard" placeholder="" />
 												</div>
 											
 											</div>
@@ -62,7 +62,7 @@
 														
 															<div class="input-group input-group-addon-icon no-border no-br-xs">
 																<span class="input-group-addon input-group-addon-icon bg-white">
-																<label class="block-xs"><i class="fa fa-sort-amount-asc"></i> Sort by:</label></span>
+																<label class="block-xs"><i class="fa fa-sort-amount-asc"></i> Category:</label></span>
 																<select class="selectpicker form-control block-xs">
 																	<option value="0"> Price</option>
 																	<option value="3"> Name</option>
@@ -80,7 +80,7 @@
 														<div class="filter-item mmr">
 														
 															<div class="input-group input-group-addon-icon no-border no-br-xs">
-																<span class="input-group-addon input-group-addon-icon bg-white"><label><i class="fa fa-sort-amount-asc"></i> Trip Style:</label></span>
+																<span class="input-group-addon input-group-addon-icon bg-white"><label><i class="fa fa-sort-amount-asc"></i> Dropdown:</label></span>
 																<select class="selectpicker form-control" data-live-search="false" data-selected-text-format="count > 2" data-done-button="true" data-done-button-text="OK" data-none-selected-text="All Types" multiple>
 																	<option value="0"> Adventure</option>
 																	<option value="1"> Hooneymoon</option>

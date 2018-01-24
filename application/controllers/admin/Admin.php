@@ -393,14 +393,14 @@ class Admin extends CI_Controller {
 	{	
         	$details['query']=$this->user1->showportfolio();
      		$this->load->view('admin/header');
-		    $this->load->view('admin/showortfolio',$details);
+		    $this->load->view('admin/showportfolio',$details);
 		    $this->load->view('admin/footer');
     }
 
     public function addportfolio()
 	{	$this->form_validation->set_rules('pname', 'pname', 'required');
 		if ($this->form_validation->run() == FALSE)
-        {	$details['query']=$this->user1->showportfolio();
+        {	$details['query']=$this->user1->showcategory();
      		$this->load->view('admin/header');
 		    $this->load->view('admin/addportfolio',$details);
 		    $this->load->view('admin/footer');
@@ -441,8 +441,8 @@ class Admin extends CI_Controller {
 			$data= array(
 				'pname' => $this->input->post('pname'),
 				'pdescr' => $this->input->post('pdescr'),
-				'id' => $this->input->post('id'),
-				'pimage' => $pimage
+				'cid' => $this->input->post('id'),
+				'pimage' => $picture
 			);
             $result=$this->user1->insert_portfolio($data);
 		if ($result)
