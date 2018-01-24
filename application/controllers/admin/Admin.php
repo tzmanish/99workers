@@ -108,7 +108,72 @@ class Admin extends CI_Controller {
 	  
 	  redirect('admin/scategory');
 	 
-	}
+	} 
 
+
+	/*service category*/
+
+
+		public function showscategory()
+	{	
+        	$details['query']=$this->user1->showscategory();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/showscategory',$details);
+		    $this->load->view('admin/footer');
+    }
+    public function addscategory()
+	{	$this->form_validation->set_rules('scname', 'scname', 'required');
+		if ($this->form_validation->run() == FALSE)
+        {
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/addscategory');
+		    $this->load->view('admin/footer');
+        }
+		else
+		{
+			$data = array(
+				'scname' => $this->input->post('scname'),
+				'scdescr' => $this->input->post('scdescr')
+			);
+            $result=$this->user1->insert_scategory($data);
+		if ($result)
+			{
+				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+				redirect('admin/admin/addscategory');
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
+				redirect('admin/admin/addscategory');
+			}
+		}
+	
+		
+	}
+	public function Deletescategory($id)
+	{
+			
+		$details['query']=$this->user1->showscategory();
+     		$this->load->view('header');
+		$this->load->view('scategory',$details);
+		$this->load->view('footer');
+	  
+	  echo "<script>
+	 x = confirm ('You want to proceed deleting?')";
+	 
+	  $r=$this->user1->deletescategory($id);
+	  if($r){
+	  echo "Successfully Deleted Data";
+	  }
+	  else {
+		  echo "Can Not Delete Data";
+	  }
+	  
+	   
+	  
+	  redirect('admin/scategory');
+	 
+	}
 	
 }

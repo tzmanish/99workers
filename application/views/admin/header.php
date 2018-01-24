@@ -126,13 +126,13 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-              <a href="#">Service Category</a>
+              <a href="#">All Service Categories</a>
             </li>
             <li>
-              <a href="#">Add Service Category</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/addscategory">Add Service Category</a>
             </li>
             <li>
-              <a href="#">Add Service</a>
+              <a href="#">All Services</a>
             </li>
             <li>
               <a href="#">Add Service</a>

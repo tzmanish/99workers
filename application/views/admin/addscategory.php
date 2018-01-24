@@ -2,17 +2,17 @@
   <div class="content-wrapper">
     <div class="container-fluid">
        <div class="col-md-6 col-md-offset-3">
-          <h1> ADD CATEGORY </h1>
-       	  <?php $attributes = array("name" => "category");
-      echo form_open("admin/admin/addcategory", $attributes);?>
+          <h1> ADD SERVICE CATEGORY </h1>
+       	  <?php $attributes = array("name" => "scategory");
+      echo form_open("admin/admin/addscategory", $attributes);?>
           <div class="box-body">
             <div class="form-group">
-              <label for="">Category</label>
-                <input type="text" class="form-control"  name="name">
+              <label for="">Service-Category</label>
+                <input type="text" class="form-control"  name="scname">
               </div>
             <div class="form-group">
               <label for="">Description</label>
-                <input type="text" class="form-control"  name="descr">
+                <input type="text" class="form-control"  name="scdescr">
               </div>
             </div>
             <div class="box-footer">

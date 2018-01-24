@@ -9,7 +9,7 @@ class user1 extends CI_Model
 
 	function showcategory()
 	{
-		$query=$this->db->get('category');;
+		$query=$this->db->get('category');
 		return $query->result();
 	}
 
@@ -17,6 +17,25 @@ class user1 extends CI_Model
 	{
 	   $this->db->where('id', $id);
 	   return($this->db->delete('category'));
+	}
+
+/* service category*/
+
+	function insert_scategory($data)
+    {
+		return $this->db->insert('scategory', $data);
+	}
+
+	function showscategory()
+	{
+		$query=$this->db->get('scategory');
+		return $query->result();
+	}
+
+	function deletescategory($id)
+	{
+	   $this->db->where('id', $id);
+	   return($this->db->delete('scategory'));
 	}
 
 }?>
