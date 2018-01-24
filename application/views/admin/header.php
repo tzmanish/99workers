@@ -21,14 +21,14 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html"><img src="<?php echo base_url();?>media/images/logow.png" class="img-responsive" style="height: 30px;"></a>
+    <a class="navbar-brand" href="<?php echo base_url();?>index.php/admin/admin/"><img src="<?php echo base_url();?>media/images/logow.png" class="img-responsive" style="height: 30px;"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive" style="overflow: auto;">
-      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion" style="overflow: auto;">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="<?php echo base_url();?>index.php/admin/admin/">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
@@ -38,20 +38,20 @@
             <i class="fa fa-align-left" aria-hidden="true"></i>
             <span class="nav-link-text">Projects</span>
           </a>
-          <ul class="sidenav-second-level collapse" id="collapseComponents">
+          <ul class="sidenav-second-level collapse" id="collapseComponents" >
             <li>
-              <a href="navbar.html">All Projects</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showproject">All Projects</a>
             </li>
             <li>
-              <a href="cards.html">Completed Project</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showcompleatedproject">Completed Project</a>
             </li>
             <li>
-              <a href="cards.html">Project Progress</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showongoingproject">Project Processing</a>
             </li>
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Email">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="<?php echo base_url();?>index.php/admin/admin/showsubscription">
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <span class="nav-link-text">Email Subscription</span>
           </a>
@@ -59,14 +59,20 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Accounts">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#Accounts" data-parent="#exampleAccordion">
             <i class="fa fa-align-left" aria-hidden="true"></i>
-            <span class="nav-link-text">Accounts</span>
+            <span class="nav-link-text">Account</span>
           </a>
           <ul class="sidenav-second-level collapse" id="Accounts">
             <li>
-              <a href="navbar.html">All User</a>
+              <a href="navbar.html">Available Balance</a>
             </li>
             <li>
-              <a href="cards.html">Suspended User</a>
+              <a href="cards.html">Expence</a>
+            </li>
+            <li>
+              <a href="cards.html">Total Earning</a>
+            </li>
+            <li>
+              <a href="cards.html">Transaction Report</a>
             </li>
           </ul>
         </li>
@@ -77,10 +83,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseUsers">
             <li>
-              <a href="navbar.html">All User</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showuser">All User</a>
             </li>
             <li>
-              <a href="cards.html">Suspended User</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showsuspendeduser">Suspended User</a>
             </li>
           </ul>
         </li>
@@ -122,20 +128,37 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
             <i class="fa fa-align-left" aria-hidden="true"></i>
-            <span class="nav-link-text">Our Service</span>
+            <span class="nav-link-text">Our Services</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
-              <a href="<?php echo base_url();?>index.php/admin/admin/showscategory">All Service Categories</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showscategory">Service Categories</a>
             </li>
             <li>
-              <a href="<?php echo base_url();?>index.php/admin/admin/addscategory">Add Service Category</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/addscategory">Add Categories</a>
             </li>
             <li>
               <a href="<?php echo base_url();?>index.php/admin/admin/showservice">All Services</a>
             </li>
             <li>
-              <a href="<?php echo base_url();?>index.php/admin/admin/addservice">Add Service</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/addservice">Add Services</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsepro" data-parent="#exampleAccordion">
+            <i class="fa fa-align-left" aria-hidden="true"></i>
+            <span class="nav-link-text">Profile Settings</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapsepro">
+            <li>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showscategory">General Settings</a>
+            </li>
+            <li>
+              <a href="<?php echo base_url();?>index.php/admin/admin/addscategory">Change Password</a>
+            </li>
+            <li>
+              <a href="<?php echo base_url();?>index.php/admin/admin/showservice">Change Email</a>
             </li>
           </ul>
         </li>
