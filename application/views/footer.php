@@ -12,25 +12,26 @@
 							<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
 								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img src="<?php echo base_url();?>media/images/fb.png"></a>
+									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/fb.png"></a>
 								</div>
 								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img src="<?php echo base_url();?>media/images/yt.png"></a>
+									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/yt.png"></a>
 								</div>
 								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img src="<?php echo base_url();?>media/images/tw.png"></a>
+									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/tw.png"></a>
 								</div>
 								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img src="<?php echo base_url();?>media/images/fb.png"></a>
+									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/fb.png"></a>
 								</div>
 								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img src="<?php echo base_url();?>media/images/yt.png"></a>
+									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/yt.png"></a>
 								</div>
 								<div class="col-md-2 col-sm-4 col-xs-4">
-									<a href=""><img src="<?php echo base_url();?>media/images/tw.png"></a>
+									<a href=""><img style="padding : 2%;" src="<?php echo base_url();?>media/images/tw.png"></a>
 								</div>
 
-							</div>	
+							</div>
+							<div class="gap"></div>	
 							<br><br>
 							<div class="col-md-12">
 								<p style="text-align: center;">99workers is an ICANN-accredited Graphics Design and Web Development Company . In addition to great pricing and a
@@ -40,7 +41,7 @@
 						</div>
 						<br>
 					
-						
+						<div class="gap"></div>	<div class="gap"></div>	<div class="gap"></div>	
 						
 						<div class="col-sm-12 col-md-12">
 						
