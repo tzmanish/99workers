@@ -44,7 +44,7 @@
 
 <body class="home">
 
-	<div id="introLoader" class="introLoading"></div>
+	<!--<div id="introLoader" class="introLoading"></div>-->
 
 	<!-- start Container Wrapper -->
 	
@@ -92,8 +92,6 @@
 					</div>
 				 </div>
 				</div>
-				
-				<div id="slicknav-mobile"></div>
 				 <div class="container-fluid" style="background-color: #000;height: 45px; color: #fff;padding-left: 15%;padding-right:15%;padding-top: 5px;">
 				 	<div  id="navbar" class="navbar-nav-wrapper1">
 				 		<ul class="nav navbar-nav" id="responsive-menu">
@@ -125,6 +123,8 @@
 						</ul>
 				 	</div>
 			     </div>
+
+				<div id="slicknav-mobile" style="color: #000;background-color: #fff;"></div>
 			</nav>
 			<!-- end Navbar (Header) -->
 

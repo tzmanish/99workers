@@ -159,7 +159,7 @@
 
 
 <!-- start Sign-in Modal -->
-<div id="loginModal" class="modal fade login-box-wrapper" tabindex="-1" data-width="550" data-backdrop="static" data-keyboard="false" data-replace="true">
+<!-- <div id="loginModal" class="modal fade login-box-wrapper" tabindex="-1" data-width="550" data-backdrop="static" data-keyboard="false" data-replace="true">
 
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -228,10 +228,10 @@
 	</div>
 	
 </div>
-<!-- end Sign-in Modal -->
+end Sign-in Modal -->
 
 <!-- start Register Modal -->
-<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" data-backdrop="static" data-keyboard="false" data-replace="true">
+<!--<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" data-backdrop="static" data-keyboard="false" data-replace="true">
 
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -314,7 +314,7 @@
 	</div>
 	
 </div>
-<!-- end Register Modal -->
+ end Register Modal -->
 
 <!-- start Forget Password Modal -->
 <div id="forgotPasswordModal" class="modal fade login-box-wrapper" tabindex="-1" data-backdrop="static" data-keyboard="false" data-replace="true">
