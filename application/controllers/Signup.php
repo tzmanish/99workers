@@ -35,7 +35,8 @@ class signup extends CI_Controller
 				'fname' => $this->input->post('fname'),
 				'lname' => $this->input->post('lname'),
 				'email' => $this->input->post('email'),
-				'password' => $this->input->post('password')
+				'password' => $this->input->post('password'),
+				'status' =>"1"
 			);
 			
 			if ($this->user->insert_user($data))

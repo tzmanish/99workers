@@ -81,8 +81,8 @@
 								<a href="#">Pay Us</a>
 								
 							</li>
-							<li><a data-toggle="modal" href="#loginModal" style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a></li>
-							<li><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;">&nbsp;SignUp &nbsp;<i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
+							<li><a href="<?php echo base_url();?>index.php/login" style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a></li>
+							<li><a href="<?php echo base_url();?>index.php/signup" style="background-color:#008000;color: #fff;">&nbsp;SignUp &nbsp;<i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
 						</ul>
 				
 					</div><!--/.nav-collapse -->

@@ -20,42 +20,37 @@
 						<hr>
 		                <div class="col-sm-6 col-md-12">
 							<div class="form-group">
-								<label>Pick a Username:</label>
-									<input type="text" class="form-control" placeholder="Username">
+								<label>First Name:</label>
+									<input type="text" class="form-control" placeholder="First Name" name="fname">
 								</div>
 						</div>
-										
-										<div class="col-sm-6 col-md-12">
-										
-											<div class="form-group">
-												<label>Email Address:</label>
-												<input type="email" class="form-control" placeholder="myemail@gmail.com">
-											</div>
-											
-										</div>
-										<div class="clear"></div>
-										<div class="clear"></div>
-										<div class="col-sm-6 col-md-12">
-                                            <div class="form-group">
-												<label>Create a Password:</label>
-												<input type="Password" class="form-control" placeholder="Password">
-											</div>
-											<div class="radio-group">
-   
-											    <div class="btn-container">
-											   		<input type="checkbox" name="checkbox-2" id="checkbox-btn-2-1">
-											      <label for="checkbox-btn-2-1" style="text-align: justify; font-size: 14px;">I agree to 99workers.com's Terms & Conditions
-													You have to agree to the 99workers.com terms and conditions before we can create your account.</label>
-											    </div>
-										    
-										  </div>
-
-											<form>
-										        <input type="checkbox" id="checked">
-										        <label for="checked" style="text-align: justify; font-size: 14px;">Send me 99workers.com's latest news, services, and promos (you can unsubscribe at any time).</label> 
-										    </form>
-											 <br>
-										    
+						 <div class="col-sm-6 col-md-12">
+							<div class="form-group">
+								<label>Last Name:</label>
+									<input type="text" class="form-control" placeholder="Last Name" name="lname">
+								</div>
+						</div>
+						<div class="col-sm-6 col-md-12">
+							<div class="form-group">
+								<label>Email Address:</label>
+								<input type="email" class="form-control" placeholder="myemail@gmail.com" name="email">
+						</div>
+						</div>
+						<div class="clear"></div>
+						<div class="clear"></div>
+						<div class="col-sm-6 col-md-12">
+                            <div class="form-group">
+								<label>Create a Password:</label>
+								<input type="Password" class="form-control" placeholder="Password" name="password">
+							</div>
+							<div class="radio-group">
+   							<div class="btn-container">
+								<input type="checkbox" name="checkbox-2" id="checkbox-btn-2-1">
+								<label for="checkbox-btn-2-1" style="text-align: justify; font-size: 14px;">I agree to 99workers.com's Terms & Conditions You have to agree to the 99workers.com terms and conditions before we can create your account.
+								</label>
+							 </div>
+						 </div>
+						<br>
 						</div>	
 						<div class="form-group">
 							<center><button type="submit" class="btn btn-primary btn-block " ><i class="fa fa-lock"></i> Create Account</button></center>

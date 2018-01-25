@@ -27,7 +27,7 @@
               	
                 <?php foreach ($query as $row) {?>
                 <tr>
-                  <td><?php echo $row->name;?></td>
+                  <td style="text-transform: capitalize;"><?php echo $row->fname;?> <?php echo $row->lname;?></td>
                   <td><?php echo $row->email;?></td>
                   <td><?php if($row->status==1){ echo "active";}else{echo "suspended";}?></td>
                   <td><a href="<?php echo base_url();?>index.php/admin/admin/userstatus/<?php echo $row->uid; ?>/<?php echo $row->status; ?>" class="btn"><?php if($row->status==0){ echo "activate";}else{echo "suspend";}?></a></td>

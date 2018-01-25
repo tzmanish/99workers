@@ -39,7 +39,7 @@ class login extends CI_Controller
 				$sess_data = array('login' => TRUE, 'fname' => $uresult[0]->fname,'lname' => $uresult[0]->lname, 'uid' => $uresult[0]->id,'email'=> $uresult[0]->email,'contact'=> $uresult[0]->contact);
 
 				$this->session->set_userdata($sess_data);
-				redirect($_SERVER['HTTP_REFERER']);
+				redirect('');
 		    }
 			else
 			{
