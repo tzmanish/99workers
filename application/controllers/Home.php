@@ -115,6 +115,12 @@ class Home extends CI_Controller {
 		$this->load->view('privacy');
 		$this->load->view('footer');
 	}
+	public function contact()
+	{
+		$this->load->view('header');
+		$this->load->view('contact');
+		$this->load->view('footer');
+	}
 	public function aggrement()
 	{
 		$this->load->view('header');
