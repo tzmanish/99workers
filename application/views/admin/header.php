@@ -152,13 +152,13 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapsepro">
             <li>
-              <a href="<?php echo base_url();?>index.php/admin/admin/showscategory">General Settings</a>
+              <a href="#">General Settings</a>
             </li>
             <li>
-              <a href="<?php echo base_url();?>index.php/admin/admin/addscategory">Change Password</a>
+              <a href="#">Change Password</a>
             </li>
             <li>
-              <a href="<?php echo base_url();?>index.php/admin/admin/showservice">Change Email</a>
+              <a href="#">Change Email</a>
             </li>
           </ul>
         </li>

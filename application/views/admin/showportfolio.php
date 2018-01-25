@@ -29,11 +29,11 @@
               	
                 <?php foreach ($query as $row) {?>
                 <tr>
-                  <td></td>
+                  <td><img src="<?php echo base_url();?>uploads/portfolio/thumb/<?php echo $row->pimage;?>" class="img-responsive center-block" style="height:80px;"></td>
                   <td><?php echo $row->pname;?></td>
                   <td><?php echo $row->pdescr;?></td>
-                  <td></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/deleteportfolio/<?php echo $row->pid; ?>" class="btn">Delete</a></td>
+                  <td><?php echo $row->name;?></td>
+                  <td><a href="<?php echo base_url();?>index.php/admin/admin/deleteportfolio/<?php echo $row->pid; ?>/<?php echo $row->pimage;?>" class="btn">Delete</a></td>
                 </tr>
                 <?php }?>
               </tbody>

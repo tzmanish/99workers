@@ -199,7 +199,7 @@ class Admin extends CI_Controller {
 		    $this->load->view('admin/footer');
     }
     public function addservice()
-	{	$this->form_validation->set_rules('sname', 'sname', 'required');
+	{	$this->form_validation->set_rules('sname', 'sname','required');
 		if ($this->form_validation->run() == FALSE)
         {	$details['query']=$this->user1->showscategory();
      		$this->load->view('admin/header');
@@ -209,7 +209,7 @@ class Admin extends CI_Controller {
 		else
 		{
 			if(!empty($_FILES['picture']['name'])){
-                $config['upload_path'] = '../uploads/';
+                $config['upload_path'] = 'uploads/service/';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
                 $config['file_name'] = time()."product";
                 
@@ -219,7 +219,7 @@ class Admin extends CI_Controller {
                 
                 if($this->upload->do_upload('picture')){
                     $uploadData = $this->upload->data();
-                     $this->gallery_path = realpath(APPPATH . '../../uploads/');//fetching path
+                     $this->gallery_path = realpath(APPPATH . '../uploads/service/');//fetching path
                      $config1 = array(
                           'source_image' => $uploadData['full_path'], //get original image
                           'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
@@ -261,8 +261,13 @@ class Admin extends CI_Controller {
 	
 		
 	}
-	public function Deleteservice($id)
+	public function Deleteservice($id,$delpicture)
 	{
+		if(!empty($delpicture))
+                        {
+                        unlink("uploads/service/".$delpicture);
+                        unlink("uploads/service/thumb/".$delpicture);
+                         }
 	 
 	  $r=$this->user1->deleteservice($id);
 	  if($r){
@@ -372,9 +377,14 @@ class Admin extends CI_Controller {
 	
 		
 	}
-	public function Deleteproduct($id)
+	public function Deleteproduct($id,$delpicture)
 	{
 	 
+                        if(!empty($delpicture))
+                        {
+                        unlink("uploads/product/".$delpicture);
+                        unlink("uploads/product/thumb/".$delpicture);
+                         }
 	  $r=$this->user1->deleteproduct($id);
 	  if($r){
 	  echo "Successfully Deleted Data";
@@ -410,7 +420,7 @@ class Admin extends CI_Controller {
 		else
 		{
 			if(!empty($_FILES['picture']['name'])){
-                $config['upload_path'] = '../uploads/';
+                $config['upload_path'] = 'uploads/portfolio/';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
                 $config['file_name'] = time()."product";
                 
@@ -420,7 +430,7 @@ class Admin extends CI_Controller {
                 
                 if($this->upload->do_upload('picture')){
                     $uploadData = $this->upload->data();
-                     $this->gallery_path = realpath(APPPATH . '../../uploads/');//fetching path
+                     $this->gallery_path = realpath(APPPATH . '../uploads/portfolio/');//fetching path
                      $config1 = array(
                           'source_image' => $uploadData['full_path'], //get original image
                           'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
@@ -462,8 +472,15 @@ class Admin extends CI_Controller {
 	
 		
 	}
-	public function Deleteportfolio($id)
+	public function Deleteportfolio($id,$delpicture)
 	{
+		
+                        if(!empty($delpicture))
+                        {
+                        unlink("uploads/portfolio/".$delpicture);
+                        unlink("uploads/portfolio/thumb/".$delpicture);
+                         }
+                        
 	 
 	  $r=$this->user1->deleteportfolio($id);
 	  if($r){
