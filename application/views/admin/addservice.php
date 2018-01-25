@@ -16,7 +16,7 @@
               </div>
             <div class="form-group">
               <label for="">Description</label>
-                <input type="text" class="form-control"  name="sdescr">
+                <textarea type="text" class="form-control"  name="sdescr"></textarea>
               </div>
             <div class="form-group">
               <label for="">Image</label>

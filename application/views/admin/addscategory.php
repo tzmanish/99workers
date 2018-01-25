@@ -12,7 +12,7 @@
               </div>
             <div class="form-group">
               <label for="">Description</label>
-                <input type="text" class="form-control"  name="scdescr">
+                <textarea type="text" class="form-control"  name="scdescr"></textarea>
               </div>
             </div>
             <div class="box-footer">
