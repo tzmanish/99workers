@@ -12,11 +12,11 @@
               </div>
             <div class="form-group">
               <label for="">Description</label>
-                <input type="text" class="form-control"  name="pdescr">
+                <textarea type="text" class="form-control"  name="pdescr"></textarea>
               </div>
             <div class="form-group">
               <label for="">Image</label>
-                <input type="file" class="form-control"  name="pimage">
+                <input type="file" class="form-control"  name="picture">
               </div>
             <div class="form-group">
               <label for="">Category</label>

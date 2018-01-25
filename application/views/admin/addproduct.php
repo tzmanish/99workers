@@ -16,11 +16,11 @@
               </div>
             <div class="form-group">
               <label for="">Link</label>
-                <input type="text" class="form-control"  name="link">
+                <input type="url" class="form-control"  name="link">
               </div>
             <div class="form-group">
               <label for="">Description</label>
-                <input type="text" class="form-control"  name="pdescr">
+                <textarea type="text" class="form-control"  name="pdescr"></textarea>
               </div>
             <div class="form-group">
               <label for="">Image</label>

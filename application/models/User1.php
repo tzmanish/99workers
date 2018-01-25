@@ -59,7 +59,10 @@ class user1 extends CI_Model
 
 	function showservice()
 	{
-		$query=$this->db->get('service');
+		$this->db->select('*');
+		$this->db->from('service');
+		$this->db->join('scategory', 'scategory.scid = service.scid');
+		$query = $this->db->get();
 		return $query->result();
 	}
 
@@ -103,7 +106,10 @@ class user1 extends CI_Model
 
 	function showportfolio()
 	{
-		$query=$this->db->get('portfolio');
+		$this->db->select('*');
+		$this->db->from('portfolio');
+		$this->db->join('category', 'category.id = portfolio.pid');
+		$query = $this->db->get();
 		return $query->result();
 	}
 
