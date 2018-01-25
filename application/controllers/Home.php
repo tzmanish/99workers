@@ -97,6 +97,18 @@ class Home extends CI_Controller {
 		$this->load->view('faq');
 		$this->load->view('footer');
 	}
+	public function trust()
+	{
+		$this->load->view('header');
+		$this->load->view('trust');
+		$this->load->view('footer');
+	}
+	public function chooseus()
+	{
+		$this->load->view('header');
+		$this->load->view('chooseus');
+		$this->load->view('footer');
+	}
 	public function privacy()
 	{
 		$this->load->view('header');
