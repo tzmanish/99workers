@@ -12,19 +12,18 @@
 			
 	    	<div class="row">
 		    	<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-7 col-lg-offset-4">
+		    	<?php $attributes = array("name" => "loginform");
+            echo form_open("signup/index", $attributes);?>
 		    		<div class="formlogin">
 					<div class="padding24 bgtruewhite  shadowbox2" id="new-account">
 						<center><h3>Create a New Account</h3></center>
 						<hr>
-		              
-						<div class="col-sm-6 col-md-12">
-												
-											<div class="form-group">
-												<label>Pick a Username:</label>
-												<input type="text" class="form-control" placeholder="Username">
-											</div>
-											
-										</div>
+		                <div class="col-sm-6 col-md-12">
+							<div class="form-group">
+								<label>Pick a Username:</label>
+									<input type="text" class="form-control" placeholder="Username">
+								</div>
+						</div>
 										
 										<div class="col-sm-6 col-md-12">
 										
@@ -34,18 +33,10 @@
 											</div>
 											
 										</div>
-										
 										<div class="clear"></div>
-										
-										
-										
-										
-										
 										<div class="clear"></div>
-										
 										<div class="col-sm-6 col-md-12">
-
-											<div class="form-group">
+                                            <div class="form-group">
 												<label>Create a Password:</label>
 												<input type="Password" class="form-control" placeholder="Password">
 											</div>
