@@ -79,6 +79,36 @@ class Home extends CI_Controller {
 		$this->load->view('product');
 		$this->load->view('footer');
 	}
+	public function aboutus()
+	{
+		$this->load->view('header');
+		$this->load->view('aboutus');
+		$this->load->view('footer');
+	}
+	public function productdetails()
+	{
+		$this->load->view('header');
+		$this->load->view('productdetails');
+		$this->load->view('footer');
+	}
+	public function faq()
+	{
+		$this->load->view('header');
+		$this->load->view('faq');
+		$this->load->view('footer');
+	}
+	public function privacy()
+	{
+		$this->load->view('header');
+		$this->load->view('privacy');
+		$this->load->view('footer');
+	}
+	public function aggrement()
+	{
+		$this->load->view('header');
+		$this->load->view('aggrement');
+		$this->load->view('footer');
+	}
 	public function register()
 	{
 		$this->load->view('header');

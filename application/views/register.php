@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container" style="padding-bottom: 5%;padding-top: 5%;">
     	<div class="row ">
 		
 			<div class="col-sm-6 col-sm-6 col-md-4 col-md-push-7">
 				<div class="formlogin">
 					<div class="container">
-						<a href="#">I already have a name.com account »</a>
+						<a href="#">I already have a 99workers.com account »</a>
 					</div>
 				</div>	
 		</div>
@@ -53,15 +53,15 @@
    
 											    <div class="btn-container">
 											   		<input type="checkbox" name="checkbox-2" id="checkbox-btn-2-1">
-											      <label for="checkbox-btn-2-1" style="text-align: justify; font-size: 14px;">I agree to Name.com's Terms & Conditions
-													You have to agree to the Name.com terms and conditions before we can create your account.</label>
+											      <label for="checkbox-btn-2-1" style="text-align: justify; font-size: 14px;">I agree to 99workers.com's Terms & Conditions
+													You have to agree to the 99workers.com terms and conditions before we can create your account.</label>
 											    </div>
 										    
 										  </div>
 
 											<form>
 										        <input type="checkbox" id="checked">
-										        <label for="checked" style="text-align: justify; font-size: 14px;">Send me Name.com's latest news, services, and promos (you can unsubscribe at any time).</label> 
+										        <label for="checked" style="text-align: justify; font-size: 14px;">Send me 99workers.com's latest news, services, and promos (you can unsubscribe at any time).</label> 
 										    </form>
 											 <br>
 										    

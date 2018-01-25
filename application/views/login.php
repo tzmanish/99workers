@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container" style="padding-bottom: 5%;padding-top: 5%;">
 	<div class="col-md-12">
 				<div class="col-md-8">
 					
-					<div class=" col-md-12" style="background-image: url(<?php echo base_url(); ?>media/images/login2.jpg); background-size: 101%; background-repeat: no-repeat;">
+					<div class=" col-md-12 col-sm-8" style="background-image: url(<?php echo base_url(); ?>media/images/login2.jpg); background-size: 101%; background-repeat: no-repeat; ">
 						
 						
-							<div class="col-md-6 col-md-offset-6" style="padding-top: 20px; padding-bottom: 10px;" >
+							<div class="col-md-6 col-md-offset-6 col-sm-12" style="padding-top: 20px; padding-bottom: 10px;" >
 								<center>
 									<h3>I am a new customer!</h3>
 								Verifiable contact information is required for domain registration. Please create an account to proceed.</center></div>

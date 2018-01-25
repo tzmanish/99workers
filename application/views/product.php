@@ -8,7 +8,8 @@
 	        <img class="img-responsive" src="<?php echo base_url();?>/media/images/top-destinations/06.jpg" alt="">
 	        <div class="overlay">
 	           <h2>Template</h2>
-	           <a class="info" href="#">Live Demo</a>
+	           <a class="info" href="#">view</a>
+	           <h2>cost: $233</h2>
 	        </div><br>
 	    </div></div>
 	    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -16,7 +17,8 @@
 	        <img class="img-responsive" src="<?php echo base_url();?>/media/images/top-destinations/06.jpg" alt="">
 	        <div class="overlay">
 	           <h2>Template</h2>
-	           <a class="info"   href="#">Live Demo</a>
+	           <a class="info"   href="#">view</a>
+	           <h2>cost: $233</h2>
 	        </div><br>
 	    </div></div>
 	    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -24,7 +26,8 @@
 	        <img class="img-responsive" src="<?php echo base_url();?>/media/images/top-destinations/06.jpg" alt="">
 	        <div class="overlay">
 	           <h2>Template</h2>
-	           <a class="info" href="#">Live Demo</a>
+	           <a class="info" href="#">view</a>
+	           <h2>cost: $233</h2>
 	        </div><br>
 	    </div></div>
 	    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -32,7 +35,8 @@
 	        <img class="img-responsive" src="<?php echo base_url();?>/media/images/top-destinations/06.jpg" alt="" ; >
 	        <div class="overlay">
 	           <h2>Template</h2>
-	           <a class="info" href="#">Live Demo</a>
+	           <a class="info" href="#">view</a>
+	           <h2>cost: $233</h2>
 	        </div><br>
 	    </div></div>
 	    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -40,9 +44,15 @@
 	        <img class="img-responsive" src="<?php echo base_url();?>/media/images/top-destinations/06.jpg" alt="">
 	        <div class="overlay">
 	           <h2>Template</h2>
-	           <a class="info" href="#">Live Demo</a>
+	           <a class="info" href="#">view</a>
+	           <h2>cost: $233</h2>
 	        </div><br>
 	    </div></div>
+
+
+
+
+
 	</div>
 				
 </div>
