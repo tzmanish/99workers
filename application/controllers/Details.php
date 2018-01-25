@@ -1,0 +1,88 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Details extends CI_Controller {
+	public function __construct()
+	{	
+		
+		parent::__construct();
+		$this->load->helper(array('form','url'));
+		$this->load->library(array('session', 'form_validation','pagination'));
+		$this->load->database();
+		$this->load->model('user');
+
+	}
+
+	public function index()
+	{
+		$this->load->view('header');
+		$this->load->view('home');
+		$this->load->view('footer');
+	}
+	public function portfolio()
+	{
+		$this->load->view('header');
+		$this->load->view('portfolio');
+		$this->load->view('footer');
+	}
+	public function pdetails()
+	{
+		$this->load->view('header');
+		$this->load->view('pdetails');
+		$this->load->view('footer');
+	}
+	public function sdetails()
+	{
+		$this->load->view('header');
+		$this->load->view('sdetails');
+		$this->load->view('footer');
+	}
+	public function userdash()
+	{
+		$this->load->view('header');
+		$this->load->view('userdash');
+		$this->load->view('footer');
+	}
+	public function changepass()
+	{
+		$this->load->view('header');
+		$this->load->view('changepass');
+		$this->load->view('footer');
+	}
+	public function editprofile()
+	{
+		$this->load->view('header');
+		$this->load->view('editprofile');
+		$this->load->view('footer');
+	}
+	public function services()
+	{
+		$this->load->view('header');
+		$this->load->view('services');
+		$this->load->view('footer');
+	}
+	public function changemail()
+	{
+		$this->load->view('header');
+		$this->load->view('changemail');
+		$this->load->view('footer');
+	}
+	public function login()
+	{
+		$this->load->view('header');
+		$this->load->view('login');
+		$this->load->view('footer');
+	}
+	public function register()
+	{
+		$this->load->view('header');
+		$this->load->view('register');
+		$this->load->view('footer');
+	}
+	public function portfolio_details()
+	{
+		$this->load->view('header');
+		$this->load->view('portfoliodetails');
+		$this->load->view('footer');
+	}
+}
