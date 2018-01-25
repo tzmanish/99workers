@@ -57,7 +57,7 @@
 			<!-- start Navbar (Header) -->
 			<nav class="navbar navbar-default navbar-fixed-top" style="height: 50px">
 
-				<div class="container-fluid">
+				<div class="container">
 					
 					<div class="logo-wrapper">
 						<div class="logo">
@@ -70,7 +70,7 @@
 						<ul class="nav navbar-nav" id="responsive-menu">
 						
 							<li>
-								<a href="#">Live Chat</a>
+								<a href="#"><i class="fa fa-weixin" aria-hidden="true"></i> Live Chat</a>
 								
 							</li>
 							<li>
@@ -82,7 +82,7 @@
 								
 							</li>
 							<li><a data-toggle="modal" href="#loginModal" style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a></li>
-							<li><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;">&nbsp;SignUp &nbsp;&nbsp;</a></li>
+							<li><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;">&nbsp;SignUp &nbsp;<i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
 						</ul>
 				
 					</div><!--/.nav-collapse -->
@@ -94,21 +94,21 @@
 				</div>
 				
 				<div id="slicknav-mobile"></div>
-				 <div class="container-fluid" style="background-color: #000;height: 45px; color: #fff;padding-left: 5%;padding-right: 5%;padding-top: 5px;">
+				 <div class="container-fluid" style="background-color: #000;height: 45px; color: #fff;padding-left: 15%;padding-right:15%;padding-top: 5px;">
 				 	<div  id="navbar" class="navbar-nav-wrapper1">
 				 		<ul class="nav navbar-nav" id="responsive-menu">
 						
 							<li>
-								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="glyphicons glyphicons-group"></i>Who We Are</a>
+								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="fa fa-users" aria-hidden="true"></i> Who We Are</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="glyphicons glyphicons-group"></i>Our Services</a>
+								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="fa fa-rocket" aria-hidden="true"></i> Our Services</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="glyphicon glyphicon-th"></i>Product</a>
+								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Product</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="glyphicon glyphicon-th"></i>Portfolio</a>
+								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="glyphicon glyphicon-th"></i> Portfolio</a>
 							</li>
 							<li>
 								<a href="#" style=" color: #fff;"><i class="glyphicon glyphicon-question-sign" ></i>Help</a>
