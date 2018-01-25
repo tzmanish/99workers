@@ -27,7 +27,7 @@
                 <tr>
                   <td><?php echo $row->pname;?></td>
                   <td><?php if($row->pstatus==1){ echo "compleated";}else{echo "ongoing";}?></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/projectstatus/<?php echo $row->pid; ?>/<?php echo $row->pstatus; ?>" class="btn"><?php if($row->pstatus==0){ echo "compleated";}else{echo "resume";}?></a></td>
+                  <td><a href="<?php echo base_url();?>index.php/admin/admin/projectstatus/<?php echo $row->pid;?>/<?php echo $row->pstatus;?>" class="btn"><?php if($row->pstatus==0){ echo "compleated";}else{echo "resume";}?></a></td>
                 </tr>
                 <?php }?>
               </tbody>

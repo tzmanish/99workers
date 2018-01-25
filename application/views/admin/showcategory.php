@@ -30,8 +30,7 @@
                   <td><?php echo $row->name;?></td>
                   <td><?php echo $row->descr;?></td>
                   <td><?php if($row->status==1){ echo "active";}else{echo "inactive";}?></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/deletecategory/<?php echo $row->id; ?>" class="btn">Delete</a></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/categorystatus/<?php echo $row->id; ?>/<?php echo $row->status; ?>" class="btn"><?php if($row->status==0){ echo "active";}else{echo "inactive";}?></a></td>
+                  <td><a href="<?php echo base_url();?>index.php/admin/admin/deletecategory/<?php echo $row->id; ?>" class="btn">Delete</a><a href="<?php echo base_url();?>index.php/admin/admin/categorystatus/<?php echo $row->id; ?>/<?php echo $row->status; ?>" class="btn"><?php if($row->status==0){ echo "activate";}else{echo "deactivate";}?></a></td>
                 </tr>
                 <?php }?>
               </tbody>
