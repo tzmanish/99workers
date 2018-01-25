@@ -31,11 +31,12 @@
               	
                 <?php foreach ($query as $row) {?>
                 <tr>
+                  <td></td>
                   <td><?php echo $row->sname;?></td>
                   <td><?php echo $row->short_descr;?></td>
+                  <td></td>
                   <td><?php if($row->status==1){ echo "active";}else{echo "inactive";}?></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/deleteservice/<?php echo $row->sid; ?>" class="btn">Delete</a></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/servicestatus/<?php echo $row->sid; ?>/<?php echo $row->status; ?>" class="btn"><?php if($row->status==0){ echo "active";}else{echo "inactive";}?></a></td>
+                  <td><a href="<?php echo base_url();?>index.php/admin/admin/deleteservice/<?php echo $row->sid; ?>" class="btn">Delete</a><a href="<?php echo base_url();?>index.php/admin/admin/servicestatus/<?php echo $row->sid; ?>/<?php echo $row->status; ?>" class="btn"><?php if($row->status==0){ echo "activate";}else{echo "deactivate";}?></a></td>
                 </tr>
                 <?php }?>
               </tbody>

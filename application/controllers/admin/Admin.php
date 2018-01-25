@@ -317,8 +317,8 @@ class Admin extends CI_Controller {
         }
 		else
 		{
-			if(!empty($_FILES['picture']['name'])){
-                $config['upload_path'] = '../uploads/';
+			if(!empty($_FILES['picture'])){
+                $config['upload_path'] = 'uploads/product/';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
                 $config['file_name'] = time()."product";
                 
@@ -328,7 +328,7 @@ class Admin extends CI_Controller {
                 
                 if($this->upload->do_upload('picture')){
                     $uploadData = $this->upload->data();
-                     $this->gallery_path = realpath(APPPATH . '../../uploads/');//fetching path
+                     $this->gallery_path = realpath(APPPATH . '../uploads/product/');//fetching path
                      $config1 = array(
                           'source_image' => $uploadData['full_path'], //get original image
                           'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
@@ -352,6 +352,8 @@ class Admin extends CI_Controller {
 				'pname' => $this->input->post('pname'),
 				'pdescr' => $this->input->post('pdescr'),
 				'pid' => $this->input->post('pid'),
+				'link' => $this->input->post('link'),
+				'cost' => $this->input->post('cost'),
 				'pimage' => $picture
 			);
             $result=$this->user1->insert_product($data);
@@ -549,7 +551,7 @@ class Admin extends CI_Controller {
 
 	/* projects */
 
-	public function projectstatus($id,$status)
+	public function projectstatus($pid,$status)
 	{
 
 	  if($status=='1')

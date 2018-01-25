@@ -169,10 +169,10 @@ class user1 extends CI_Model
 		$query=$this->db->get('project');
 		return $query->result();
 	}
-	function projectstatus($id, $status)
+	function projectstatus($pid,$pstatus)
 	{
-		$this->db->where('pid', $id);
-        $data = array('pstatus'=>$status);
+		$this->db->where('pid',$pid);
+        $data = array('pstatus'=>$pstatus);
 		return($this->db->update('project',$data));
 	}
 
