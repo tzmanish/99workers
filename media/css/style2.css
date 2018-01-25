@@ -87,6 +87,12 @@ transition-delay:.2s;
 }
 
 
-
-
-
+/** form */
+.formlogin {
+    border-radius: 0px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 1px 1px 1px 1px #888888
+    
+}
