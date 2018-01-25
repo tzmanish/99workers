@@ -1,7 +1,4 @@
 
-			
-			
-
 <!--portfolio-->
 
 <div class="container pt-70 pb-60 clearfix">

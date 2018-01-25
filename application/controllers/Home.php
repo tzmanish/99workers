@@ -73,6 +73,12 @@ class Home extends CI_Controller {
 		$this->load->view('login');
 		$this->load->view('footer');
 	}
+	public function product()
+	{
+		$this->load->view('header');
+		$this->load->view('product');
+		$this->load->view('footer');
+	}
 	public function register()
 	{
 		$this->load->view('header');
