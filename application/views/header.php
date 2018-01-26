@@ -81,8 +81,24 @@
 								<a href="#">Pay Us</a>
 								
 							</li>
+							<?php if ($this->session->userdata('fname')){ ?>
+							<li>
+								<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('fname'), 0, 6); ?> </a>
+								<ul>
+									<li><a href="guide-detail-setting-edit-profile.html">Dashboard</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">My Project</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">Accout</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">Profile</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">Setting</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">Report</a></li>
+									<li><a href="guide-detail-setting-my-wihslist.html">Log Out</a></li>
+								</ul>
+							</li>
+							
+							<?php } else{?>
 							<li><a href="<?php echo base_url();?>index.php/login" style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a></li>
 							<li><a href="<?php echo base_url();?>index.php/signup" style="background-color:#008000;color: #fff;">&nbsp;SignUp &nbsp;<i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
+							<?php }?>
 						</ul>
 				
 					</div><!--/.nav-collapse -->
@@ -97,13 +113,13 @@
 				 		<ul class="nav navbar-nav" id="responsive-menu">
 						
 							<li>
-								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="fa fa-users" aria-hidden="true"></i> Who We Are</a>
+								<a href="<?php echo base_url();?>index.php/home/whoweare" style=" color: #fff;"><i class="fa fa-users" aria-hidden="true"></i> Who We Are</a>
 							</li>
 							<li>
 								<a href="<?php echo base_url();?>index.php/home/services" style=" color: #fff;"><i class="fa fa-rocket" aria-hidden="true"></i> Our Services</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Product</a>
+								<a href="<?php echo base_url();?>index.php/home/Product" style=" color: #fff;"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Product</a>
 							</li>
 							<li>
 								<a href="<?php echo base_url();?>index.php/home/portfolio" style=" color: #fff;"><i class="glyphicon glyphicon-th"></i> Portfolio</a>

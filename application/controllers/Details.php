@@ -13,64 +13,46 @@ class Details extends CI_Controller {
 
 	}
 
-	public function index()
+	public function aboutus()
 	{
 		$this->load->view('header');
-		$this->load->view('home');
+		$this->load->view('aboutus');
 		$this->load->view('footer');
 	}
-	public function portfolio()
+	public function productdetails()
 	{
 		$this->load->view('header');
-		$this->load->view('portfolio');
+		$this->load->view('productdetails');
 		$this->load->view('footer');
 	}
-	public function pdetails()
+	public function faq()
 	{
 		$this->load->view('header');
-		$this->load->view('pdetails');
+		$this->load->view('faq');
 		$this->load->view('footer');
 	}
-	public function sdetails()
+	public function trust()
 	{
 		$this->load->view('header');
-		$this->load->view('sdetails');
+		$this->load->view('trust');
 		$this->load->view('footer');
 	}
-	public function userdash()
+	public function chooseus()
 	{
 		$this->load->view('header');
-		$this->load->view('userdash');
+		$this->load->view('chooseus');
 		$this->load->view('footer');
 	}
-	public function changepass()
+	public function privacy()
 	{
 		$this->load->view('header');
-		$this->load->view('changepass');
+		$this->load->view('privacy');
 		$this->load->view('footer');
 	}
-	public function editprofile()
+	public function aggrement()
 	{
 		$this->load->view('header');
-		$this->load->view('editprofile');
-		$this->load->view('footer');
-	}
-	public function services()
-	{
-		$this->load->view('header');
-		$this->load->view('services');
-		$this->load->view('footer');
-	}
-	public function changemail()
-	{
-		$this->load->view('header');
-		$this->load->view('changemail');
-		$this->load->view('footer');
-	}
-	public function login()
-	{
-		$this->load->view('header');
-		$this->load->view('login');
+		$this->load->view('aggrement');
 		$this->load->view('footer');
 	}
 	public function register()

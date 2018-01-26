@@ -21,20 +21,47 @@ class Home extends CI_Controller {
 	}
 	public function portfolio()
 	{
+		$details['query']=$this->user->showportfolio();
 		$this->load->view('header');
-		$this->load->view('portfolio');
+		$this->load->view('portfolio',$details);
 		$this->load->view('footer');
 	}
-	public function pdetails()
-	{
+	public function services()
+	{   
+		$details['query']=$this->user->showservice();
 		$this->load->view('header');
-		$this->load->view('pdetails');
+		$this->load->view('services',$details);
 		$this->load->view('footer');
 	}
-	public function sdetails()
+    
+	public function sdetails($id)
 	{
+
+		$details=$this->user->showservice1($id);
+		$data['sname']=$details[0]->sname;
+		$data['sdescr']=$details[0]->sdescr;
+		$data['image']=$details[0]->image;
+		$data['scname']=$details[0]->scname;
 		$this->load->view('header');
-		$this->load->view('sdetails');
+		$this->load->view('sdetails',$data);
+		$this->load->view('footer');
+	}
+	public function product()
+	{   
+		$details['query']=$this->user->showproduct();
+		$this->load->view('header');
+		$this->load->view('product',$details);
+		$this->load->view('footer');
+	}
+	public function productdetails($id)
+	{   $details=$this->user->showproduct1($id);
+        $data['pname']=$details[0]->pname;
+		$data['pdescr']=$details[0]->pdescr;
+		$data['pimage']=$details[0]->pimage;
+		$data['cost']=$details[0]->cost;
+		$data['link']=$details[0]->link;
+		$this->load->view('header');
+		$this->load->view('productdetails',$data);
 		$this->load->view('footer');
 	}
 	public function userdash()
@@ -55,12 +82,6 @@ class Home extends CI_Controller {
 		$this->load->view('editprofile');
 		$this->load->view('footer');
 	}
-	public function services()
-	{
-		$this->load->view('header');
-		$this->load->view('services');
-		$this->load->view('footer');
-	}
 	public function changemail()
 	{
 		$this->load->view('header');
@@ -73,64 +94,29 @@ class Home extends CI_Controller {
 		$this->load->view('login');
 		$this->load->view('footer');
 	}
-	public function product()
-	{
-		$this->load->view('header');
-		$this->load->view('product');
-		$this->load->view('footer');
-	}
-	public function aboutus()
-	{
-		$this->load->view('header');
-		$this->load->view('aboutus');
-		$this->load->view('footer');
-	}
-	public function productdetails()
-	{
-		$this->load->view('header');
-		$this->load->view('productdetails');
-		$this->load->view('footer');
-	}
-	public function faq()
-	{
-		$this->load->view('header');
-		$this->load->view('faq');
-		$this->load->view('footer');
-	}
-	public function trust()
-	{
-		$this->load->view('header');
-		$this->load->view('trust');
-		$this->load->view('footer');
-	}
-	public function chooseus()
-	{
-		$this->load->view('header');
-		$this->load->view('chooseus');
-		$this->load->view('footer');
-	}
-	public function privacy()
-	{
-		$this->load->view('header');
-		$this->load->view('privacy');
-		$this->load->view('footer');
-	}
-	public function aggrement()
-	{
-		$this->load->view('header');
-		$this->load->view('aggrement');
-		$this->load->view('footer');
-	}
-	public function register()
-	{
-		$this->load->view('header');
-		$this->load->view('register');
-		$this->load->view('footer');
-	}
-	public function portfolio_details()
-	{
-		$this->load->view('header');
-		$this->load->view('portfoliodetails');
-		$this->load->view('footer');
+	public function subscribe()
+	{  
+		$this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|is_unique[subscription.email]');
+	    if ($this->form_validation->run() == FALSE)
+        {
+			
+        		$details['msg']="Email Exist Or Not an Email";
+        }
+        else
+        {   $data = array(
+				'email' => $this->input->post('email'),
+				'status' => "1"
+			);
+	    	$result=$this->user->insert_subscriber($data);
+            if ($result)
+			{
+				$details['msg']="Successfully Subscribe";
+			}
+			else
+			{
+				$details['msg']="Email Exist Or Not an Email";
+			}
+        }
+        $this->load->view('submsg',$details);
 	}
 }

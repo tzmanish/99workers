@@ -10,11 +10,8 @@
 					<div class="row">
 						<div class="col-md-8" >
 							<div class="hovereffect">
-						        <center><img class="img-responsive" src="<?php echo base_url();?>/media/images/top-destinations/06.jpg" alt="">
-						        <div class="overlay">
-						           <h2>Template</h2>
-						           <a class="info" href="#">Live Demo</a>
-						        </div></center><br>
+						        <center><img class="img-responsive" src="<?php echo base_url();?>uploads/product/thumb/<?php echo $pimage;?>" alt="">
+						        </center><br>
 						    </div>
 						</div>
 
@@ -33,11 +30,13 @@
 											<div class="row">
 												
 												<div class="col-xs-12 col-sm-12 col-md-12">
-												
+												      <h2><?php echo $pname;?></h2>
+						           					  <a class="info" href="<?php echo $link;?>">Live Demo</a>
+						           					  <hr>
 													<div class="review-content" style="text-align: justify;">
 													
 														<h3>Description</h3>
-														<p>It as announcing it me stimulated frequently continuing. Least their she you now above going stand forth. He pretty future afraid should genius spirit on. Set property addition building put likewise get. Of will at sell well at as. Too want but tall nay like old. Removing yourself be in answered he.</p>
+														<p><?php echo $pdescr;?></p>
 													
 													</div>
 													
@@ -57,7 +56,7 @@
 											<div class="GridLex-col-12_sm-8_xs-12_xss-12">
 											
 												<div class="review-rating">
-													<h1>Price: $68.00  </h1>
+													<h1>Price: $<?php echo $cost;?>  </h1>
 												</div>
 												
 												
@@ -66,7 +65,7 @@
 											<div class="GridLex-col-4_sm-4_xs-12_xss-12">
 												
 												<div class="GridLex-inner center">
-													<a href="#" class="btn btn-primary btn-block anchor">Add to Cart</a>
+													<a href="#" class="btn btn-primary btn-block anchor">Buy Now</a>
 												</div>
 											
 											</div>

@@ -118,133 +118,21 @@
 					<div class="GridLex-gap-20 GridLex-gap-15-mdd GridLex-gap-10-xs">
 						
 						<div class="GridLex-grid-noGutter-equalHeight">
-						
+						<?php if($query)
+						    {foreach ($query as $row) {?>
 							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
 							
 								<div class="top-destination-item">
 									<a href="#">
 										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/01.jpg" alt="images" />
+											<img src="<?php echo base_url();?>uploads/portfolio/thumb/<?php echo $row->pimage;?>" alt="images" />
 										</div>
 										
 									</a>
 								</div>
 								
 							</div>
-							
-							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/02.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div>
-							
-							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/03.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div>
-							
-							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/04.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div>
-							
-							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/05.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div>
-							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/02.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div>
-							
-							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/03.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div><div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/02.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div>
-							
-							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/03.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div>
-							
-							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
-							
-								<div class="top-destination-item">
-									<a href="#">
-										<div class="image">
-											<img src="<?php echo base_url();?>/media/images/top-destinations/06.jpg" alt="images" />
-										</div>
-										
-									</a>
-								</div>
-								
-							</div>
+						<?php }}?>
 							
 						</div>
 
