@@ -59,11 +59,6 @@ class user extends CI_Model
 		return $this->db->insert('subscription', $data);
 	}
 	/*pages*/
-	 function showproject()
-	{
-		$query=$this->db->get('project');
-		return $query->result();
-	}
 	function showportfolio()
 	{
 		$query=$this->db->get('portfolio');
@@ -115,6 +110,32 @@ class user extends CI_Model
 	function addproject($data)
     {
 		return $this->db->insert('project', $data);
+	}
+	 function showproject($id)
+	{
+		$this->db->where('uid', $id);
+		$query=$this->db->get('project');
+		return $query->result();
+	}
+	function showcomp($id)
+	{
+		$this->db->where('uid', $id);
+		$this->db->where('pstatus', "1");
+		$query=$this->db->get('project');
+		return $query->result();
+	}
+	function showproc($id)
+	{
+		$this->db->where('uid', $id);
+		$this->db->where('pstatus', "0");
+		$query=$this->db->get('project');
+		return $query->result();
+	}
+
+	function editp($uid, $data)
+    {
+    	$this->db->where('uid',$uid);
+        return $this->db->insert('project', $data);
 	}
 
 }

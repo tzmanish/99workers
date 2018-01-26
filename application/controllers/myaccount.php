@@ -96,12 +96,29 @@ class myaccount extends CI_Controller {
 		$this->load->view('changepass');
 		$this->load->view('footer');
 	}
-	public function editprofile()
+
+	public function editp()
 	{
-		$this->load->view('header');
-		$this->load->view('sideuser');
-		$this->load->view('editprofile');
-		$this->load->view('footer');
+			
+            $uid=$this->session->userdata('uid');
+			$data= array(
+				'fname' => $this->input->post('fname'),
+				'lname' => $this->input->post('lname'),
+				'uid'=>$uid
+			);
+            $result=$this->user->editp($data);
+		if ($result)
+			{
+				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+				redirect('myaccount/editp');
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
+				redirect('myaccount/editp');
+			}
+		
 	}
 	public function changemail()
 	{
@@ -110,4 +127,28 @@ class myaccount extends CI_Controller {
 		$this->load->view('changemail');
 		$this->load->view('footer');
 	}
+	public function showproject()
+	{	
+        	$details['query']=$this->user->showproject($this->session->userdata('uid'));
+     		$this->load->view('header');
+			$this->load->view('sideuser');
+		    $this->load->view('showproject',$details);
+		    $this->load->view('footer');
+    }
+	public function showcomp()
+	{	
+        	$details['query']=$this->user->showcomp($this->session->userdata('uid'));
+     		$this->load->view('header');
+			$this->load->view('sideuser');
+		    $this->load->view('showproject',$details);
+		    $this->load->view('footer');
+    }
+	public function showproc()
+	{	
+        	$details['query']=$this->user->showproc($this->session->userdata('uid'));
+     		$this->load->view('header');
+			$this->load->view('sideuser');
+		    $this->load->view('showproject',$details);
+		    $this->load->view('footer');
+    }
 }
