@@ -182,4 +182,27 @@ class user1 extends CI_Model
 		return($this->db->update('project',$data));
 	}
 
+	/* admin */
+
+	function updatepass($aid, $pass)
+    {
+    	$this->db->where('aid',$aid);
+        $data = array('pass'=>$pass);
+		return $this->db->update('admin', $data);
+	}
+
+	function updatemail($aid, $mail)
+    {
+    	$this->db->where('aid',$aid);
+        $data = array('email'=>$mail);
+		return $this->db->update('admin', $data);
+	}
+
+	function gset($aid, $aname)
+    {
+    	$this->db->where('aid',$aid);
+        $data = array('aname'=>$aname);
+		return $this->db->update('admin', $data);
+	}
+
 }?>
