@@ -106,4 +106,15 @@ class user extends CI_Model
 		$query = $this->db->get();
 		return $query->result();
 	}
+	function showscategory()
+	{
+		$query=$this->db->get('scategory');
+		return $query->result();
+	}
+
+	function addproject($data)
+    {
+		return $this->db->insert('project', $data);
+	}
+
 }
