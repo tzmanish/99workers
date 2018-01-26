@@ -2,7 +2,5 @@
 .serv{padding-left: 15%; padding-right: 15%;}
 .uc{text-transform: capitalize;}
 .servtxt{color: #444;}
-.th-btn{padding:5% 10%; color: #fff; background-color: #15a853; border:none;}
-.btn-lg{padding:5% 10%; border:none;}
 .icn{padding: 2%; filter: grayscale(100%);transition-duration: .5s;}
 .icn:hover{filter: grayscale(0%);}
