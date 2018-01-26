@@ -211,7 +211,7 @@ class Admin extends CI_Controller {
 			if(!empty($_FILES['picture']['name'])){
                 $config['upload_path'] = 'uploads/service/';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
-                $config['file_name'] = time()."product";
+                $config['file_name'] = time()."service";
                 
                 //Load upload library and initialize configuration
                 $this->load->library('upload',$config);
@@ -422,7 +422,7 @@ class Admin extends CI_Controller {
 			if(!empty($_FILES['picture']['name'])){
                 $config['upload_path'] = 'uploads/portfolio/';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
-                $config['file_name'] = time()."product";
+                $config['file_name'] = time()."portfolio";
                 
                 //Load upload library and initialize configuration
                 $this->load->library('upload',$config);

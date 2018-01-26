@@ -115,7 +115,8 @@
 				<p>(We promise not to share your information with anyone, and you can unsubscribe anytime.)</p>
 		    </div>
 			<div class="col-md-4" >
-			    <input type="email" name="subemail" class="form-control col-xs-12 col-md-12" placeholder="Email" style="height: 50px;border-radius: 5px;">
+			    <input type="email" name="subemail" id="subemail" class="form-control col-xs-12 col-md-12" placeholder="Email" style="height: 50px;border-radius: 5px;" onchange="javascript:subemail();">
+			    <div id="submsg"></div>
 			</div>
 		</div>
 	</div>

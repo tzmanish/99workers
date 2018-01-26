@@ -52,5 +52,49 @@ class user extends CI_Model
     	$this->db->where('id', $id);
 		return $this->db->update('user', $data);
 	}
-
+	/*Subscribe*/
+    function insert_subscriber($data)
+    {
+    	$data['created'] = date("Y-m-d H:i:s");
+		return $this->db->insert('subscription', $data);
+	}
+	/*pages*/
+	 function showproject()
+	{
+		$query=$this->db->get('project');
+		return $query->result();
+	}
+	function showportfolio()
+	{
+		$query=$this->db->get('portfolio');
+		return $query->result();
+	}
+	function showproduct()
+	{
+		$query=$this->db->get('product');
+		return $query->result();
+	}
+	function showproduct1($id)
+	{ 
+		$this->db->where('pid', $id);
+		$query=$this->db->get('product');
+		return $query->result();
+	}
+	function showservice()
+	{
+		$this->db->select('*');
+		$this->db->from('service');
+		$this->db->join('scategory', 'scategory.scid = service.scid');
+		$query = $this->db->get();
+		return $query->result();
+	}
+	function showservice1($id)
+	{
+		$this->db->where('sid', $id);
+		$this->db->select('*');
+		$this->db->from('service');
+		$this->db->join('scategory', 'scategory.scid = service.scid');
+		$query = $this->db->get();
+		return $query->result();
+	}
 }
