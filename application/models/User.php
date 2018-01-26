@@ -135,7 +135,7 @@ class user extends CI_Model
 	function editp($uid, $data)
     {
     	$this->db->where('uid',$uid);
-        return $this->db->insert('project', $data);
+        return $this->db->update('user', $data);
 	}
 
 }

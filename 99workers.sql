@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 26, 2018 at 10:54 AM
+-- Generation Time: Jan 26, 2018 at 02:46 PM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `99workers`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+DROP TABLE IF EXISTS `admin`;
+CREATE TABLE IF NOT EXISTS `admin` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `aname` varchar(200) NOT NULL,
+  `pass` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`aid`, `aname`, `pass`, `email`) VALUES
+(1, 'wer qwe', 'pass', 'asdf@kjfd');
 
 -- --------------------------------------------------------
 
@@ -103,11 +125,25 @@ DROP TABLE IF EXISTS `project`;
 CREATE TABLE IF NOT EXISTS `project` (
   `pid` int(10) NOT NULL AUTO_INCREMENT,
   `pname` varchar(200) NOT NULL,
+  `dscr` text NOT NULL,
+  `cost` int(11) NOT NULL,
+  `attach` varchar(200) NOT NULL,
   `pstatus` int(1) NOT NULL,
   `pprogress` text NOT NULL,
-  `cid` int(11) NOT NULL,
+  `scid` int(11) NOT NULL,
+  `uid` int(11) NOT NULL,
   PRIMARY KEY (`pid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `project`
+--
+
+INSERT INTO `project` (`pid`, `pname`, `dscr`, `cost`, `attach`, `pstatus`, `pprogress`, `scid`, `uid`) VALUES
+(1, 'fgdfg', 'gdfgfdg', 5867, '1516969676portfolio.JPG', 0, '', 3, 0),
+(2, 'drgf', 'dfgdfg', 45345, '1516969732portfolio.JPG', 0, '', 3, 0),
+(3, 'egt', 'etg', 53, '', 1, '', 3, 3),
+(4, 'fgthgf', 'hgfhfgh', 543245, '', 0, '', 3, 3);
 
 -- --------------------------------------------------------
 
@@ -208,15 +244,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   `modified` datetime NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`uid`, `fname`, `lname`, `email`, `password`, `created`, `modified`, `status`) VALUES
-(3, 'amit', 'anand', 'amitanand.kvj.2@gmail.com', '202cb962ac59075b964b07152d234b70', '2018-01-25 20:36:03', '2018-01-26 07:46:45', 1),
-(4, 'amit', 'anand', 'amitanand.kvj.3@gmail.com', '202cb962ac59075b964b07152d234b70', '2018-01-25 20:40:21', '2018-01-26 07:46:45', 1);
+(3, '', '', 'amitanand.kvj.2@gmail.com', '202cb962ac59075b964b07152d234b70', '2018-01-25 20:36:03', '2018-01-26 12:40:57', 1),
+(4, 'amit', 'anand', 'amitanand.kvj.3@gmail.com', '202cb962ac59075b964b07152d234b70', '2018-01-25 20:40:21', '2018-01-26 12:40:57', 1),
+(5, 'amit', 'chutiya', 'amit@chu.tiya', '202cb962ac59075b964b07152d234b70', '2018-01-26 10:59:19', '2018-01-26 12:40:57', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

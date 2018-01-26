@@ -98,9 +98,18 @@ class myaccount extends CI_Controller {
 	}
 
 	public function editp()
-	{
-			
-            $uid=$this->session->userdata('uid');
+	{	$this->form_validation->set_rules('fname', 'lname', 'required');
+		if ($this->form_validation->run() == FALSE)
+        {	
+        	$details['query']=$this->user->editp();
+		$this->load->view('header');
+		$this->load->view('sideuser');
+		$this->load->view('editp', $data);
+		$this->load->view('footer');
+        }
+		else
+		{
+		$uid=$this->session->userdata('uid');
 			$data= array(
 				'fname' => $this->input->post('fname'),
 				'lname' => $this->input->post('lname'),
@@ -117,7 +126,7 @@ class myaccount extends CI_Controller {
 				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
 				redirect('myaccount/editp');
 			}
-		
+		}
 	}
 	public function changemail()
 	{
