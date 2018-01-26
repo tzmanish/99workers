@@ -98,6 +98,12 @@ class Home extends CI_Controller {
 		$this->load->view('changemail');
 		$this->load->view('footer');
 	}
+	public function contact()
+	{
+		$this->load->view('header');
+		$this->load->view('contact');
+		$this->load->view('footer');
+	}
 	public function login()
 	{
 		$this->load->view('header');
