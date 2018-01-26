@@ -104,9 +104,8 @@ class myaccount extends CI_Controller {
 			$data= array(
 				'fname' => $this->input->post('fname'),
 				'lname' => $this->input->post('lname'),
-				'uid'=>$uid
 			);
-            $result=$this->user->editp($data);
+            $result=$this->user->editp($uid, $data);
 		if ($result)
 			{
 				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
