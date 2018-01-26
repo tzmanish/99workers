@@ -85,13 +85,13 @@
 							<li>
 								<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('fname'), 0, 6); ?>&nbsp;&nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
 								<ul>
-									<li><a href="guide-detail-setting-edit-profile.html">Dashboard</a></li>
-									<li><a href="guide-detail-setting-change-pass.html">My Project</a></li>
+									<li><a href="<?php echo base_url();?>index.php/myaccount/">Dashboard</a></li>
+									<li><a href="<?php echo base_url();?>index.php/myaccount/showproject">My Project</a></li>
 									<li><a href="guide-detail-setting-change-pass.html">Accout</a></li>
-									<li><a href="guide-detail-setting-change-pass.html">Profile</a></li>
+									<li><a href="<?php echo base_url();?>index.php/myaccount/editp">Profile</a></li>
 									<li><a href="guide-detail-setting-change-pass.html">Setting</a></li>
 									<li><a href="guide-detail-setting-change-pass.html">Report</a></li>
-									<li><a href="guide-detail-setting-my-wihslist.html">Log Out</a></li>
+									<li><a href="<?php echo base_url();?>index.php/home/logout">Log Out</a></li>
 								</ul>
 							</li>
 							
