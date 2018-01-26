@@ -34,7 +34,7 @@ class user extends CI_Model
 	// get user
 	function get_user_by_id($id)
 	{
-		$this->db->where('id', $id);
+		$this->db->where('uid', $id);
         $query = $this->db->get('user');
 		return $query->result();
 	}
@@ -138,4 +138,11 @@ class user extends CI_Model
         return $this->db->update('user', $data);
 	}
 
+
+	function cpass($uid, $pass)
+    {
+    	$this->db->where('uid',$uid);
+    	$data = array('password'=>$pass);
+        return $this->db->update('user', $data);
+	}
 }
