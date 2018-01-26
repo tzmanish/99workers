@@ -535,6 +535,89 @@ class Admin extends CI_Controller {
 	  redirect($_SERVER['HTTP_REFERER']);
 	}
 
+	/* admin */
+
+    public function updatepass()
+	{	$this->form_validation->set_rules('pass', 'pass', 'required');
+		if ($this->form_validation->run() == FALSE)
+        {	
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/updatepass');
+		    $this->load->view('admin/footer');
+        }
+		else
+		{
+			$aid="1";
+			$pass= $this->input->post('pass');
+            $result=$this->user1->updatepass($aid,$pass);
+		if ($result)
+			{
+				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+				redirect('admin/admin/updatepass');
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
+				redirect('admin/admin/updatepass');
+			}
+		}
+	}
+
+    public function updatemail()
+	{	$this->form_validation->set_rules('mail', 'mail', 'required');
+		if ($this->form_validation->run() == FALSE)
+        {	
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/updatemail');
+		    $this->load->view('admin/footer');
+        }
+		else
+		{
+			$aid="1";
+			$mail= $this->input->post('mail');
+            $result=$this->user1->updatemail($aid,$mail);
+		if ($result)
+			{
+				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+				redirect('admin/admin/updatemail');
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
+				redirect('admin/admin/updatemail');
+			}
+		}
+	}
+
+    public function gset()
+	{	$this->form_validation->set_rules('aname', 'aname', 'required');
+		if ($this->form_validation->run() == FALSE)
+        {	
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/gset');
+		    $this->load->view('admin/footer');
+        }
+		else
+		{
+			$aid="1";
+			$aname= $this->input->post('aname');
+            $result=$this->user1->gset($aid,$aname);
+		if ($result)
+			{
+				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+				redirect('admin/admin/gset');
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
+				redirect('admin/admin/gset');
+			}
+		}
+	}
+
 	/* subscription */
 
 	public function subscriptionstatus($id,$status)
