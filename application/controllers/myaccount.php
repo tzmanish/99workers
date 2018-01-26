@@ -21,6 +21,13 @@ class myaccount extends CI_Controller {
 		$this->load->view('userdash');
 		$this->load->view('footer');
 	}
+	public function startproject()
+	{
+		$this->load->view('header');
+		$this->load->view('sideuser');
+		$this->load->view('startproject');
+		$this->load->view('footer');
+	}
 	public function changepass()
 	{
 		$this->load->view('header');

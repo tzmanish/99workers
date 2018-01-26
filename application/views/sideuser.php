@@ -24,24 +24,19 @@
 							
 									<ul class="common-menu-list">
 										
-										<li class="active"><a href="userdash"><span class=""><i class="glyphicon glyphicon-blackboard"></i>Dashboard</span></a></li>
-										<li><a href="#">Project</a></li>
-										<li><a href="#">All Project</a></li>
-										<li><a href="#">Completed Project</a></li>
-										<li><a href="#">Project Processing</a></li>
-										<li><a href="#">Post a Project</a></li>
+										<li class="active"><a href="<?php echo base_url();?>index.php/myaccount/"><span class=""><i class="glyphicon glyphicon-blackboard"></i>Dashboard</span></a></li>
+										<li><a href="<?php echo base_url();?>index.php/myaccount/startproject">New Project</a></li>
+										<li><a href="<?php echo base_url();?>index.php/myaccount/showproject">All Project</a></li>
+										<li><a href="<?php echo base_url();?>index.php/myaccount/showcomp">Completed Project</a></li>
+										<li><a href="<?php echo base_url();?>index.php/myaccount/showproc">Project Processing</a></li>
 										
 										<li><a href="#" ><span class=""><i class="glyphicon glyphicon-th-large"></i>Account</span></a></li>
 
 										<li><a href="#">Transaction Report</a></li>
 										<li><a href="#">Payment Due</a></li>
-										<li><a href="editprofile"><span class=""><i class="glyphicon glyphicon-user"></i>Edit profile</span></a></li>
-										<li><a href="#"><span class=""><i class="glyphicon glyphicon-cog"></i>Settings</span></a></li>
-										<li><a href="#">General Settings</a></li>
-										<li><a href="changepass">Change password</a></li>
-										<li><a href="changemail"><span class=""><i class="glyphicon glyphicon-envelope"></i>Change Email</span></a></li>
-										<li><a href="#">Report</a></li>
-										<li><a href="#"><span class=""><i class="glyphicon glyphicon-log-out"></i>Logout</span></a></li>
+										<li><a href="<?php echo base_url();?>index.php/myaccount/editp"><span class=""><i class="glyphicon glyphicon-user"></i>Edit profile</span></a></li>
+										<li><a href="<?php echo base_url();?>index.php/myaccount/cpass">Change password</a></li>
+										<li><a href="<?php echo base_url();?>index.php/home/logout"><span class=""><i class="glyphicon glyphicon-log-out"></i>Logout</span></a></li>
 
 										
 									</ul>
