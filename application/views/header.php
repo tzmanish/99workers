@@ -81,7 +81,23 @@
 								<a href="#">Pay Us</a>
 								
 							</li>
+							<?php if ($this->session->userdata('fname')){ ?>
+							<li>
+								<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('fname'), 0, 6); ?> </a>
+								<ul>
+									<li><a href="guide-detail-setting-edit-profile.html">Dashboard</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">My Project</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">Accout</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">Profile</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">Setting</a></li>
+									<li><a href="guide-detail-setting-change-pass.html">Report</a></li>
+									<li><a href="guide-detail-setting-my-wihslist.html">Log Out</a></li>
+								</ul>
+							</li>
+							
+							<?php } else{?>
 							<li><a href="<?php echo base_url();?>index.php/login" style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a></li>
+							<?php }?>
 							<li><a href="<?php echo base_url();?>index.php/signup" style="background-color:#008000;color: #fff;">&nbsp;SignUp &nbsp;<i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
 						</ul>
 				
