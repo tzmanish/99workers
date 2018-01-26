@@ -92,6 +92,18 @@ class Home extends CI_Controller {
 		$this->load->view('editprofile');
 		$this->load->view('footer');
 	}
+	public function forgotpass()
+	{
+		$this->load->view('header');
+		$this->load->view('forgotpass');
+		$this->load->view('footer');
+	}
+	public function register()
+	{
+		$this->load->view('header');
+		$this->load->view('register');
+		$this->load->view('footer');
+	}
 	public function changemail()
 	{
 		$this->load->view('header');
