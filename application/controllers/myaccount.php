@@ -98,13 +98,16 @@ class myaccount extends CI_Controller {
 	}
 
 	public function editp()
-	{	$this->form_validation->set_rules('fname', 'lname', 'required');
+	{	$this->form_validation->set_rules('fname', 'fname', 'required');
+	$this->form_validation->set_rules('lname', 'lname', 'required');
 		if ($this->form_validation->run() == FALSE)
         {	
-        	$details['query']=$this->user->editp();
+        	$details=$this->user->get_user_by_id($this->session->userdata('uid'));
+        	$data['fname']=$details[0]->fname;
+        	$data['lname']=$details[0]->lname;
 		$this->load->view('header');
 		$this->load->view('sideuser');
-		$this->load->view('editp', $data);
+		$this->load->view('editp',$data);
 		$this->load->view('footer');
         }
 		else
@@ -125,6 +128,36 @@ class myaccount extends CI_Controller {
 				// error
 				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
 				redirect('myaccount/editp');
+			}
+		}
+	}
+
+	public function cpass()
+	{
+		
+		$this->form_validation->set_rules('newpass', 'newpass', 'trim|required|md5');
+		if (($this->form_validation->run() == FALSE))
+        {
+			$this->load->view('header');
+			$this->load->view('sideuser');
+			$this->load->view('cpass');
+			$this->load->view('footer');
+        }
+		else
+		{
+			$uid=$this->session->userdata('uid');
+			$pass= $this->input->post('newpass');
+            $result=$this->user->cpass($uid,$pass);
+		   if ($result)
+			{
+				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+				redirect('myaccount/cpass');
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
+				redirect('myaccount/cpass');
 			}
 		}
 	}

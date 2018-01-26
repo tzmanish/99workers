@@ -3,24 +3,14 @@
 								<h4 class="section-title">Edit Profile</h4>
 								<div class="post-form-wrapper">
 									<?php $attributes = array("name" => "profile");
-      								echo form_open_multipart("myaccount/editp", $attributes);?>
-									<div class="row gap-20">
+      								echo form_open_multipart("myaccount/cpass", $attributes);?>
 
 										<div class="clear"></div>
 
 										<div class="col-sm-6 col-md-6">
 											<div class="form-group">
-												<label>First Name</label>
-												<input type="text" class="form-control"  name="fname" value="<?php echo $fname;?>">
-											</div>
-										</div>
-
-										<div class="clear"></div>
-
-										<div class="col-sm-6 col-md-6">
-											<div class="form-group">
-												<label>Last Name</label>
-												<input type="text" class="form-control"  name="lname" value="<?php echo $lname;?>">
+												<label>New Password</label>
+												<input type="Password" class="form-control"  name="newpass" required>
 											</div>
 										</div>
 
