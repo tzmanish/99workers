@@ -81,9 +81,9 @@
 								<a href="#">Pay Us</a>
 								
 							</li>
-							<?php if ($this->session->userdata('fname')){ ?>
+							<?php if ($this->session->userdata('fname')){ ?> 
 							<li>
-								<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('fname'), 0, 6); ?> </a>
+								<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('fname'), 0, 6); ?>&nbsp;&nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
 								<ul>
 									<li><a href="guide-detail-setting-edit-profile.html">Dashboard</a></li>
 									<li><a href="guide-detail-setting-change-pass.html">My Project</a></li>
