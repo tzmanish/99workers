@@ -86,10 +86,29 @@ class Home extends CI_Controller {
 		$this->load->view('changepass');
 		$this->load->view('footer');
 	}
+
 	public function editprofile()
 	{
 		$this->load->view('header');
 		$this->load->view('editprofile');
+		$this->load->view('footer');
+	}
+	public function checkout()
+	{
+		$this->load->view('header');
+		$this->load->view('checkout');
+		$this->load->view('footer');
+	}
+	public function forgotpass()
+	{
+		$this->load->view('header');
+		$this->load->view('forgotpass');
+		$this->load->view('footer');
+	}
+	public function register()
+	{
+		$this->load->view('header');
+		$this->load->view('register');
 		$this->load->view('footer');
 	}
 	public function changemail()
@@ -98,12 +117,7 @@ class Home extends CI_Controller {
 		$this->load->view('changemail');
 		$this->load->view('footer');
 	}
-	public function contact()
-	{
-		$this->load->view('header');
-		$this->load->view('contact');
-		$this->load->view('footer');
-	}
+	
 	public function login()
 	{
 		$this->load->view('header');

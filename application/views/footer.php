@@ -49,8 +49,8 @@
 									<ul class="footer-menu">
 										<li><a href="#">Portfolio</a></li>
 										<li><a href="#">Pricing</a></li>
-										<li><a href="#">Login</a></li>
-										<li><a href="#">Sign Up</a></li>
+										<li><a href="<?php echo base_url();?>index.php/login">Login</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/register">Sign Up</a></li>
 										<li><a href="#">Start A Project</a></li>
 										<li><a href="#">Client Reviews</a></li>
 									</ul>
@@ -73,11 +73,11 @@
 								
 									<h5 class="footer-title">INFORMATION</h5>
 									<ul class="footer-menu">
-										<li><a href="#">Trust and Security</a></li>
-										<li><a href="#">Registration Agreement</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-										<li><a href="#">FAQ</a></li>
-										<li><a href="#">Contact US</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/trust">Trust and Security</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/aggrement">Registration Agreement</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/Privacy">Privacy Policy</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/faq">FAQ</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/contact">Contact US</a></li>
 									</ul>
 								
 								</div>
@@ -87,9 +87,9 @@
 								
 									<h5 class="footer-title">OUR COMPANY</h5>
 									<ul class="footer-menu">
-										<li><a href="#">About US</a></li>
-										<li><a href="#">Why Choose Us</a></li>
-										<li><a href="#">Support</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/aboutus">About US</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/chooseus">Why Choose Us</a></li>
+										<li><a href="<?php echo base_url();?>index.php/details/contact">Support</a></li>
 										
 									</ul><br>
 									<a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/images/pay.png" class="img-responsive"  style="height:100px;"></a> 
@@ -106,7 +106,7 @@
 				
 			</footer>
 			
-			<footer class="bottom-footer">
+			<!--<footer class="bottom-footer">
 			
 				<div class="container">
 				
@@ -138,7 +138,7 @@
 				</div>
 				
 			
-			</footer>
+			</footer>-->
 			
 		</div>
 		

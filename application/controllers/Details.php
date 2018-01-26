@@ -37,6 +37,12 @@ class Details extends CI_Controller {
 		$this->load->view('trust');
 		$this->load->view('footer');
 	}
+	public function contact()
+	{
+		$this->load->view('header');
+		$this->load->view('contact');
+		$this->load->view('footer');
+	}
 	public function chooseus()
 	{
 		$this->load->view('header');
