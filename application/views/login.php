@@ -44,7 +44,7 @@
 								<br>
 							</div>	
 							<div class="form-group col-md-12">
-								<center><button type="submit" class="btn btn-primary btn-block " ><i class="fa fa-lock"></i> Create Account</button></center>
+								<center><button type="submit" class="btn btn-primary btn-block " ><i class="fa fa-lock"></i> Login</button></center>
                             </div>
                             <?php echo form_close(); ?>
 								<center><a href="#">Forgot Username or Password?</a></center>

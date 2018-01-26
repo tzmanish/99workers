@@ -106,7 +106,7 @@
 				
 			</footer>
 			
-			<footer class="bottom-footer">
+			<!--<footer class="bottom-footer">
 			
 				<div class="container">
 				
@@ -138,7 +138,7 @@
 				</div>
 				
 			
-			</footer>
+			</footer>-->
 			
 		</div>
 		
