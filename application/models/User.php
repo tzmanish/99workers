@@ -69,6 +69,15 @@ class user extends CI_Model
 		$query=$this->db->get('portfolio');
 		return $query->result();
 	}
+	function showportfolio1($id)
+	{
+		$this->db->where('pid', $id);
+		$this->db->select('*');
+		$this->db->from('portfolio');
+		$this->db->join('category', 'category.id = portfolio.cid');
+		$query = $this->db->get();
+		return $query->result();
+	}
 	function showproduct()
 	{
 		$query=$this->db->get('product');

@@ -26,6 +26,15 @@ class Home extends CI_Controller {
 		$this->load->view('portfolio',$details);
 		$this->load->view('footer');
 	}
+	public function pdetails($id)
+	{   $details=$this->user->showportfolio1($id);
+        $data['pname']=$details[0]->pname;
+		$data['pdescr']=$details[0]->pdescr;
+		$data['pimage']=$details[0]->pimage;
+		$this->load->view('header');
+		$this->load->view('pdetails',$data);
+		$this->load->view('footer');
+	}
 	public function services()
 	{   
 		$details['query']=$this->user->showservice();

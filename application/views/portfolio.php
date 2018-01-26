@@ -123,7 +123,7 @@
 							<div class="GridLex-col-3_sm-3_xs-6_xss-12">
 							
 								<div class="top-destination-item">
-									<a href="#">
+									<a href="<?php echo base_url();?>index.php/home/pdetails/<?php echo $row->pid;?>">
 										<div class="image">
 											<img src="<?php echo base_url();?>uploads/portfolio/thumb/<?php echo $row->pimage;?>" alt="images" />
 										</div>

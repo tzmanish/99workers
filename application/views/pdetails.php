@@ -9,13 +9,13 @@
 
 					<div class="row">
 						<div class="col-md-8" >
-							<center><img src="<?php echo base_url();?>/media/images/top-destinations/01.jpg" alt="images" /></center>
+							<center><img src="<?php echo base_url();?>uploads/portfolio/thumb/<?php echo $pimage;?>" alt="images" /></center>
 						</div>
 
 						
 						<div class="col-xs-12 col-sm-7 col-md-4 mt-20">
 							
-							
+							<!--
 							<div class="review-wrapper">
 					
 								<div class="review-header">
@@ -51,7 +51,7 @@
 									</div>
 									
 								</div>
-								
+								-->
 								<div class="review-content">
 						
 									<ul class="review-list">
@@ -66,8 +66,9 @@
 												
 													<div class="review-content" style="text-align: justify;">
 													
-														<h4>Over many our good lady feet ask that</h4>
-														<p>It as announcing it me stimulated frequently continuing. Least their she you now above going stand forth. He pretty future afraid should genius spirit on. Set property addition building put likewise get. Of will at sell well at as. Too want but tall nay like old. Removing yourself be in answered he.</p>
+														<h2 style="text-transform: capitalize;"><?php echo $pname;?></h2>
+														<hr>
+														<p><?php echo $pdescr;?></p>
 													
 													</div>
 													
@@ -77,7 +78,8 @@
 											</div>
 											
 										</li>
-										<li class="clearfix">
+										
+								<!--<li class="clearfix">
 										
 											<div class="row">
 											
@@ -142,7 +144,6 @@
 									
 									
 								</div>
-								
 								<div id="review-form" class="review-form">
 									
 									<h3 class="review-form-title">Leave Your Review</h3>
@@ -202,7 +203,7 @@
 									
 									</form>
 								
-								</div>
+								</div>-->
 								
 							</div>
 								
