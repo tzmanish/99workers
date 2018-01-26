@@ -129,4 +129,13 @@ class Home extends CI_Controller {
         }
         $this->load->view('submsg',$details);
 	}
+		function logout()
+	{
+		// destroy session
+        $data = array('login' => '', 'uname' => '', 'uid' => '');
+        $this->session->unset_userdata($data);
+        $this->session->sess_destroy();
+		redirect($_SERVER['HTTP_REFERER']);
+	}
+	
 }
