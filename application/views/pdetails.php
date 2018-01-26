@@ -66,7 +66,7 @@
 												
 													<div class="review-content" style="text-align: justify;">
 													
-														<h2 style="text-transform: capitalize;"><?php echo $pname;?></h2>
+														<h2 style="text-transform: capitalize;"><?php echo $pname;?>, <small><?php echo $name;?></small></h2>
 														<hr>
 														<p><?php echo $pdescr;?></p>
 													
