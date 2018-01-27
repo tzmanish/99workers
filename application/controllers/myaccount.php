@@ -298,4 +298,11 @@ class myaccount extends CI_Controller {
 		
 		$this->paypal_lib->paypal_auto_form();
 	}
+    public function transaction()
+	{		$details['query']=$this->user->pt1();
+     		$this->load->view('header');
+    	    $this->load->view('sideuser');
+		    $this->load->view('transaction',$details);
+		    $this->load->view('footer');
+    }
 }

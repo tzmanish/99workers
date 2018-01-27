@@ -230,5 +230,15 @@ class user extends CI_Model
 	    return NULL;
 
 	}
+	function pt1()
+	{ 
+	   $this->db->select('*');
+		$this->db->from('payments');
+		$this->db->join('user', 'user.uid = payments.user_id');
+		$this->db->join('project', 'project.pid = payments.product_id');
+		$query = $this->db->get();
+		return $query->result();
+
+	}
 
 }

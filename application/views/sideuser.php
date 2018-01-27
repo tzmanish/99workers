@@ -32,7 +32,7 @@
 										
 										<li><a href="#" ><span class=""><i class="glyphicon glyphicon-th-large"></i>Account</span></a></li>
 
-										<li><a href="#">Transaction Report</a></li>
+										<li><a href="<?php echo base_url();?>index.php/myaccount/transaction">Transaction Report</a></li>
 										<li><a href="#">Payment Due</a></li>
 										<li><a href="<?php echo base_url();?>index.php/myaccount/editp"><span class=""><i class="glyphicon glyphicon-user"></i>Edit profile</span></a></li>
 										<li><a href="<?php echo base_url();?>index.php/myaccount/cpass">Change password</a></li>
