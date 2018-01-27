@@ -7,12 +7,14 @@
 						                <tr>
 						                  <th>Project Name</th>
 						                  <th>Status</th>
+						                  <th>Actions</th>
 						                </tr>
 						              </thead>
 						              <tfoot>
 						                <tr>
 						                  <th>Project Name</th>
 						                  <th>Status</th>
+						                  <th>Actions</th>
 						                </tr>
 						              </tfoot>
 						              <tbody>
@@ -21,6 +23,7 @@
 						                <tr>
 						                  <td><?php echo $row->pname;?></td>
 						                  <td><?php if($row->pstatus==1){ echo "compleated";}else{echo "ongoing";}?></td>
+                  						  <td><a href="<?php echo base_url();?>index.php/myaccount/chat/<?php echo $row->pid;?>/<?php echo $row->uid;?>" class="btn">Chat</a></td>
 						                </tr>
 						                <?php }?>
 						              </tbody>

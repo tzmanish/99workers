@@ -170,5 +170,19 @@ class user extends CI_Model
 	    return NULL;
 
 	}
+	function chat($pid,$uid)
+	{
+		$this->db->where('pid',$pid);
+		$this->db->where('uid',$uid);
+		$this->db->order_by("dt","desc");
+		$query=$this->db->get('chat');
+		return $query->result();
+
+	}
+	function inschat($data)
+    {
+		return $this->db->insert('chat', $data);
+	}
+
 
 }
