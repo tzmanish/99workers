@@ -26,7 +26,8 @@
 
 <div class="content-wrapper">
     <div class="container-fluid scren">
-    	<div class="col-md-12" style="overflow: scroll;">
+    	<div class="col-md-12">
+            <br><br>
     		<?php foreach ($query as $row){
     			if($row->sentby=="0"){?>
     		<div class="sent"><?php echo $row->msg;?><?php if(!empty($row->image)){?><img class="img-responsive img center-img" src="<?php echo base_url();?>uploads/chat/thumb/<?php echo $row->image; ?>"><?php }?> </div>

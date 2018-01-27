@@ -2,8 +2,8 @@
 	.chatbox{ background-color: grey; position: relative; top: 0px; margin: 0; padding: 0;}
 	.cont{ overflow: auto; height: 500px; }
 	.scren{ padding: 0; }
-	.sent{background-color: #4169e1; left: 20px; text-align: left; color: white; padding: 5px; margin-right: 55%; margin-top: 2px; border-radius: 20px 20px 20px 0;}
-	.recieved{background-color: gray; right: 20px; text-align: right; color: white; padding: 5px; margin-left: 55%; margin-top: 2px;border-radius: 20px 20px 0 20px;}
+	.recieved{background-color: #4169e1; left: 20px; text-align: left; color: white; padding: 5px; margin-right: 55%; margin-top: 2px; border-radius: 20px 20px 20px 0;}
+	.sent{background-color: gray; right: 20px; text-align: right; color: white; padding: 5px; margin-left: 55%; margin-top: 2px;border-radius: 20px 20px 0 20px;}
 	.img{width: 100%; padding: 5px;}
 	#file{
 	width: 0.1px;

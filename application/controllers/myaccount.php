@@ -200,6 +200,7 @@ class myaccount extends CI_Controller {
 		if ($this->form_validation->run() == FALSE)
         {	
         	$details['query']=$this->user->chat($pid,$uid);
+        	$result=$this->user->chatupdate($pid,$uid);
         	$details['uid']=$uid;
         	$details['pid']=$pid;
     	    $this->load->view('header');
