@@ -15,9 +15,10 @@ class Admin extends CI_Controller {
 
 	public function index()
 	{
-		$details['query']=$this->user1->showproject();
+		$details['query2']=$this->user1->tpw();
+		$details['query1']=$this->user1->pt();
 		$this->load->view('admin/header');
-		$this->load->view('admin/home');
+		$this->load->view('admin/home', $details);
 		$this->load->view('admin/footer');
 	}
 	public function portfolio()
