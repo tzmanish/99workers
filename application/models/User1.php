@@ -332,12 +332,21 @@ class user1 extends CI_Model
 
 	}
 	function pt1()
-	{ 
+	{ ;
 	   $this->db->select('*');
 		$this->db->from('payments');
 		$this->db->join('user', 'user.uid = payments.user_id');
 		$this->db->join('project', 'project.pid = payments.product_id');
 		$query = $this->db->get();
+		return $query->result();
+
+	}
+	function due($uid,$pid)
+	{ 
+		
+		$this->db->where('user_id',$uid);
+		$this->db->where('product_id',$pid)
+		$query=$this->db->get('payments');
 		return $query->result();
 
 	}

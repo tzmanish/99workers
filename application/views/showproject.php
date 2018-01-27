@@ -24,7 +24,7 @@
 						                <?php foreach ($query as $row) {?>
 						                <tr>
 						                  <td><?php echo $row->pname;?></td>
-						                  <td><?php echo $row->cost;?></td>
+						                  <td>$<?php echo $row->cost;?></td>
 						                  <td><?php if($row->pstatus==1){ echo "compleated";}else if($row->pstatus==0){echo "ongoing";}else{echo "suspended";}?></td>
                   						  <td><a href="<?php echo base_url();?>index.php/myaccount/chat/<?php echo $row->pid;?>/<?php echo $row->uid;?>" class="btn">Chat(<?php $details=$this->user->countmsgi($this->session->userdata('uid'),$row->pid ); if($details){echo "$details";}else{echo '0';} ?>)</a>
                   						  	<?php if($row->pstatus==1 || $row->pstatus==0){ ?>
