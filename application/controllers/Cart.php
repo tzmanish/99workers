@@ -5,7 +5,7 @@ class cart extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->helper(array('form','url', 'html','text','typography','date'));
-		$this->load->library(array('session', 'form_validation','pagination'));
+		$this->load->library(array('session', 'form_validation','pagination','cart'));
 		$this->load->database();
 		$this->load->model('user');
 	}
@@ -39,24 +39,19 @@ class cart extends CI_Controller
 	{	
 		$uid=$this->session->userdata('uid');
 		$postid=$this->input->post('id');
-		$qty=$this->input->post('qty');
-		$category=$this->input->post('category');
-		$attributevalue=$this->input->post('attributevalue');
-		$checkcart = $this->db->query('select * from cart 
-			                            where productid="'.$postid.'" and attributevalue="'.$attributevalue.'"
-			                            and uid = "'.$uid.'"');
+		$qty="1";
+		$attributevalue="product";
+     	$checkcart = $this->db->query('select * from cart 
+			                            where productid="'.$postid.'" and uid = "'.$uid.'"');
 		$resultcheckcart = $checkcart->num_rows();
 
 
 		if($resultcheckcart == '0' ){
-		$data=array('productid'=>$postid,'uid'=>$uid,'item'=>$qty,'category'=>$category,'attributevalue'=>$attributevalue);
+		$data=array('productid'=>$postid,'uid'=>$uid,'item'=>$qty,'attributevalue'=>$attributevalue);
 		$this->db->insert('cart',$data);
 		}
 		else if($resultcheckcart >='1' ){
-			$data=$this->user->get_cart_qty($uid,$postid,$attributevalue);
-    		$item1=$data[0]->item;
-    		$item=$item1+1;
-			$this->db->query('update cart set item="'.$item.'" where productid="'.$postid.'" and attributevalue="'.$attributevalue.'" and uid="'.$uid.'"');
+				
 			}
 	}
 	 public function cartadd1()
@@ -64,11 +59,10 @@ class cart extends CI_Controller
 	 
 		$data = array(
         'id'  =>$this->input->post('id'),
-        'qty'     => $this->input->post('qty'),
+        'qty'     =>"1",
         'price'   => 39.95,
         'name'    => 'T-Shirt',
-        'attributevalue' =>$this->input->post('attributevalue'),
-        'category' =>$this->input->post('category')
+        'attributevalue' =>"productid"
 		);
 		$this->cart->insert($data);
 	

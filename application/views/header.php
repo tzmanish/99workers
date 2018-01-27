@@ -81,6 +81,32 @@
 								<a href="#">Pay Us</a>
 								
 							</li>
+							<li>
+								<a href="<?php echo base_url();?>index.php/cart" style="background-color: grey;color: #fff;opacity: 0.6;"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (<?php 
+            if(!empty($this->session->userdata('uid')))
+            {
+                $detail1=$this->user->countproduct($this->session->userdata('uid'));
+                    if(!empty($detail1))
+                      { 
+                        echo $detail1; 
+                      }
+                  else{
+                    echo"0";
+                    }
+            }
+            elseif(!empty($this->cart->contents()))
+            {
+              $i=0;
+              $cart = $this->cart->contents();
+              foreach($cart as $items)
+              {
+                $i++;
+              }
+               echo $i;
+            }
+            else{echo"0";} ?>)</a>
+								
+							</li>
 							<?php if ($this->session->userdata('fname')){ ?> 
 							<li>
 								<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('fname'), 0, 6); ?>&nbsp;&nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
@@ -96,7 +122,20 @@
 							</li>
 							
 							<?php } else{?>
-							<li><a href="<?php echo base_url();?>index.php/login" style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a></li>
+							<li>
+								<a  style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a>
+								<ul style="padding-right: 10px;padding-left: 10px;">
+	                                <?php $attributes = array("name" => "loginform");
+            echo form_open("login", $attributes);?>
+                                    <br>
+									<input type="text" class="form-control" placeholder="Email"  name="email">
+									<br>
+									<input type="Password" class="form-control" placeholder="Password" name="password">
+									<br>
+									<button type="submit" class="btn btn-primary btn-block " ><i class="fa fa-lock"></i> Login</button>
+									<br>
+								</ul>
+							</li>
 							<li><a href="<?php echo base_url();?>index.php/signup" style="background-color:#008000;color: #fff;">&nbsp;SignUp &nbsp;<i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
 							<?php }?>
 						</ul>
@@ -108,9 +147,10 @@
 					</div>
 				 </div>
 				</div>
-				 <div class="container-fluid" style="background-color: #000;height: 45px; color: #fff;padding-left: 15%;padding-right:15%;padding-top: 5px;">
+				 <div class="row" style="background-color: #000;height: 45px; color: #fff;padding-top: 5px;margin-left: 0px;margin-right: 0px;">
+				 	<div class="container">
 				 	<div  id="navbar" class="navbar-nav-wrapper1">
-				 		<ul class="nav navbar-nav" id="responsive-menu">
+				 		<ul class="nav navbar-nav navbar-nav1" id="responsive-menu">
 						
 							<li>
 								<a href="<?php echo base_url();?>index.php/home/whoweare" style=" color: #fff;"><i class="fa fa-users" aria-hidden="true"></i> Who We Are</a>
@@ -135,12 +175,16 @@
 									
 								</ul>
 							</li>
-							<li><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;">&nbsp;Start Project &nbsp;&nbsp;</a></li>
 						</ul>
 				 	</div>
+				 	<div class="nav-mini-wrapper">
+						<ul class="nav-mini">
+							<li style="float:right;background-color:#008000;"><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;text-transform:capitalize;">&nbsp;&nbsp;&nbsp;Start Project &nbsp;&nbsp;</a></li>
+						</ul>
+				      <div id="slicknav-mobile" style="color: #000;background-color: #fff;"></div>
+					</div>
 			     </div>
-
-				<div id="slicknav-mobile" style="color: #000;background-color: #fff;"></div>
+                </div>
 			</nav>
 			<!-- end Navbar (Header) -->
 

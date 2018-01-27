@@ -7,9 +7,11 @@ class myaccount extends CI_Controller {
 		
 		parent::__construct();
 		$this->load->helper(array('form','url'));
-		$this->load->library(array('session', 'form_validation','pagination'));
+		$this->load->library(array('session', 'form_validation','pagination','cart'));
 		$this->load->database();
 		$this->load->model('user');
+		if(!$this->session->userdata('uid')){
+                redirect('login', 'refresh');}
 
 	}
 

@@ -7,7 +7,7 @@ class Home extends CI_Controller {
 		
 		parent::__construct();
 		$this->load->helper(array('form','url'));
-		$this->load->library(array('session', 'form_validation','pagination'));
+		$this->load->library(array('session', 'form_validation','pagination','cart'));
 		$this->load->database();
 		$this->load->model('user');
 
@@ -65,6 +65,7 @@ class Home extends CI_Controller {
 	}
 	public function productdetails($id)
 	{   $details=$this->user->showproduct1($id);
+		$data['pid']=$details[0]->pid;
         $data['pname']=$details[0]->pname;
 		$data['pdescr']=$details[0]->pdescr;
 		$data['pimage']=$details[0]->pimage;
