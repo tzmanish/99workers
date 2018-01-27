@@ -2,9 +2,26 @@
 	.chatbox{ background-color: grey; position: relative; top: 0px; margin: 0; padding: 0;}
 	.cont{ overflow: auto; height: 500px; }
 	.scren{ padding: 0; }
-	.sent{background-color: blue; left: 20px; text-align: left; color: white; padding: 5px; margin-right: 55%; margin-top: 2px; border-radius: 20px 20px 20px 0;}
+	.sent{background-color: #4169e1; left: 20px; text-align: left; color: white; padding: 5px; margin-right: 55%; margin-top: 2px; border-radius: 20px 20px 20px 0;}
 	.recieved{background-color: gray; right: 20px; text-align: right; color: white; padding: 5px; margin-left: 55%; margin-top: 2px;border-radius: 20px 20px 0 20px;}
 	.img{width: 100%; padding: 5px;}
+	#file{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;}
+	#file + label {
+    color: white;
+    background-color: grey;
+    display: inline-block;cursor: pointer;
+}
+
+#file:focus + label,
+#file + label:hover {
+    background-color: black;
+}
 </style>
 
 						<div class="col-xs-12 col-sm-8 col-md-9 mt-20">
@@ -20,8 +37,9 @@
 							          	<div class="row" style="padding-left: 20px;padding-right: 20px; ">
 							            	<textarea class="col-md-12" type="text" class="form-control" placeholder="Wanna say something to admin..."  name="message"></textarea>
 							            	<div class="bt">
-							              	<button class="col-md-6 btn btn-primary " type="submit" name="submit" value="Upload" ><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-							                <input 	class="btn btn-primary col-md-6 " style="background-color: white;"  type="file" class="form-control"  name="picture"></div>
+								                <input 	class="col-md-6 "  type="file" id="file" class="form-control"  name="picture"><label class="col-md-6 btn" for="file">Choose a file</label>
+								              	<button class="col-md-6 btn btn-primary " type="submit" name="submit" value="Upload" ><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+							              	</div>
 
 											<input type="hidden" name="name" value="sent">
 											<input type="hidden" name="uid" value="<?php echo $uid;?>">
