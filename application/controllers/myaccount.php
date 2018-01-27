@@ -282,7 +282,7 @@ class myaccount extends CI_Controller {
 		$notifyURL = base_url().'index.php/paypal/ipn'; //ipn url
 		//get particular product data
 		$uid=$this->input->post('pid');
-		$amount=$this->input->post('amount');
+		$amount=$this->input->post('amount');$type=$this->input->post('type');
 		$userID =$this->session->userdata('uid'); //current user id
 		$logo = base_url().'assets/images/codexworld-logo.png';
 		
@@ -292,7 +292,8 @@ class myaccount extends CI_Controller {
 		$this->paypal_lib->add_field('item_name', $uid);
 		$this->paypal_lib->add_field('custom', $userID);
 		$this->paypal_lib->add_field('item_number','1');
-		$this->paypal_lib->add_field('amount',  $amount);		
+		$this->paypal_lib->add_field('amount',  $amount);
+		$this->paypal_lib->add_field('product_type',  $type);		
 		$this->paypal_lib->image($logo);
 		
 		$this->paypal_lib->paypal_auto_form();
