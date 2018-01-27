@@ -40,7 +40,7 @@
                                                         <b>Deposit Currency</b>
                                                     </div>
                                                     <div class="col-xs-6 col-sm-6 text-right">
-                                                        <input type="" name="" value="USD" readonly>
+                                                        USD
                                                     </div>
                                                 </div><br>
                                             
@@ -66,26 +66,11 @@
                                                         Deposit Amount
                                                     </div>
                                                     <div class="col-xs-3 col-sm-3 text-right ">
-                                                        <input type="number" name="amount" value="">
+                                                        <input type="number" name="amount" value="" class="col-xs-12" required>
                                                     </div>
-                                                    <div class="col-xs-3 col-sm-3 text-right">
+                                                    <div class="col-xs-3 col-sm-3 text-right" >
                                                         USD
                                                     </div>
-                                                </div>
-                                            </li>
-                                            
-                                            <li class="divider"></li>
-                                            
-                                            <li>
-                                                <div class="row gap-10 mt-10">
-                                                    <div class="col-xs-6 col-sm-6">
-                                                        <span class="font600">Total </span>
-                                                    </div>
-                                                    <div class="col-xs-3 col-sm-3 text-right ">
-                                                        Amount
-                                                    </div>
-                                                    <div class="col-xs-3 col-sm-3 text-right">
-                                                        EUR
                                                 </div>
                                             </li>
                                             

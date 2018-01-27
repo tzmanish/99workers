@@ -17,9 +17,9 @@ class Products extends CI_Controller
 	
 	function buy($id){
 		//Set variables for paypal form
-		$returnURL = base_url().'paypal/success'; //payment success url
-		$cancelURL = base_url().'paypal/cancel'; //payment cancel url
-		$notifyURL = base_url().'paypal/ipn'; //ipn url
+		$returnURL = base_url().'index.php/paypal/success'; //payment success url
+		$cancelURL = base_url().'index.php/paypal/cancel'; //payment cancel url
+		$notifyURL = base_url().'index.php/paypal/ipn'; //ipn url
 		//get particular product data
 		$userID =$this->session->userdata('uid'); //current user id
 		$logo = base_url().'assets/images/codexworld-logo.png';
