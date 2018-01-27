@@ -27,7 +27,7 @@
 						                <tr>
 						                  <td><?php echo $row->txn_id;?></td>
 						                  <td><?php echo $row->pname;?></td>
-						                  <td><?php echo $row->pstatus;?></td>
+						                  <td><?php if($row->pstatus==1){ echo "compleated";}else if($row->pstatus==0){echo "ongoing";}else{echo "suspended";}?></td>
 						                  <td>$ <?php echo $row->payment_gross;?></td>
 						                  <td><?php echo $row->payment_status; echo"<br>";  echo $row->payer_email;  ?></td>
 						                </tr>
