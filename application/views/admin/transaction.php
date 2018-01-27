@@ -36,7 +36,7 @@
                   <td><?php echo $row->pname;?></td>
                   <td><?php echo $row->pstatus;?></td>
                   <td>$ <?php echo $row->payment_gross;?></td>
-                  <td><?php echo $row->payment_status; echo"<br>";  echo"payer_email"; ?></td>
+                  <td><?php echo $row->payment_status; echo"<br>";  echo $row->payer_email;  ?></td>
                 </tr>
                 <?php }?>
               </tbody>
