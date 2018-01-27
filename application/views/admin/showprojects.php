@@ -14,6 +14,8 @@
                   <th>Budget</th>
                   <th>Status</th>
                   <th>Category</th>
+                  <th>user</th>
+                  <th>Actions</th>
                 </tr>
               </thead>
               <tfoot>
@@ -23,6 +25,8 @@
                   <th>Budget</th>
                   <th>Status</th>
                   <th>Category</th>
+                  <th>user</th>
+                  <th>Actions</th>
                 </tr>
               </tfoot>
               <tbody>
@@ -33,7 +37,12 @@
                   <td><?php echo $row->dscr;?></td>
                   <td><?php echo $row->cost;?></td>
                   <td><?php if($row->pstatus==1){ echo "compleated";}else{echo "ongoing";}?></td>
-                  <td><a href="<?php echo base_url();?>index.php/admin/admin/projectstatus/<?php echo $row->pid;?>/<?php echo $row->pstatus;?>" class="btn"><?php if($row->pstatus==0){ echo "compleated";}else{echo "resume";}?></a></td>
+                  <td><?php echo $row->scname;?></td>
+                  <td><?php echo $row->fname;?> <?php echo $row->lname;?></td>
+                  <td>
+                    <a href="<?php echo base_url();?>index.php/admin/admin/projectstatus/<?php echo $row->pid;?>/<?php echo $row->pstatus;?>" class="btn"><?php if($row->pstatus==0){ echo "compleated";}else{echo "resume";}?></a>
+                    <a href="<?php echo base_url();?>index.php/admin/admin/chat/<?php echo $row->pid;?>/<?php echo $row->uid;?>" class="btn">Chat</a>
+                  </td>
                 </tr>
                 <?php }?>
               </tbody>

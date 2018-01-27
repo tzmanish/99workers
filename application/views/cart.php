@@ -6,7 +6,7 @@
 <div class="container">
         <div class="col-xs-12 col-md-9" >
             <?php foreach ($query as $row ) {
-              $details=$this->user->get_product_by_id($row->productid);
+              $details=$this->user->get_product_by_id($row->productid); 
              ?>
             <div class="col-xs-12 col-md-12  cart-layout cart_item" id="cart_<?php echo $row->id;?>">
                 <div class="col-md-1 col-xs-6 cart-line text-right">

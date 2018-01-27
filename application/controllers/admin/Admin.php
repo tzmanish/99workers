@@ -693,5 +693,75 @@ class Admin extends CI_Controller {
 		    $this->load->view('admin/showprojects',$details);
 		    $this->load->view('admin/footer');
     }
+    function chat($pid,$uid)
+    {	
+		$this->form_validation->set_rules('name', 'name', 'required');
+		if ($this->form_validation->run() == FALSE)
+        {	
+        	$details['query']=$this->user1->chat($pid,$uid);
+        	$details['uid']=$uid;
+        	$details['pid']=$pid;
+    	    $this->load->view('admin/header');
+	        $this->load->view('admin/chat',$details);
+	        $this->load->view('admin/footer');	
+        }
+		else
+		{
+			if(!empty($_FILES['picture']['name'])){
+                $config['upload_path'] = 'uploads/chat/';
+                $config['allowed_types'] = 'jpg|jpeg|png|gif';
+                $config['file_name'] = time()."chat";
+                
+                //Load upload library and initialize configuration
+                $this->load->library('upload',$config);
+                $this->upload->initialize($config);
+                
+                if($this->upload->do_upload('picture')){
+                    $uploadData = $this->upload->data();
+                     $this->gallery_path = realpath(APPPATH . '../uploads/chat/');//fetching path
+                     $config1 = array(
+                          'source_image' => $uploadData['full_path'], //get original image
+                          'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
+                          'maintain_ratio' => TRUE,
+                          'width' => 600
+                           
+                        );
+                        $this->load->library('image_lib', $config1); //load library
+                        $this->image_lib->resize(); //generating thumb
+
+                    $picture = $uploadData['file_name'];
+                }
+                else{
+                    $picture = '';
+            }
+            }
+            else{
+                $picture = '';
+            }
+			$data= array(
+				'uid' => $this->input->post('uid'),
+				'pid' => $this->input->post('pid'),
+				'msg' => $this->input->post('message'),
+				'ustatus' => "0",
+				'astatus' => "1",
+				'sentby' => "1",
+				'image' => $picture
+			);
+            $result=$this->user1->inschat($data);
+		if ($result)
+			{
+				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+	  			redirect($_SERVER['HTTP_REFERER']);
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
+				redirect($_SERVER['HTTP_REFERER']);
+			}
+		}
+	
+		
+	}
 
 }

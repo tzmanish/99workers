@@ -47,6 +47,7 @@
 								<center><button type="submit" class="btn btn-primary btn-block " ><i class="fa fa-lock"></i> Login</button></center>
                             </div>
                             <?php echo form_close(); ?>
+          	<?php echo $this->session->flashdata('msg'); ?>
 								<center><a href="#">Forgot Username or Password?</a></center>
 							<div></div>
 							    
