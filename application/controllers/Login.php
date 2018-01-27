@@ -5,7 +5,7 @@ class login extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->helper(array('form','url','html'));
-		$this->load->library(array('session', 'form_validation'));
+		$this->load->library(array('session', 'form_validation','cart'));
 		$this->load->database();
 		$this->load->model('user');
 			if($this->session->userdata('uid')){

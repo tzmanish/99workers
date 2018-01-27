@@ -154,4 +154,21 @@ class user extends CI_Model
 		$query = $this->db->get();
 		return $query->result();
 	}
+	function countproduct($id)
+	{	
+		$this->db->where('uid', $id);
+		$this->db->select_sum('id');
+	    $this->db->from('cart');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
+
 }

@@ -81,6 +81,32 @@
 								<a href="#">Pay Us</a>
 								
 							</li>
+							<li>
+								<a href="<?php echo base_url();?>index.php/cart" style="background-color: grey;color: #fff;opacity: 0.6;"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (<?php 
+            if(!empty($this->session->userdata('uid')))
+            {
+                $detail1=$this->user->countproduct($this->session->userdata('uid'));
+                    if(!empty($detail1))
+                      { 
+                        echo $detail1; 
+                      }
+                  else{
+                    echo"0";
+                    }
+            }
+            elseif(!empty($this->cart->contents()))
+            {
+              $i=0;
+              $cart = $this->cart->contents();
+              foreach($cart as $items)
+              {
+                $i++;
+              }
+               echo $i;
+            }
+            else{echo"0";} ?>)</a>
+								
+							</li>
 							<?php if ($this->session->userdata('fname')){ ?> 
 							<li>
 								<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('fname'), 0, 6); ?>&nbsp;&nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i> </a>

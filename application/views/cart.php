@@ -18,12 +18,10 @@
                     <h5><a href="" style="color: #000;"><?php  echo $details[0]->pname;?> </a></h5>
                 </div>
                 <div class="col-md-2 col-xs-3 cart-line text-center">
-                    <h5>&#8377;  <span id="itemcost_<?php echo $i;?>"><?php echo  $details1[0]->cost;?></span></h5>
+                    <h5>&#8377;  <span id="itemcost_<?php echo $i;?>"><?php echo  $details[0]->cost;?></span></h5>
                 </div>
             </div>
             <div style="boder-bottom:solid 1ps #ccc;"></div><?php $i++;}}?>
-        </div>
-        <div class="col-xs-12 col-md-9" >
             <?php foreach ($query as $row ) {
              ?>
             <div class="col-xs-12 col-md-12  cart-layout cart_item" id="cart_<?php echo $row->id;?>">
@@ -55,25 +53,34 @@
                         <td class="text-right"><h5><strong>&#8377;
                   <span id="totalcost" >
                     <?php $i=0;
-                    if(!empty($this->session->userdata('uid'))){
+                  if(!empty($this->cart->contents()))
+                    { foreach ($cart as $item )
+                        {$details=$this->user->showproduct1($item['id']);
+                            $i=$i+($details[0]->cost*$item['qty']);
+                        }
+                    }
+                    elseif(!empty($this->session->userdata('uid'))){
                    foreach ($query as $row ) {
                    $i=$i+($row->cost*$row->item);}}
                    echo $i;?></span></strong></h5></td>
                     </tr>
                     <tr>
                         
-                        <td><h5>Estimated shipping</h5></td>
-                        <td class="text-right"><h5><strong>0</strong></h5></td>
-                    </tr>
-                    <tr>
-                        
                         <td><h3>Total</h3></td>
                         <td class="text-right"><h3><strong>&#8377;
-                  <span id="totalcost1" ><?php $i=0;
-                  if(!empty($this->session->userdata('uid'))){
+                  <span id="totalcost1" >
+                    <?php $i=0;
+                  if(!empty($this->cart->contents()))
+                    { foreach ($cart as $item )
+                        {$details=$this->user->showproduct1($item['id']);
+                            $i=$i+($details[0]->cost*$item['qty']);
+                        }
+                    }
+                    elseif(!empty($this->session->userdata('uid'))){
                    foreach ($query as $row ) {
                    $i=$i+($row->cost*$row->item);}}
-                   echo $i;?></span></strong></h3></td>
+                   echo $i;?>
+                    </span></strong></h3></td>
                     </tr>
                 </tbody>
             </table>
