@@ -276,5 +276,66 @@ class user1 extends CI_Model
         $data = array('astatus'=>'1');
 		return $this->db->update('chat', $data);
 	}
+	function totalprojectcount()
+	{
+		$this->db->select_sum('id');
+	    $this->db->from('project');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
+
+	function comprojectcount()
+	{
+		$this->db->where('pstatus',"1");
+		$this->db->select_sum('id');
+	    $this->db->from('project');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
+
+	function onprojectcount()
+	{ 
+		$this->db->where('pstatus',"0");
+		$this->db->select_sum('id');
+	    $this->db->from('project');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
+	function pt()
+	{ 
+	   $query=$this->db->get('payments');
+	   return $query->result();
+
+	}
+	function tpw()
+	{ 
+	   $query=$this->db->get('project');
+	   return $query->result();
+
+	}
 
 }?>

@@ -33,6 +33,7 @@
       echo form_open_multipart("myaccount/pay", $attributes);?>
                                                         <input type="hidden" name="pid" value="<?php echo $pid;?>">
                                                         <input type="hidden" name="uid" value="<?php echo $uid;?>">
+                                                        <input type="hidden" name="type" value="project">
                                         <ul class="price-summary-list">
                                  
                                             <div class="row gap-10 mt-10">
