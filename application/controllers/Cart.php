@@ -25,9 +25,7 @@ class cart extends CI_Controller
 		$this->db->delete('cart', array('id'=>$id,
                                           'uid'=>$uid));
     }
-
-
-    public function itemadd()
+ public function itemadd()
     {
     	$uid=$this->session->userdata('uid');
     	$id=$this->input->post('id');
