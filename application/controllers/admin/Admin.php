@@ -671,6 +671,25 @@ class Admin extends CI_Controller {
 	  }
 	  redirect($_SERVER['HTTP_REFERER']);
 	}
+		public function suspend($pid,$status)
+	{
+
+	  if($status=='1' || $status=='0')
+	 {
+	 	$r=$this->user1->projectstatus($pid,'2');
+	 }
+	 else
+	 {
+	 	$r=$this->user1->projectstatus($pid,'0');
+	 }
+	  if($r){
+	  echo "Successfully Updated Data";
+	  }
+	  else {
+		  echo "Can Not Update Data";
+	  }
+	  redirect($_SERVER['HTTP_REFERER']);
+	}
 
 
 	public function showproject()

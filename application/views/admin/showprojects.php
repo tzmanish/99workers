@@ -36,12 +36,13 @@
                   <td><?php echo $row->pname;?></td>
                   <td><?php echo $row->dscr;?></td>
                   <td><?php echo $row->cost;?></td>
-                  <td><?php if($row->pstatus==1){ echo "compleated";}else{echo "ongoing";}?></td>
+                  <td><?php if($row->pstatus==1){ echo "compleated";}else if($row->pstatus==0){echo "ongoing";}else{echo "suspended";}?></td>
                   <td><?php echo $row->scname;?></td>
                   <td><?php echo $row->fname;?> <?php echo $row->lname;?></td>
                   <td>
-                    <a href="<?php echo base_url();?>index.php/admin/admin/projectstatus/<?php echo $row->pid;?>/<?php echo $row->pstatus;?>" class="btn"><?php if($row->pstatus==0){ echo "compleated";}else{echo "resume";}?></a>
                     <a href="<?php echo base_url();?>index.php/admin/admin/chat/<?php echo $row->pid;?>/<?php echo $row->uid;?>" class="btn">Chat(<?php $details=$this->user1->countmsgi($row->pid ); if($details){echo "$details";}else{echo '0';} ?>)</a>
+                    <a href="<?php echo base_url();?>index.php/admin/admin/projectstatus/<?php echo $row->pid;?>/<?php echo $row->pstatus;?>" class="btn"><?php if($row->pstatus==0){ echo "compleated";}else if($row->pstatus==1){echo "resume";}?></a>
+                    <a href="<?php echo base_url();?>index.php/admin/admin/suspend/<?php echo $row->pid;?>/<?php echo $row->pstatus;?>" class="btn" style="color: red;"><?php if($row->pstatus==0 || $row->pstatus==1){ echo "Suspend";}else{echo "resume";}?></a>
                   </td>
                 </tr>
                 <?php }?>
