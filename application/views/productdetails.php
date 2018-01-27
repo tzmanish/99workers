@@ -65,7 +65,11 @@
 											<div class="GridLex-col-4_sm-4_xs-12_xss-12">
 												
 												<div class="GridLex-inner center">
-													<a href="#" class="btn btn-primary btn-block anchor">Buy Now</a>
+													<?php if(!empty($this->session->userdata('uid'))){?>
+			                						<div class="" id="addcartbtn" ><button  class="btn btn-primary btn-block anchor" onclick="javascript:cartadd(<?php echo $pid;?>);"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="btn-text">  ADD TO CART</span></button ></div>
+			                						<?php }else{?>
+			                						<div class="" id="addcartbtn" ><button  class="btn btn-primary btn-block anchor" onclick="javascript:cartadd1(<?php echo $pid;?>);"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="btn-text"> ADD TO CART</span></button ></div>
+			                						<?php }?>
 												</div>
 											
 											</div>
