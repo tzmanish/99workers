@@ -14,14 +14,15 @@
 					<a href="#" class="btn btn-primary btn-lg">Brows Portfolio</a>
 			</div>
 		    </div>
-		</div>	
-	</div>
-	<!-- end hero-header -->
-	<div class="gap" style="background-color: #fff;"></div>
-	<div class="container" >
+		</div>
+    
+	<div class="gap" style="background-color: transparent;"></div>
+	<div class="container-fluid" >
 		<div class="row"  >
-			<div class="col-md-12" style="background-color: #fff;">
-				<div class="col-md-2 col-xs-6">
+			<div class="col-md-12 col-xs-12" style="background-color: #fff;">
+		    <div class="gap" style="background-color: #fff;"></div>
+				<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-2 col-xs-6">
 					<img class="img-responsive center-block serv" src="<?php echo base_url(); ?>media/images/services/gd.jpg">
 					
 				</div>
@@ -45,14 +46,11 @@
 					<img class="img-responsive center-block serv" src="<?php echo base_url(); ?>media/images/services/ws.png">
 					
 				</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="gap" style="background-color: #fff;"></div>
-	
-
-
-
+	</div>
 	<div class="gap" ></div>
 	<div class="container-fluid" style="background-color: #f4f4f4;padding-top: 5%;padding-bottom: 5%;">
 		<div class="row">

@@ -31,8 +31,8 @@
 							<hr>
 			                <div class="col-sm-6 col-md-12">
 								<div class="form-group">
-									<label>Username:</label>
-									<input type="text" class="form-control" placeholder="Username"  name="email">
+									<label>Email:</label>
+									<input type="text" class="form-control" placeholder="Email"  name="email">
 								</div>
 							</div>
 							<div class="clear"></div>

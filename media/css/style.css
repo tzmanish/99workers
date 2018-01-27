@@ -93,11 +93,10 @@ body
     float: left;
 }
 .navbar-nav-wrapper,
-.nav-mini-wrapper {
+.nav-mini-wrapper1 {
     float: right;
 }
-.navbar-nav-wrapper1,
-.nav-mini-wrapper {
+.navbar-nav-wrapper1 {
     float: left;
 }
 .logo-wrapper {
@@ -418,7 +417,7 @@ ul.nav-mini li i {
 
 .hero {
     position: relative;
-    padding: 220px 0 150px;
+    padding:150px 0 0px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -573,7 +572,7 @@ ul.nav-mini li i {
 
 @media only screen and (max-width: 767px) {
     .hero {
-        padding: 80px 0 40px;
+        padding: 80px 0 0px;
     }
     .hero h1 {
         font-size: 40px;
@@ -592,7 +591,7 @@ ul.nav-mini li i {
         width: 280px;
     }
     .hero {
-        padding: 115px 0 70px;
+        padding: 115px 0 0px;
     }
 }
 
