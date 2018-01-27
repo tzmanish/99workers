@@ -170,5 +170,9 @@ class user extends CI_Model
 	    return NULL;
 
 	}
+	public function insertTransaction($data = array()){
+		$insert = $this->db->insert('payments',$data);
+		return $insert?true:false;
+	}
 
 }

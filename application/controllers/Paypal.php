@@ -30,8 +30,8 @@ class Paypal extends CI_Controller
 		//paypal return transaction details array
 		$paypalInfo	= $this->input->post();
 
-		$data['user_id'] = $paypalInfo['custom'];
-		$data['product_id']	= $paypalInfo["item_number"];
+		$data['user_id'] = "1";
+		$data['product_id']	= "1";
 		$data['txn_id']	= $paypalInfo["txn_id"];
 		$data['payment_gross'] = $paypalInfo["payment_gross"];
 		$data['currency_code'] = $paypalInfo["mc_currency"];
