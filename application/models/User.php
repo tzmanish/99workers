@@ -171,6 +171,7 @@ class user extends CI_Model
 
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function chat($pid,$uid)
 	{
 		$this->db->where('pid',$pid);
@@ -191,5 +192,8 @@ class user extends CI_Model
 		return $insert?true:false;
 	}
 >>>>>>> 699789915fbf35f0b84c77819ce121f47d194361
+=======
+
+>>>>>>> 03a9e669b98c371480a41cca43320aa81a35121d
 
 }
