@@ -169,9 +169,9 @@ class user1 extends CI_Model
 	}
     function showcompleatedproject()
 	{
-		$this->db->where('pstatus', "1");
+		$this->db->where('pstatus',"1");
 		$this->db->from('project');
-		$this->db->join('scategory', 'scategory.scid = project.scid');
+		$this->db->join('scategory','scategory.scid = project.scid');
 		$this->db->join('user', 'user.uid = project.uid');
 		$query=$this->db->get();
 		return $query->result();
@@ -180,7 +180,7 @@ class user1 extends CI_Model
 	{
 		$this->db->where('pstatus',"0");
 		$this->db->from('project');
-		$this->db->join('scategory', 'scategory.scid = project.scid');
+		$this->db->join('scategory','scategory.scid = project.scid');
 		$this->db->join('user', 'user.uid = project.uid');
 		$query=$this->db->get();
 		return $query->result();
@@ -196,7 +196,7 @@ class user1 extends CI_Model
 		$this->db->from('chat');
 		$this->db->join('project','project.pid = chat.pid');
 		$this->db->join('scategory','scategory.scid = project.scid');
-		$this->db->join('user', 'user.uid = project.uid');
+		$this->db->join('user','user.uid = project.uid');
 		$query=$this->db->get();
 		return $query->result();
 	}
@@ -235,6 +235,39 @@ class user1 extends CI_Model
 	function inschat($data)
     {
 		return $this->db->insert('chat', $data);
+	}
+	function countmsg()
+	{	
+		$this->db->where('astatus',"0");
+		$this->db->select_sum('id');
+	    $this->db->from('chat');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
+	function countmsgi($pid)
+	{	
+		$this->db->where('astatus',"0");
+		$this->db->where('pid',$pid);
+		$this->db->select_sum('id');
+	    $this->db->from('chat');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
 	}
 	function chatupdate($pid, $uid)
     {

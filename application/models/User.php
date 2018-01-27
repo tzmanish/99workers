@@ -195,5 +195,40 @@ class user extends CI_Model
         $data = array('ustatus'=>'1');
 		return $this->db->update('chat', $data);
 	}
+	function countmsg($uid)
+	{	
+		$this->db->where('ustatus',"0");
+		$this->db->where('uid',$uid);
+		$this->db->select_sum('id');
+	    $this->db->from('chat');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
+	function countmsgi($uid, $pid)
+	{	
+		$this->db->where('ustatus',"0");
+		$this->db->where('uid',$uid);
+		$this->db->where('pid',$pid);
+		$this->db->select_sum('id');
+	    $this->db->from('chat');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
 
 }

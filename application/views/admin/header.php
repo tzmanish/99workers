@@ -198,10 +198,7 @@
         </li>
          <li class="nav-item">
           <a class="nav-link" href="<?php echo base_url();?>index.php/admin/admin/unread">
-            <i class="fa fa-fw fa-envelope"></i>
-            <span class="d-lg-none">Messages
-              <span class="badge badge-pill badge-primary">12 New</span>
-            </span>
+            <i class="fa fa-fw fa-envelope"></i>(<?php $details=$this->user1->countmsg(); if($details){echo "$details";}else{echo '0';} ?>)
           </a>
         </li>
         <li class="nav-item">

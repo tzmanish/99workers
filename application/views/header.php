@@ -107,6 +107,10 @@
             else{echo"0";} ?>)</a>
 								
 							</li>
+							<li>
+								<a href="<?php echo base_url();?>index.php/myaccount/showproject" style="background-color: grey;color: #fff;opacity: 0.6;"><i class="fa fa-bell-o" aria-hidden="true"></i> (<?php $details=$this->user->countmsg($this->session->userdata('uid')); if($details){echo "$details";}else{echo '0';} ?>)</a>
+								
+							</li>
 							<?php if ($this->session->userdata('fname')){ ?> 
 							<li>
 								<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('fname'), 0, 6); ?>&nbsp;&nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
