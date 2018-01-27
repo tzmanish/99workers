@@ -721,6 +721,12 @@ class Admin extends CI_Controller {
 		    $this->load->view('admin/showprojects',$details);
 		    $this->load->view('admin/footer');
     }
+    public function transaction()
+	{		$details['query1']=$this->user1->pt1();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/transaction',$details);
+		    $this->load->view('admin/footer');
+    }
     function chat($pid,$uid)
     {	
 		$this->form_validation->set_rules('name', 'name', 'required');

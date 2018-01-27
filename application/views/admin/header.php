@@ -62,7 +62,7 @@
             <span class="nav-link-text">Account</span>
           </a>
           <ul class="sidenav-second-level collapse" id="Accounts">
-            <li>
+            <!--<li>
               <a href="navbar.html">Available Balance</a>
             </li>
             <li>
@@ -70,9 +70,9 @@
             </li>
             <li>
               <a href="cards.html">Total Earning</a>
-            </li>
+            </li>-->
             <li>
-              <a href="cards.html">Transaction Report</a>
+              <a href="<?php echo base_url();?>index.php/admin/admin/transaction">Transaction Report</a>
             </li>
           </ul>
         </li>
@@ -169,7 +169,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Report">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="<?php echo base_url();?>index.php/admin/admin/">
           	<i class="fa fa-line-chart" aria-hidden="true"></i>
             <span class="nav-link-text">Report</span>
           </a>
