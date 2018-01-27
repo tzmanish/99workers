@@ -10,7 +10,7 @@
                                                         <div class="checkbox checkbox-success">
                        
                                                             <div class="radio radio-danger">
-                                                                <input type="radio" name="radio2" id="radio3" value="option1">
+                                                                <input type="radio" name="radio2" id="radio3" value="option1" checked>
                                                                 <label for="radio3">
                                                                 <b>PayPal</b>
                                                                 </label>
@@ -37,10 +37,7 @@
                                                         <b>Deposit Currency</b>
                                                     </div>
                                                     <div class="col-xs-6 col-sm-6 text-right">
-                                                        <select class="form-control " id="id_state" name="state" >
-                                                        <option value="AK">EUR</option>
-                                                        <option value="WY">RS</option>
-                                                    </select>
+                                                        <input type="" name="" value="USD" readonly>
                                                     </div>
                                                 </div><br>
                                             

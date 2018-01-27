@@ -4,7 +4,7 @@ class Paypal extends CI_Controller
 {
 	 function  __construct(){
 		parent::__construct();
-		$this->load->library('paypal_lib');
+		$this->load->library(array('session', 'form_validation','pagination','cart','paypal_lib'));
 		$this->load->model('product');
 	 }
 	 

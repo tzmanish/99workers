@@ -94,12 +94,7 @@ class Home extends CI_Controller {
 		$this->load->view('editprofile');
 		$this->load->view('footer');
 	}
-	public function checkout()
-	{
-		$this->load->view('header');
-		$this->load->view('checkout');
-		$this->load->view('footer');
-	}
+	
 	public function forgotpass()
 	{
 		$this->load->view('header');
