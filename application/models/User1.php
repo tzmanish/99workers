@@ -331,6 +331,16 @@ class user1 extends CI_Model
 	   return $query->result();
 
 	}
+	function pt1()
+	{ 
+	   $this->db->select('*');
+		$this->db->from('payments');
+		$this->db->join('user', 'user.uid = payments.user_id');
+		$this->db->join('project', 'project.pid = payments.product_id');
+		$query = $this->db->get();
+		return $query->result();
+
+	}
 	function tpw()
 	{ 
 	   $query=$this->db->get('project');
