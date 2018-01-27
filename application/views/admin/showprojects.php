@@ -12,6 +12,7 @@
                   <th>Project Name</th>
                   <th>Description</th>
                   <th>Budget</th>
+                  <th>Due</th>
                   <th>Status</th>
                   <th>Category</th>
                   <th>user</th>
@@ -23,6 +24,7 @@
                   <th>Project Name</th>
                   <th>Description</th>
                   <th>Budget</th>
+                  <th>Due</th>
                   <th>Status</th>
                   <th>Category</th>
                   <th>user</th>
@@ -35,7 +37,8 @@
                 <tr>
                   <td><?php echo $row->pname;?></td>
                   <td><?php echo $row->dscr;?></td>
-                  <td><?php echo $row->cost;?></td>
+                  <td> $ <?php echo $row->cost;?></td>
+                  <td> $ <?php $details3=$this->user->due($row->pid); forech($details3 as $row)echo $row->cost;?></td>
                   <td><?php if($row->pstatus==1){ echo "compleated";}else if($row->pstatus==0){echo "ongoing";}else{echo "suspended";}?></td>
                   <td><?php echo $row->scname;?></td>
                   <td><?php echo $row->fname;?> <?php echo $row->lname;?></td>
