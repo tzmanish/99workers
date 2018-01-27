@@ -212,7 +212,7 @@ class user1 extends CI_Model
 	{
 		$this->db->where('pid',$pid);
 		$this->db->where('uid',$uid);
-		$this->db->order_by("dt","asc");
+		$this->db->order_by("dt","desc");
 		$query=$this->db->get('chat');
 		return $query->result();
 
