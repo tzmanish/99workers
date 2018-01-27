@@ -345,7 +345,7 @@ class user1 extends CI_Model
 	{ 
 		
 		$this->db->where('user_id',$uid);
-		$this->db->where('product_id',$pid)
+		$this->db->where('product_id',$pid);
 		$query=$this->db->get('payments');
 		return $query->result();
 
