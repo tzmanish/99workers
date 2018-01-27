@@ -163,7 +163,7 @@
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="msg">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="<?php echo base_url();?>index.php/admin/admin/unread">
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <span class="nav-link-text">Message Board</span>
           </a>
@@ -197,7 +197,7 @@
           </form>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="<?php echo base_url();?>index.php/admin/admin/unread">
             <i class="fa fa-fw fa-envelope"></i>
             <span class="d-lg-none">Messages
               <span class="badge badge-pill badge-primary">12 New</span>

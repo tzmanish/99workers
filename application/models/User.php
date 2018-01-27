@@ -188,4 +188,12 @@ class user extends CI_Model
 		$insert = $this->db->insert('payments',$data);
 		return $insert?true:false;
 	}
+	function chatupdate($pid, $uid)
+    {
+    	$this->db->where('pid',$pid);
+    	$this->db->where('uid',$uid);
+        $data = array('ustatus'=>'1');
+		return $this->db->update('chat', $data);
+	}
+
 }

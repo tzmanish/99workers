@@ -179,7 +179,7 @@
 				 	</div>
 				 	<div class="nav-mini-wrapper">
 						<ul class="nav-mini">
-							<li style="float:right;background-color:#008000;"><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;text-transform:capitalize;">&nbsp;&nbsp;&nbsp;Start Project &nbsp;&nbsp;</a></li>
+							<li style="float:right;background-color:#008000;"><a data-toggle="modal" href="<?php echo base_url();?>index.php/myaccount/startproject" style="background-color:#008000;color: #fff;text-transform:capitalize;">&nbsp;&nbsp;&nbsp;Start Project &nbsp;&nbsp;</a></li>
 						</ul>
 				      <div id="slicknav-mobile" style="color: #000;background-color: #fff;"></div>
 					</div>
