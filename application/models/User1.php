@@ -160,7 +160,11 @@ class user1 extends CI_Model
 	
     function showproject()
 	{
-		$query=$this->db->get('project');
+		$this->db->select('*');
+		$this->db->from('project');
+		$this->db->join('scategory', 'scategory.scid = project.scid');
+		$this->db->join('user', 'user.uid = project.uid');
+		$query=$this->db->get();
 		return $query->result();
 	}
     function showcompleatedproject()
@@ -203,6 +207,19 @@ class user1 extends CI_Model
     	$this->db->where('aid',$aid);
         $data = array('aname'=>$aname);
 		return $this->db->update('admin', $data);
+	}
+	function chat($pid,$uid)
+	{
+		$this->db->where('pid',$pid);
+		$this->db->where('uid',$uid);
+		$this->db->order_by("dt","desc");
+		$query=$this->db->get('chat');
+		return $query->result();
+
+	}
+	function inschat($data)
+    {
+		return $this->db->insert('chat', $data);
 	}
 
 }?>

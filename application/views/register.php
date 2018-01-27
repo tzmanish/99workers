@@ -43,12 +43,6 @@
 								<label>Create a Password:</label>
 								<input type="Password" class="form-control" placeholder="Password" name="password">
 							</div>
-							<div class="radio-group">
-   							<div class="btn-container">
-								<input type="checkbox" name="checkbox-2" id="checkbox-btn-2-1">
-								<label for="checkbox-btn-2-1" style="text-align: justify; font-size: 14px;">I agree to 99workers.com's Terms & Conditions You have to agree to the 99workers.com terms and conditions before we can create your account.
-								</label>
-							 </div>
 						 </div>
 	
 						<br>
@@ -60,6 +54,9 @@
 						        <span class="sr-only">Loading...</span>
 						    </div>
 						</div></div>
+						
+                            <?php echo form_close(); ?>
+          	<?php echo $this->session->flashdata('msg'); ?>
 					</div>
 		    	</div>
 	    	</div><br>

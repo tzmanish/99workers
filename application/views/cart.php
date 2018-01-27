@@ -23,6 +23,10 @@
             </div>
             <div style="boder-bottom:solid 1ps #ccc;"></div><?php $i++;}}?>
             <?php foreach ($query as $row ) {
+<<<<<<< HEAD
+              $details=$this->user->get_product_by_id($row->productid); 
+=======
+>>>>>>> a42ce7ae0ff93676ddd99421c8798ab472548a06
              ?>
             <div class="col-xs-12 col-md-12  cart-layout cart_item" id="cart_<?php echo $row->id;?>">
                 <div class="col-md-1 col-xs-6 cart-line text-right">
