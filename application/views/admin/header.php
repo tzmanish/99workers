@@ -163,7 +163,7 @@
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="msg">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="<?php echo base_url();?>index.php/admin/admin/unread">
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <span class="nav-link-text">Message Board</span>
           </a>

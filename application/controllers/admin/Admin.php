@@ -693,12 +693,20 @@ class Admin extends CI_Controller {
 		    $this->load->view('admin/showprojects',$details);
 		    $this->load->view('admin/footer');
     }
+	public function unread()
+	{	
+        	$details['query']=$this->user1->unread();
+     		$this->load->view('admin/header');
+		    $this->load->view('admin/showprojects',$details);
+		    $this->load->view('admin/footer');
+    }
     function chat($pid,$uid)
     {	
 		$this->form_validation->set_rules('name', 'name', 'required');
 		if ($this->form_validation->run() == FALSE)
         {	
         	$details['query']=$this->user1->chat($pid,$uid);
+        	$result=$this->user1->chatupdate($pid,$uid);
         	$details['uid']=$uid;
         	$details['pid']=$pid;
     	    $this->load->view('admin/header');

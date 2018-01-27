@@ -170,13 +170,19 @@ class user1 extends CI_Model
     function showcompleatedproject()
 	{
 		$this->db->where('pstatus', "1");
-		$query=$this->db->get('project');
+		$this->db->from('project');
+		$this->db->join('scategory', 'scategory.scid = project.scid');
+		$this->db->join('user', 'user.uid = project.uid');
+		$query=$this->db->get();
 		return $query->result();
 	}
     function showongoingproject()
 	{
 		$this->db->where('pstatus',"0");
-		$query=$this->db->get('project');
+		$this->db->from('project');
+		$this->db->join('scategory', 'scategory.scid = project.scid');
+		$this->db->join('user', 'user.uid = project.uid');
+		$query=$this->db->get();
 		return $query->result();
 	}
 	function projectstatus($pid,$pstatus)
@@ -184,6 +190,15 @@ class user1 extends CI_Model
 		$this->db->where('pid',$pid);
         $data = array('pstatus'=>$pstatus);
 		return($this->db->update('project',$data));
+	}
+    function unread()
+	{   $this->db->where('astatus',"0");
+		$this->db->from('chat');
+		$this->db->join('project','project.pid = chat.pid');
+		$this->db->join('scategory','scategory.scid = project.scid');
+		$this->db->join('user', 'user.uid = project.uid');
+		$query=$this->db->get();
+		return $query->result();
 	}
 
 	/* admin */
@@ -220,6 +235,13 @@ class user1 extends CI_Model
 	function inschat($data)
     {
 		return $this->db->insert('chat', $data);
+	}
+	function chatupdate($pid, $uid)
+    {
+    	$this->db->where('pid',$pid);
+    	$this->db->where('uid',$uid);
+        $data = array('astatus'=>'1');
+		return $this->db->update('chat', $data);
 	}
 
 }?>
