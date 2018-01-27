@@ -2,6 +2,13 @@
 
 class user1 extends CI_Model
 {
+	function get_user($email, $pwd)
+	{
+		$this->db->where('aaid', $email);
+		$this->db->where('pass', $pwd);
+        $query = $this->db->get('admin');
+		return $query->result();
+	}
 	function insert_category($data)
     {
 		return $this->db->insert('category', $data);
@@ -341,11 +348,9 @@ class user1 extends CI_Model
 		return $query->result();
 
 	}
-	function due($uid,$pid)
+	function due($pid)
 	{ 
-		
-		$this->db->where('user_id',$uid);
-		$this->db->where('product_id',$pid)
+		$this->db->where('product_id',$pid);
 		$query=$this->db->get('payments');
 		return $query->result();
 

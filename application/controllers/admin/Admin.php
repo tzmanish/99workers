@@ -10,7 +10,8 @@ class Admin extends CI_Controller {
 		$this->load->library(array('session', 'form_validation','pagination'));
 		$this->load->database();
 		$this->load->model('user1');
-
+       if(!$this->session->userdata('aaid')){
+                redirect('admin/loginadmin', 'refresh');}
 	}
 
 	public function index()
