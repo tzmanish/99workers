@@ -97,7 +97,7 @@
 							
 							<?php } else{?>
 							<li>
-								<a href="<?php echo base_url();?>index.php/login" style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a>
+								<a  style="background-color: grey;color: #fff;">&nbsp;&nbsp;LogIn&nbsp;&nbsp;</a>
 								<ul style="padding-right: 10px;padding-left: 10px;">
 	                                <?php $attributes = array("name" => "loginform");
             echo form_open("login", $attributes);?>
@@ -124,7 +124,7 @@
 				 <div class="row" style="background-color: #000;height: 45px; color: #fff;padding-top: 5px;margin-left: 0px;margin-right: 0px;">
 				 	<div class="container">
 				 	<div  id="navbar" class="navbar-nav-wrapper1">
-				 		<ul class="nav navbar-nav" id="responsive-menu">
+				 		<ul class="nav navbar-nav navbar-nav1" id="responsive-menu">
 						
 							<li>
 								<a href="<?php echo base_url();?>index.php/home/whoweare" style=" color: #fff;"><i class="fa fa-users" aria-hidden="true"></i> Who We Are</a>
@@ -155,10 +155,10 @@
 						<ul class="nav-mini">
 							<li style="float:right;background-color:#008000;"><a data-toggle="modal" href="#registerModal" style="background-color:#008000;color: #fff;text-transform:capitalize;">&nbsp;&nbsp;&nbsp;Start Project &nbsp;&nbsp;</a></li>
 						</ul>
+				      <div id="slicknav-mobile" style="color: #000;background-color: #fff;"></div>
 					</div>
 			     </div>
                 </div>
-				<div id="slicknav-mobile" style="color: #000;background-color: #fff;"></div>
 			</nav>
 			<!-- end Navbar (Header) -->
 
