@@ -38,7 +38,7 @@
                   <td><?php echo $row->pname;?></td>
                   <td><?php echo $row->dscr;?></td>
                   <td> $ <?php echo $row->cost;?></td>
-                  <td> $ <?php $details3=$this->user->due($row->pid); forech($details3 as $row)echo $row->cost;?></td>
+                  <td> $ <?php $p=0; $details3=$this->user1->due($row->pid); foreach($details3 as $row1){$p=$p+$row1->payment_gross;}echo $l=$row->cost-$p;?></td>
                   <td><?php if($row->pstatus==1){ echo "compleated";}else if($row->pstatus==0){echo "ongoing";}else{echo "suspended";}?></td>
                   <td><?php echo $row->scname;?></td>
                   <td><?php echo $row->fname;?> <?php echo $row->lname;?></td>

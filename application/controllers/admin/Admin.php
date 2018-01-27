@@ -10,7 +10,6 @@ class Admin extends CI_Controller {
 		$this->load->library(array('session', 'form_validation','pagination'));
 		$this->load->database();
 		$this->load->model('user1');
-
 	}
 
 	public function index()
