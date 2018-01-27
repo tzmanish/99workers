@@ -145,4 +145,10 @@ class user extends CI_Model
     	$data = array('password'=>$pass);
         return $this->db->update('user', $data);
 	}
+	function showcart($uid)
+	{
+		$this->db->where('uid',$uid);
+		$query=$this->db->get('cart');
+		return $query->result();
+	}
 }
