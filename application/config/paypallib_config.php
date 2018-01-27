@@ -8,7 +8,7 @@
 $config['sandbox'] = TRUE; // FALSE for live environment
 
 // PayPal Business Email ID
-$config['business'] = 'info@codexworld.com';
+$config['business'] = 'amitanand.kvj.2-facilitator@gmail.com';
 
 // If (and where) to log ipn to file
 $config['paypal_lib_ipn_log_file'] = BASEPATH . 'logs/paypal_ipn.log';

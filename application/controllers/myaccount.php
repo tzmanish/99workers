@@ -7,7 +7,7 @@ class myaccount extends CI_Controller {
 		
 		parent::__construct();
 		$this->load->helper(array('form','url'));
-		$this->load->library(array('session', 'form_validation','pagination','cart'));
+		$this->load->library(array('session', 'form_validation','pagination','cart','paypal_lib'));
 		$this->load->database();
 		$this->load->model('user');
 		if(!$this->session->userdata('uid')){
@@ -268,8 +268,33 @@ class myaccount extends CI_Controller {
 	}
 	public function checkout($pid,$uid)
 	{
+		$data['pid']=$pid;
+		$data['uid']=$uid;
+
 		$this->load->view('header');
-		$this->load->view('checkout');
+		$this->load->view('checkout',$data);
 		$this->load->view('footer');
+	}
+	function pay(){
+		//Set variables for paypal form
+		$returnURL = base_url().'paypal/success'; //payment success url
+		$cancelURL = base_url().'paypal/cancel'; //payment cancel url
+		$notifyURL = base_url().'paypal/ipn'; //ipn url
+		//get particular product data
+		$uid=$this->input->post('pid');
+		$amount=$this->input->post('amount');
+		$userID =$this->session->userdata('uid'); //current user id
+		$logo = base_url().'assets/images/codexworld-logo.png';
+		
+		$this->paypal_lib->add_field('return', $returnURL);
+		$this->paypal_lib->add_field('cancel_return', $cancelURL);
+		$this->paypal_lib->add_field('notify_url', $notifyURL);
+		$this->paypal_lib->add_field('item_name', $uid);
+		$this->paypal_lib->add_field('custom', $userID);
+		$this->paypal_lib->add_field('item_number','1');
+		$this->paypal_lib->add_field('amount',  $amount);		
+		$this->paypal_lib->image($logo);
+		
+		$this->paypal_lib->paypal_auto_form();
 	}
 }
