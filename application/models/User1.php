@@ -350,11 +350,9 @@ class user1 extends CI_Model
 	}
 	function due($pid)
 	{ 
-<<<<<<< HEAD
 		
 		$this->db->where('user_id',$uid);
-=======
->>>>>>> 65d4f3f0fc282894ac91541438c7f683ab3c2824
+
 		$this->db->where('product_id',$pid);
 		$query=$this->db->get('payments');
 		return $query->result();
